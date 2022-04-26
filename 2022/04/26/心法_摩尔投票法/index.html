@@ -39,11 +39,11 @@
 <meta property="og:title" content="心法_摩尔投票法">
 <meta property="og:url" content="https://touale.github.io/2022/04/26/%E5%BF%83%E6%B3%95_%E6%91%A9%E5%B0%94%E6%8A%95%E7%A5%A8%E6%B3%95/index.html">
 <meta property="og:site_name" content="Touale Cula&#39;s Blog">
-<meta property="og:description" content="原理 摩尔投票法的基本思想很简单，在每一轮投票过程中，从数组中找出一对不同的元素，将其从数组中删除。 这样不断的删除直到无法再进行投票，如果数组为空，则没有任何元素出现的次数超过该数组长度的一半。 如果只存在一种元素，那么这个元素则可能为目标元素。  理解用一个很好的例子可以介绍一下！ 假设有一个擂台，有一组人，每个人有编号，相同编号为一组，依次上场，没人时上去的便是擂主（x），若有人，编号相同则">
+<meta property="og:description" content="原理 摩尔投票法的基本思想很简单，在每一轮投票过程中，从数组中找出一对不同的元素，将其从数组中删除。这样不断的删除直到无法再进行投票，如果数组为空，则没有任何元素出现的次数超过该数组长度的一半。如果只存在一种元素，那么这个元素则可能为目标元素。  理解用一个很好的例子可以介绍一下！ 假设有一个擂台，有一组人，每个人有编号，相同编号为一组，依次上场，没人时上去的便是擂主（x），若有人，编号相同则继续">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/android-chrome-192x192.png">
 <meta property="article:published_time" content="2022-04-26T01:13:05.853Z">
-<meta property="article:modified_time" content="2022-04-26T01:36:51.761Z">
+<meta property="article:modified_time" content="2022-04-26T01:37:22.267Z">
 <meta property="article:author" content="Touale Cula">
 <meta property="article:tag" content="算法">
 <meta name="twitter:card" content="summary">
@@ -1752,7 +1752,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     debug: false,
     cdn: {"js":{"app":"/js/app.3690b000.js","parallax":"/js/plugins/parallax.8bf0ab10.js","rightMenu":"/js/plugins/rightMenu.1d2dd3e0.js","rightMenus":"/js/plugins/rightMenus.68379f6b.js","sites":"/js/plugins/tags/sites.76bf19b8.js","friends":"/js/plugins/tags/friends.f372da57.js","contributors":"/js/plugins/tags/contributors.aec80453.js","search":"/js/search/hexo.06d40311.js"},"css":{"style":"/css/style.8a038721.css"}},
     default: {"avatar":"https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/placeholder/avatar/round/3442075.svg","link":"https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/placeholder/cover/76b86c0226ffd.svg","image":"https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1650937018534),
+    lastupdate: new Date(1650937049551),
     sidebar: {
       for_page: ["blogger","category","tagcloud","donate"],
       for_post: ["toc"],
@@ -2570,9 +2570,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   <div id="layoutHelper-page-plugins"></div>
   <div id="post-body" itemprop="articleBody">
     <h3 id="原理"><a href="#原理" class="headerlink" title="原理"></a>原理</h3><blockquote>
-<p>摩尔投票法的基本思想很简单，在每一轮投票过程中，从数组中找出一对不同的元素，将其从数组中删除。</p>
-<p>这样不断的删除直到无法再进行投票，如果数组为空，则没有任何元素出现的次数超过该数组长度的一半。</p>
-<p>如果只存在一种元素，那么这个元素则可能为目标元素。</p>
+<p>摩尔投票法的基本思想很简单，在每一轮投票过程中，从数组中找出一对不同的元素，将其从数组中删除。<br>这样不断的删除直到无法再进行投票，如果数组为空，则没有任何元素出现的次数超过该数组长度的一半。<br>如果只存在一种元素，那么这个元素则可能为目标元素。</p>
 </blockquote>
 <h3 id="理解"><a href="#理解" class="headerlink" title="理解"></a>理解</h3><p>用一个很好的例子可以介绍一下！</p>
 <p>假设有一个擂台，有一组人，每个人有编号，相同编号为一组，依次上场，没人时上去的便是擂主（x），若有人，编号相同则继续站着（台上总人数+1），若不同，假设每个人战斗力相同，都同归于尽，则台上总人数-1；那么到最后站着的肯定是人数占绝对优势的那一组啦~对应的编号就是答案</p>
@@ -2646,7 +2644,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateModified" datetime="2022-04-26T09:36:51+08:00">
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2022-04-26T09:37:22+08:00">
   <a class='notlink'>
     <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
     <p>更新于：2022年4月26日</p>
@@ -3692,7 +3690,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"Touale Cula's Blog","url":"https://touale.github.io/","logo":{"@type":"ImageObject","url":"https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"Touale Cula","image":{"@type":"ImageObject","url":"https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://touale.github.io/","sameAs":["https://github.com/volantis-x"],"description":"欢迎来到 Touale Cula 的小世界哦"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://touale.github.io/","name":"Touale Cula's Blog"}},{"@type":"ListItem","position":2,"item":{"@id":"https://touale.github.io/categories/心法/","name":"心法"}},{"@type":"ListItem","position":3,"item":{"@id":"https://touale.github.io/2022/04/26/心法_摩尔投票法/","name":"心法_摩尔投票法"}}]},{"@context":"http://schema.org","@type":"BlogPosting","headline":"心法_摩尔投票法","description":"","datePublished":"2022-04-26T01:13:05.853Z","dateModified":"2022-04-26T01:36:51.761Z","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https://touale.github.io/2022/04/26/%E5%BF%83%E6%B3%95_%E6%91%A9%E5%B0%94%E6%8A%95%E7%A5%A8%E6%B3%95/"},"author":{"@type":"Person","name":"Touale Cula","image":{"@type":"ImageObject","url":"https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://touale.github.io/"},"publisher":{"@type":"Organization","name":"Touale Cula's Blog","logo":{"@type":"ImageObject","url":"https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://touale.github.io/2022/04/26/%E5%BF%83%E6%B3%95_%E6%91%A9%E5%B0%94%E6%8A%95%E7%A5%A8%E6%B3%95/","wordCount":0,"articleSection":"心法","keywords":"算法","image":{"@type":"ImageObject","url":"https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"Touale Cula's Blog","url":"https://touale.github.io/","logo":{"@type":"ImageObject","url":"https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"Touale Cula","image":{"@type":"ImageObject","url":"https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://touale.github.io/","sameAs":["https://github.com/volantis-x"],"description":"欢迎来到 Touale Cula 的小世界哦"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://touale.github.io/","name":"Touale Cula's Blog"}},{"@type":"ListItem","position":2,"item":{"@id":"https://touale.github.io/categories/心法/","name":"心法"}},{"@type":"ListItem","position":3,"item":{"@id":"https://touale.github.io/2022/04/26/心法_摩尔投票法/","name":"心法_摩尔投票法"}}]},{"@context":"http://schema.org","@type":"BlogPosting","headline":"心法_摩尔投票法","description":"","datePublished":"2022-04-26T01:13:05.853Z","dateModified":"2022-04-26T01:37:22.267Z","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https://touale.github.io/2022/04/26/%E5%BF%83%E6%B3%95_%E6%91%A9%E5%B0%94%E6%8A%95%E7%A5%A8%E6%B3%95/"},"author":{"@type":"Person","name":"Touale Cula","image":{"@type":"ImageObject","url":"https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://touale.github.io/"},"publisher":{"@type":"Organization","name":"Touale Cula's Blog","logo":{"@type":"ImageObject","url":"https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://touale.github.io/2022/04/26/%E5%BF%83%E6%B3%95_%E6%91%A9%E5%B0%94%E6%8A%95%E7%A5%A8%E6%B3%95/","wordCount":0,"articleSection":"心法","keywords":"算法","image":{"@type":"ImageObject","url":"https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 
