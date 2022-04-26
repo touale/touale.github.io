@@ -1750,7 +1750,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     debug: false,
     cdn: {"js":{"app":"/js/app.3690b000.js","parallax":"/js/plugins/parallax.8bf0ab10.js","rightMenu":"/js/plugins/rightMenu.1d2dd3e0.js","rightMenus":"/js/plugins/rightMenus.68379f6b.js","sites":"/js/plugins/tags/sites.76bf19b8.js","friends":"/js/plugins/tags/friends.f372da57.js","contributors":"/js/plugins/tags/contributors.aec80453.js","search":"/js/search/hexo.06d40311.js"},"css":{"style":"/css/style.8a038721.css"}},
     default: {"avatar":"https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/placeholder/avatar/round/3442075.svg","link":"https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/placeholder/cover/76b86c0226ffd.svg","image":"https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1650936625748),
+    lastupdate: new Date(1650936730342),
     sidebar: {
       for_page: ["blogger","category","tagcloud","donate"],
       for_post: ["toc"],
@@ -2530,23 +2530,20 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
     <h2 class="article-title"  itemprop="name headline">
       <a href="/2022/04/26/%E5%BF%83%E6%B3%95_%E6%91%A9%E5%B0%94%E6%8A%95%E7%A5%A8%E6%B3%95/"  itemprop="url">
-        2022年4月26日
+        心法_摩尔投票法
       </a>
     </h2>
   
   <div class='md article-desc' itemprop="articleBody">
     
       
-        
-title: �ķ�_Ħ��ͶƱ��author: ToualeCulatags:
+        原理
+摩尔投票法的基本思想很简单，在每一轮投票过程中，从数组中找出一对不同的元素，将其从数组中删除。
+这样不断的删除直到无法再进行投票，如果数组为空，则没有任何元素出现的次数超过该数组长度的一半。
+如果只存在一种元素，那么这个元素则可能为目标元素。
 
-�㷨categories:
-�ķ�
-
-
-ԭ��
-Ħ��ͶƱ���Ļ���˼��ܼ򵥣���ÿһ��ͶƱ�����У����������ҳ�һ�Բ�ͬ��Ԫ�أ������������ɾ����
-�������ϵ�ɾ��ֱ���޷��ٽ���ͶƱ���������Ϊ�գ���û���κ�Ԫ�س��ֵĴ���...
+理解用一个很好的例子可以介绍一下！
+假设有一个擂台，有一组人，每个人有编号，相同编号为一组，依次上场，没人时上去的便是擂主（x），若有人，编号...
       
     
   </div>
@@ -2555,6 +2552,14 @@ title: �ķ�_Ħ��ͶƱ��author: ToualeCulatags:
       <div>
         
         <time itemprop="dateCreated datePublished" datetime="2022-04-26T09:13:05+08:00">2022-04-26</time>
+        
+          <span class="dot"></span>
+          <a class="category-link" href="/categories/%E5%BF%83%E6%B3%95/">心法</a>
+          
+            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
+              <a href="/categories/%E5%BF%83%E6%B3%95/" itemprop="url"><span itemprop="name">心法</span></a>
+            </span>
+          
         
       </div>
       
@@ -2594,24 +2599,22 @@ title: �ķ�_Ħ��ͶƱ��author: ToualeCulatags:
     
     <h2 class="article-title"  itemprop="name headline">
       <a href="/2022/04/26/%E6%8B%9B%E5%BC%8F_%E5%89%91%E6%8C%87Offer%2039.%20%E6%95%B0%E7%BB%84%E4%B8%AD%E5%87%BA%E7%8E%B0%E6%AC%A1%E6%95%B0%E8%B6%85%E8%BF%87%E4%B8%80%E5%8D%8A%E7%9A%84%E6%95%B0%E5%AD%97/"  itemprop="url">
-        2022年4月26日
+        招式_剑指Offer 39. 数组中出现次数超过一半的数字
       </a>
     </h2>
   
   <div class='md article-desc' itemprop="articleBody">
     
       
-        
-title: ��ʽ_��ָOffer 39. �����г��ִ�������һ�������author: ToualeCulatags:
-
-�㷨
-����categories:
-��ʽdate: 2022-4-26 08:54:00
-
-
-��Ŀ������������һ�����ֳ��ֵĴ����������鳤�ȵ�һ�룬���ҳ�������֡�
+        题目内容数组中有一个数字出现的次数超过数组长度的一半，请找出这个数字。
 ?
-����Լ��������Ƿǿ...
+你可以假设数组是非空的，并且给定的数组总是存在多数元素。
+?
+123456789示例?1:输入: [1, 2, 3, 2, 2, 2, 5, 4, 2]输出: 2?限制：1 &lt;= 数组长度 &lt;= 50000
+
+
+解法解法一： 哈希表(暴力法)思路：利用map存储，后遍历取出
+123456789101112...
       
     
   </div>
@@ -2619,7 +2622,15 @@ title: ��ʽ_��ָOffer 39. �����г��ִ�������
     <div class='meta-v3' line_style='solid'>
       <div>
         
-        <time itemprop="dateCreated datePublished" datetime="2022-04-26T08:53:33+08:00">2022-04-26</time>
+        <time itemprop="dateCreated datePublished" datetime="2022-04-26T08:54:00+08:00">2022-04-26</time>
+        
+          <span class="dot"></span>
+          <a class="category-link" href="/categories/%E6%8B%9B%E5%BC%8F/">招式</a>
+          
+            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
+              <a href="/categories/%E6%8B%9B%E5%BC%8F/" itemprop="url"><span itemprop="name">招式</span></a>
+            </span>
+          
         
       </div>
       
@@ -2867,9 +2878,14 @@ Qu...
             ><div class='name'>分类1</div><div class='badge'>(1)</div></a></li>
         
           <li><a class="flat-box"
+            title="/categories/%E5%BF%83%E6%B3%95/" href="/categories/%E5%BF%83%E6%B3%95/"
+            active-action="action-categoriesE5BF83E6B395"
+            ><div class='name'>心法</div><div class='badge'>(1)</div></a></li>
+        
+          <li><a class="flat-box"
             title="/categories/%E6%8B%9B%E5%BC%8F/" href="/categories/%E6%8B%9B%E5%BC%8F/"
             active-action="action-categoriesE68B9BE5BC8F"
-            ><div class='name'>招式</div><div class='badge'>(1)</div></a></li>
+            ><div class='name'>招式</div><div class='badge'>(2)</div></a></li>
         
       </ul>
     </div>
@@ -2893,7 +2909,7 @@ Qu...
 
 
     <div class='content'>
-      <a href="/tags/js%E5%8A%A0%E5%AF%86/" style="font-size: 14px; color: #999">js加密</a> <a href="/tags/%E5%AF%B9%E6%8A%97/" style="font-size: 14px; color: #999">对抗</a> <a href="/tags/%E6%94%BB%E9%98%B2/" style="font-size: 14px; color: #999">攻防</a> <a href="/tags/%E6%A0%87%E7%AD%BE1/" style="font-size: 14px; color: #999">标签1</a> <a href="/tags/%E6%A0%87%E7%AD%BE2/" style="font-size: 14px; color: #999">标签2</a> <a href="/tags/%E6%A0%87%E7%AD%BE3/" style="font-size: 14px; color: #999">标签3</a> <a href="/tags/%E6%B7%B7%E6%B7%86/" style="font-size: 14px; color: #999">混淆</a>
+      <a href="/tags/js%E5%8A%A0%E5%AF%86/" style="font-size: 14px; color: #999">js加密</a> <a href="/tags/%E5%8A%9B%E6%89%A3/" style="font-size: 14px; color: #999">力扣</a> <a href="/tags/%E5%AF%B9%E6%8A%97/" style="font-size: 14px; color: #999">对抗</a> <a href="/tags/%E6%94%BB%E9%98%B2/" style="font-size: 14px; color: #999">攻防</a> <a href="/tags/%E6%A0%87%E7%AD%BE1/" style="font-size: 14px; color: #999">标签1</a> <a href="/tags/%E6%A0%87%E7%AD%BE2/" style="font-size: 14px; color: #999">标签2</a> <a href="/tags/%E6%A0%87%E7%AD%BE3/" style="font-size: 14px; color: #999">标签3</a> <a href="/tags/%E6%B7%B7%E6%B7%86/" style="font-size: 14px; color: #999">混淆</a> <a href="/tags/%E7%AE%97%E6%B3%95/" style="font-size: 24px; color: #555">算法</a>
     </div>
   </section>
 
