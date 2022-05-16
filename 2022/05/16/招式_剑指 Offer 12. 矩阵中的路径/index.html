@@ -43,7 +43,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/android-chrome-192x192.png">
 <meta property="article:published_time" content="2022-05-15T16:00:00.000Z">
-<meta property="article:modified_time" content="2022-05-16T08:40:37.495Z">
+<meta property="article:modified_time" content="2022-05-16T08:48:14.018Z">
 <meta property="article:author" content="Touale Cula">
 <meta property="article:tag" content="算法">
 <meta property="article:tag" content="力扣">
@@ -1753,7 +1753,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     debug: false,
     cdn: {"js":{"app":"/js/app.3690b000.js","parallax":"/js/plugins/parallax.8bf0ab10.js","rightMenu":"/js/plugins/rightMenu.1d2dd3e0.js","rightMenus":"/js/plugins/rightMenus.68379f6b.js","sites":"/js/plugins/tags/sites.76bf19b8.js","friends":"/js/plugins/tags/friends.f372da57.js","contributors":"/js/plugins/tags/contributors.aec80453.js","search":"/js/search/hexo.06d40311.js"},"css":{"style":"/css/style.8a038721.css"}},
     default: {"avatar":"https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/placeholder/avatar/round/3442075.svg","link":"https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/placeholder/cover/76b86c0226ffd.svg","image":"https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1652690467244),
+    lastupdate: new Date(1652703594907),
     sidebar: {
       for_page: ["blogger","category","tagcloud","donate"],
       for_post: ["toc"],
@@ -2605,6 +2605,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 <p>效率直接提升起飞。。。。</p>
 <p><img src="/img/2022-05-16-16-39-28.png" class="lazyload" data-srcset="/img/2022-05-16-16-39-28.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+<p>或者，调整一下，用&amp;</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br></pre></td><td class="code"><pre><span class="line">class Solution &#123;</span><br><span class="line">public:</span><br><span class="line">    int m ,n;</span><br><span class="line"></span><br><span class="line">    bool dfs(vector&lt;vector&lt;char&gt;&gt;&amp; board, string&amp; word,int i,int j,int k)&#123;</span><br><span class="line">        if(i&gt;=m || i&lt;0 || j&gt;= n || j&lt;0 || board[i][j] != word[k])&#123;</span><br><span class="line">            return false;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        if( k == word.size() - 1)&#123;</span><br><span class="line">            return true;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        board[i][j] = &#x27; &#x27;;</span><br><span class="line">        bool res = dfs(board,word,i-1,j,k+1) || dfs(board,word,i+1,j,k+1) || dfs(board,word,i,j+1,k+1) || dfs(board,word,i,j-1,k+1);</span><br><span class="line">        board[i][j] = word[k];</span><br><span class="line"></span><br><span class="line">        return res;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    bool exist(vector&lt;vector&lt;char&gt;&gt;&amp; board, string word) &#123;</span><br><span class="line"></span><br><span class="line">        m = board.size();</span><br><span class="line">        n = board[0].size();</span><br><span class="line"></span><br><span class="line">        for(int i =0;i&lt;m;i++)&#123;</span><br><span class="line">            for(int j = 0;j&lt;n;j++)&#123;</span><br><span class="line">                if(dfs(board,word,i,j,0))&#123;</span><br><span class="line">                    return true;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        return false;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>一样的效果！</p>
 
 
   </div>
@@ -2641,7 +2645,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateModified" datetime="2022-05-16T16:40:37+08:00">
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2022-05-16T16:48:14+08:00">
   <a class='notlink'>
     <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
     <p>更新于：2022年5月16日</p>
@@ -2741,12 +2745,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         </a>
       
       
-        <a class='next' href='/2022/05/15/%E6%8B%9B%E5%BC%8F_%E5%89%91%E6%8C%87%20Offer%2007.%20%E9%87%8D%E5%BB%BA%E4%BA%8C%E5%8F%89%E6%A0%91/'>
-          <p class='title'>招式_剑指 Offer 07. 重建二叉树<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
-          <p class='content'>题目输入某二叉树的前序遍历和中序遍历的结果，请构建该二叉树并返回其根节点。
-假设输入的前序遍历和中序遍历的结果中都不含重复的数字。
-示例 1:
-12Input: preorder = [3,9,...</p>
+        <a class='next' href='/2022/05/16/%E6%8B%9B%E5%BC%8F_%E5%89%91%E6%8C%87%20Offer%2013.%20%E6%9C%BA%E5%99%A8%E4%BA%BA%E7%9A%84%E8%BF%90%E5%8A%A8%E8%8C%83%E5%9B%B4/'>
+          <p class='title'>招式_剑指 Offer 13. 机器人的运动范围<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>题目内容地上有一个m行n列的方格，从坐标 [0,0] 到坐标 [m-1,n-1] 。一个机器人从坐标 [0, 0] 的格子开始移动，它每次可以向左、右、上、下移动一格（不能移动到方格外），也不能...</p>
         </a>
       
     </div>
@@ -3702,7 +3703,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"Touale Cula's Blog","url":"https://touale.github.io/","logo":{"@type":"ImageObject","url":"https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"Touale Cula","image":{"@type":"ImageObject","url":"https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://touale.github.io/","sameAs":["https://github.com/volantis-x"],"description":"欢迎来到 Touale Cula 的小世界哦"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://touale.github.io/","name":"Touale Cula's Blog"}},{"@type":"ListItem","position":2,"item":{"@id":"https://touale.github.io/categories/招式/","name":"招式"}},{"@type":"ListItem","position":3,"item":{"@id":"https://touale.github.io/2022/05/16/招式_剑指 Offer 12. 矩阵中的路径/","name":"招式_剑指 Offer 12. 矩阵中的路径"}}]},{"@context":"http://schema.org","@type":"BlogPosting","headline":"招式_剑指 Offer 12. 矩阵中的路径","description":"","datePublished":"2022-05-15T16:00:00.000Z","dateModified":"2022-05-16T08:40:37.495Z","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https://touale.github.io/2022/05/16/%E6%8B%9B%E5%BC%8F_%E5%89%91%E6%8C%87%20Offer%2012.%20%E7%9F%A9%E9%98%B5%E4%B8%AD%E7%9A%84%E8%B7%AF%E5%BE%84/"},"author":{"@type":"Person","name":"Touale Cula","image":{"@type":"ImageObject","url":"https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://touale.github.io/"},"publisher":{"@type":"Organization","name":"Touale Cula's Blog","logo":{"@type":"ImageObject","url":"https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://touale.github.io/2022/05/16/%E6%8B%9B%E5%BC%8F_%E5%89%91%E6%8C%87%20Offer%2012.%20%E7%9F%A9%E9%98%B5%E4%B8%AD%E7%9A%84%E8%B7%AF%E5%BE%84/","wordCount":0,"articleSection":"招式","keywords":"算法,力扣","image":{"@type":"ImageObject","url":"https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"Touale Cula's Blog","url":"https://touale.github.io/","logo":{"@type":"ImageObject","url":"https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"Touale Cula","image":{"@type":"ImageObject","url":"https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://touale.github.io/","sameAs":["https://github.com/volantis-x"],"description":"欢迎来到 Touale Cula 的小世界哦"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://touale.github.io/","name":"Touale Cula's Blog"}},{"@type":"ListItem","position":2,"item":{"@id":"https://touale.github.io/categories/招式/","name":"招式"}},{"@type":"ListItem","position":3,"item":{"@id":"https://touale.github.io/2022/05/16/招式_剑指 Offer 12. 矩阵中的路径/","name":"招式_剑指 Offer 12. 矩阵中的路径"}}]},{"@context":"http://schema.org","@type":"BlogPosting","headline":"招式_剑指 Offer 12. 矩阵中的路径","description":"","datePublished":"2022-05-15T16:00:00.000Z","dateModified":"2022-05-16T08:48:14.018Z","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https://touale.github.io/2022/05/16/%E6%8B%9B%E5%BC%8F_%E5%89%91%E6%8C%87%20Offer%2012.%20%E7%9F%A9%E9%98%B5%E4%B8%AD%E7%9A%84%E8%B7%AF%E5%BE%84/"},"author":{"@type":"Person","name":"Touale Cula","image":{"@type":"ImageObject","url":"https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://touale.github.io/"},"publisher":{"@type":"Organization","name":"Touale Cula's Blog","logo":{"@type":"ImageObject","url":"https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://touale.github.io/2022/05/16/%E6%8B%9B%E5%BC%8F_%E5%89%91%E6%8C%87%20Offer%2012.%20%E7%9F%A9%E9%98%B5%E4%B8%AD%E7%9A%84%E8%B7%AF%E5%BE%84/","wordCount":0,"articleSection":"招式","keywords":"算法,力扣","image":{"@type":"ImageObject","url":"https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 
