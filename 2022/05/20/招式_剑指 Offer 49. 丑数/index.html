@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <!-- SEO相关 -->
   
-  <link rel="canonical" href="https://touale.github.io/about/"/>
+  <link rel="canonical" href="https://touale.github.io/2022/05/20/招式_剑指 offer 49. 丑数/"/>
   <!-- 渲染优化 -->
     <meta http-equiv='x-dns-prefetch-control' content='on' />
       <link rel='dns-prefetch' href='https://npm.elemecdn.com'>
@@ -31,23 +31,24 @@
   <!-- feed -->
   <!-- 页面元数据 -->
   <pjax>
-  <title>关于 - Touale Cula's Blog</title>
-  <meta name="keywords" content="内功,心法,招式">
+  <title>��ָ Offer 49. ���� - Touale Cula's Blog</title>
+  <meta name="keywords" content="�㷨,����,内功,心法,招式">
   <meta desc name="description" content="欢迎来到 Touale Cula 的小世界哦 - Touale Cula - Touale Cula's Blog">
   
-<meta property="og:type" content="website">
-<meta property="og:title" content="Touale Cula&#39;s Blog">
-<meta property="og:url" content="https://touale.github.io/about/index.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="��ָ Offer 49. ����">
+<meta property="og:url" content="https://touale.github.io/2022/05/20/%E6%8B%9B%E5%BC%8F_%E5%89%91%E6%8C%87%20Offer%2049.%20%E4%B8%91%E6%95%B0/index.html">
 <meta property="og:site_name" content="Touale Cula&#39;s Blog">
-<meta property="og:description" content="如果有一天，我有空了，我就把这里写了！ 1&#x2F;&#x2F; ToDo 2022&#x2F;5&#x2F;7">
+<meta property="og:description" content="��Ŀ���ǰ�ֻ���������� 2��3 �� 5 ��������������Ugly Number�����󰴴�С�����˳��ĵ� n �������� ? ʾ��: 123����: n &#x3D; 10���: 12����: 1, 2, 3, 4, 5, 6, 8, 9, 10, 12 ��ǰ 10 �������� ˵��:?? 121?�ǳ�����n?������1690��">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://touale.github.io/about/img/touale.jpg">
-<meta property="article:published_time" content="2022-05-07T07:35:29.228Z">
-<meta property="article:modified_time" content="2022-05-07T07:35:29.228Z">
+<meta property="og:image" content="https://touale.github.io/2022/05/20/%E6%8B%9B%E5%BC%8F_%E5%89%91%E6%8C%87%20Offer%2049.%20%E4%B8%91%E6%95%B0/img/touale.jpg">
+<meta property="article:published_time" content="2022-05-19T16:00:00.000Z">
+<meta property="article:modified_time" content="2022-05-20T13:02:28.448Z">
 <meta property="article:author" content="Touale Cula">
-<meta property="article:tag" content="内功,心法,招式">
+<meta property="article:tag" content="�㷨">
+<meta property="article:tag" content="����">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://touale.github.io/about/img/touale.jpg">
+<meta name="twitter:image" content="https://touale.github.io/2022/05/20/%E6%8B%9B%E5%BC%8F_%E5%89%91%E6%8C%87%20Offer%2049.%20%E4%B8%91%E6%95%B0/img/touale.jpg">
   </pjax>
   <style>
     /* 首屏样式 */
@@ -2163,6 +2164,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       <ul class='switcher nav-list-h m-phone' id="pjax-header-nav-list">
         <li><a id="s-comment" class="fa-solid fa-comments fa-fw" target="_self"  href="/" onclick="return false;" title="comment"></a></li>
         
+          <li><a id="s-toc" class="s-toc fa-solid fa-list fa-fw" target="_self"  href="/" onclick="return false;" title="toc"></a></li>
+        
       </ul>
     </div>
 		<div class="nav-main">
@@ -2422,7 +2425,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     
       <!-- see: /layout/_partial/scripts/_ctrl/coverCtrl.ejs -->
-      <div id="none" class='cover-wrapper docs dock' style="display: none;">
+      <div id="none" class='cover-wrapper post dock' style="display: none;">
         
   <div class='cover-bg lazyload placeholder' data-bg="https://api.yimian.xyz/img?type=moe&size=1920x1080"></div>
 
@@ -2496,9 +2499,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       <div id="safearea">
         <div class="body-wrapper">
           
-<div id="l_main" class=' no_sidebar'>
-  <article itemscope itemtype="http://schema.org/Article" class="article post white-box reveal md shadow floatable blur article-type-docs" id="docs" itemscope itemprop="blogPost">
-  <link itemprop="mainEntityOfPage" href="https://touale.github.io/about/index.html">
+<div id="l_main" class=''>
+  <article itemscope itemtype="http://schema.org/Article" class="article post white-box reveal md shadow floatable blur article-type-post" id="post" itemscope itemprop="blogPost">
+  <link itemprop="mainEntityOfPage" href="https://touale.github.io/2022/05/20/%E6%8B%9B%E5%BC%8F_%E5%89%91%E6%8C%87%20Offer%2049.%20%E4%B8%91%E6%95%B0/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="Touale Cula's Blog">
   </span>
@@ -2518,20 +2521,73 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
     
     
-      <span hidden itemprop="name headline">
+      <h1 class="title" itemprop="name headline">
+        ��ָ Offer 49. ����
+      </h1>
+      <div class='new-meta-box'>
         
+          
+            
+<div class='new-meta-item author' itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <a itemprop="url" class='author' href="/" rel="nofollow">
+    <img itemprop="image" src="https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/apple-touch-icon.png" class="lazyload" data-srcset="https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/apple-touch-icon.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+    <p itemprop="name">Touale</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+  <div class='new-meta-item category'>
+    <i class="fa-solid fa-folder-open fa-fw" aria-hidden="true"></i>
+    <a class="category-link" href="/categories/%EF%BF%BD%EF%BF%BD%CA%BD/">��ʽ</a>
+    
+      <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
+        <a href="/categories/%EF%BF%BD%EF%BF%BD%CA%BD/" itemprop="url"><span itemprop="name">��ʽ</span></a>
       </span>
+    
+  </div>
+
+
+          
+        
+          
+            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2022-05-20T00:00:00+08:00">
+  <a class='notlink'>
+    <i class="fa-solid fa-calendar-alt fa-fw" aria-hidden="true"></i>
+    <p>发布于：2022年5月20日</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+
+          
+        
+        <!-- Custom Files topMeta begin-->
+        
+        <!-- Custom Files topMeta end-->
+      </div>
     
   </div>
 
 
   <div id="layoutHelper-page-plugins"></div>
   <div id="post-body" itemprop="articleBody">
-    <p>如果有一天，我有空了，我就把这里写了！</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">// ToDo 2022/5/7</span><br></pre></td></tr></table></figure>
+    <h3 id="��L"><a href="#��L" class="headerlink" title="��Ŀ"></a>��Ŀ</h3><p>���ǰ�ֻ���������� 2��3 �� 5 ��������������Ugly Number�����󰴴�С�����˳��ĵ� n ��������</p>
+<p>?</p>
+<p>ʾ��:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">����: n = 10</span><br><span class="line">���: 12</span><br><span class="line">����: 1, 2, 3, 4, 5, 6, 8, 9, 10, 12 ��ǰ 10 ��������</span><br></pre></td></tr></table></figure>
+<p>˵��:??</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">1?�ǳ�����</span><br><span class="line">n?������1690��</span><br></pre></td></tr></table></figure>
 
-
-
+<hr>
+<h3 id="�ⷨһ����̬�滮"><a href="#�ⷨһ����̬�滮" class="headerlink" title="�ⷨһ����̬�滮"></a>�ⷨһ����̬�滮</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">class Solution &#123;</span><br><span class="line">public:</span><br><span class="line"></span><br><span class="line">    int nthUglyNumber(int n) &#123;</span><br><span class="line">        if(n==0)return 0;</span><br><span class="line">        vector&lt;int&gt; dp(n+1);</span><br><span class="line">        dp[1]=1;</span><br><span class="line">        int l=1,r=1,q=1;</span><br><span class="line">        for(int i = 2;i&lt;=n;i++)&#123;</span><br><span class="line">            int temp = min(min(dp[l]*2,dp[r]*3),dp[q]*5);</span><br><span class="line">            dp[i] = temp;</span><br><span class="line">            if(temp == dp[l]*2)l++;</span><br><span class="line">            if(temp == dp[r]*3)r++;</span><br><span class="line">            if(temp == dp[q]*5)q++;</span><br><span class="line">        &#125;</span><br><span class="line">        return dp[n];</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+<p>�����</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">ִ����ʱ��</span><br><span class="line">8 ms</span><br><span class="line">, ������ C++ �ύ�л�����</span><br><span class="line">58.99%</span><br><span class="line">���û�</span><br><span class="line">�ڴ����ģ�</span><br><span class="line">7.5 MB</span><br><span class="line">, ������ C++ �ύ�л�����</span><br><span class="line">37.14%</span><br><span class="line">���û�</span><br><span class="line">ͨ������������</span><br><span class="line">596 / 596</span><br></pre></td></tr></table></figure>
 
   </div>
   
@@ -2540,6 +2596,21 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class='footer'>
       
       
+      
+        <div class='copyright'>
+          <blockquote>
+            
+              
+                <p>感谢您的观看哦！</p>
+
+              
+            
+              
+                <p>本文永久链接是：<a href=https://touale.github.io/2022/05/20/%E6%8B%9B%E5%BC%8F_%E5%89%91%E6%8C%87%20Offer%2049.%20%E4%B8%91%E6%95%B0/>https://touale.github.io/2022/05/20/%E6%8B%9B%E5%BC%8F_%E5%89%91%E6%8C%87%20Offer%2049.%20%E4%B8%91%E6%95%B0/</a></p>
+              
+            
+          </blockquote>
+        </div>
       
       
     </div>
@@ -2551,6 +2622,77 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   <div class='article-meta' id="bottom">
     <div class='new-meta-box'>
       
+        
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2022-05-20T21:02:28+08:00">
+  <a class='notlink'>
+    <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
+    <p>更新于：2022年5月20日</p>
+  </a>
+</div>
+
+        
+      
+        
+          
+  
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/%EF%BF%BD%E3%B7%A8/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>�㷨</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>����</p></a></div>
+  <span hidden itemprop="keywords">�㷨 ����</span>
+
+
+        
+      
+        
+          
+  <div class="new-meta-item share -mob-share-list">
+  <div class="-mob-share-list share-body">
+    
+      
+        <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://touale.github.io/2022/05/20/%E6%8B%9B%E5%BC%8F_%E5%89%91%E6%8C%87%20Offer%2049.%20%E4%B8%91%E6%95%B0/&title=��ָ Offer 49. ���� - Touale Cula's Blog&summary="
+          
+          >
+          
+            <img src="https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/logo/128/qq.png" class="lazyload" data-srcset="https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/logo/128/qq.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://touale.github.io/2022/05/20/%E6%8B%9B%E5%BC%8F_%E5%89%91%E6%8C%87%20Offer%2049.%20%E4%B8%91%E6%95%B0/&title=��ָ Offer 49. ���� - Touale Cula's Blog&summary="
+          
+          >
+          
+            <img src="https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/logo/128/qzone.png" class="lazyload" data-srcset="https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/logo/128/qzone.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://service.weibo.com/share/share.php?url=https://touale.github.io/2022/05/20/%E6%8B%9B%E5%BC%8F_%E5%89%91%E6%8C%87%20Offer%2049.%20%E4%B8%91%E6%95%B0/&title=��ָ Offer 49. ���� - Touale Cula's Blog&summary="
+          
+          >
+          
+            <img src="https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/logo/128/weibo.png" class="lazyload" data-srcset="https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/logo/128/weibo.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+
+
+        
+      
     </div>
     <!-- Custom Files bottomMeta begin -->
     
@@ -2561,6 +2703,27 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
   
 
+  
+    <div class="prev-next">
+      
+        <a class='prev' href='/2022/05/20/%E6%8B%9B%E5%BC%8F_%E5%89%91%E6%8C%87%20Offer%2048.%20%E6%9C%80%E9%95%BF%E4%B8%8D%E5%90%AB%E9%87%8D%E5%A4%8D%E5%AD%97%E7%AC%A6%E7%9A%84%E5%AD%90%E5%AD%97%E7%AC%A6%E4%B8%B2/'>
+          <p class='title'><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>剑指 Offer 48. 最长不含重复字符的子字符串</p>
+          <p class='content'>题目请从字符串中找出一个最长的不包含重复字符的子字符串，计算该最长子字符串的长度。
+ 
+示例 1:
+123输入: &quot;abcabcbb&quot;输出: 3 解释: 因为无重复字符的最长...</p>
+        </a>
+      
+      
+        <a class='next' href='/2022/05/18/%E6%8B%9B%E5%BC%8F_%E5%89%91%E6%8C%87%20Offer%2026.%20%E6%A0%91%E7%9A%84%E5%AD%90%E7%BB%93%E6%9E%84/'>
+          <p class='title'>剑指 Offer 26. 树的子结构<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>输入两棵二叉树A和B，判断B是不是A的子结构。(约定空树不是任意一个树的子结构)
+B是A的子结构， 即 A中有出现和B相同的结构和节点值。
+例如:
+12345678910111213给定的树 A...</p>
+        </a>
+      
+    </div>
   
   <!-- Custom Files postEnd begin-->
   
@@ -2579,20 +2742,120 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 </div>
 <aside id='l_side' itemscope itemtype="http://schema.org/WPSideBar">
   
+  
+    
+    
+
+<section class="widget blogger shadow floatable blur desktop mobile pjax">
+  <div class='content'>
+    
+      
+        <a class='avatar flat-box circle' href='/about/'>
+          <img no-lazy src='/img/touale.jpg'/>
+        </a>
+      
+    
+    
+      <div class='text'>
+        
+        
+        
+          <p><span id="jinrishici-sentence">Touale Cula's Blog</span></p>
+          <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
+        
+      </div>
+    
+    
+      <div class="social-wrapper">
+        
+          
+            <a href="/about/"
+              class="social fa-solid fa-rss flat-btn"
+              target="_blank"
+              rel="external nofollow noopener noreferrer">
+              
+            </a>
+          
+        
+          
+            <a href="mailto:1367642349@qq.com"
+              class="social fa-solid fa-envelope flat-btn"
+              target="_blank"
+              rel="external nofollow noopener noreferrer">
+              
+            </a>
+          
+        
+          
+            <a href="https://github.com/touale"
+              class="social fab fa-github flat-btn"
+              target="_blank"
+              rel="external nofollow noopener noreferrer">
+              
+            </a>
+          
+        
+          
+            <a href="/"
+              class="social fa-solid fa-headphones-alt flat-btn"
+              target="_blank"
+              rel="external nofollow noopener noreferrer">
+              
+            </a>
+          
+        
+      </div>
+    
+  </div>
+</section>
+
+  
+
+  
+    
+    
+
+
+
+  <section class="widget toc-wrapper shadow floatable blur desktop mobile pjax" id="toc-div" >
+    
+  <header>
+    
+      <i class="fa-solid fa-list fa-fw" aria-hidden="true"></i><span class='name'>本文目录</span>
+    
+  </header>
+
+
+    <div class='content'>
+        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%EF%BF%BD%EF%BF%BDL"><span class="toc-text">��Ŀ</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%EF%BF%BD%E2%B7%A8%D2%BB%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%CC%AC%EF%BF%BD%E6%BB%AE"><span class="toc-text">�ⷨһ����̬�滮</span></a></li></ol>
+    </div>
+  </section>
+
+  
+
+  
+    
+     
+
+ 
+<section class="widget shadow floatable blur desktop mobile pjax"> 
+  
+  <header>
+    
+      <i class="fa-solid fa-clock WISTERIA fa-fw" aria-hidden="true"></i><span class='name'>最近更新</span>
+    
+  </header>
+
+ 
+  <div class='content'> 
+    <ul class="list entry navigation"><li><a class="widget-last" href="/2022/05/20/%E6%8B%9B%E5%BC%8F_%E5%89%91%E6%8C%87%20Offer%2049.%20%E4%B8%91%E6%95%B0/"><div class="item"><time>2022-05-20</time><span>��ʽ</span></div><span>��ָ Offer 49. ����</span></a></li><li><a class="widget-last" href="/2022/05/20/%E6%8B%9B%E5%BC%8F_%E5%89%91%E6%8C%87%20Offer%2048.%20%E6%9C%80%E9%95%BF%E4%B8%8D%E5%90%AB%E9%87%8D%E5%A4%8D%E5%AD%97%E7%AC%A6%E7%9A%84%E5%AD%90%E5%AD%97%E7%AC%A6%E4%B8%B2/"><div class="item"><time>2022-05-20</time><span>招式</span></div><span>剑指 Offer 48. 最长不含重复字符的子字符串</span></a></li><li><a class="widget-last" href="/2022/05/18/%E6%8B%9B%E5%BC%8F_%E5%89%91%E6%8C%87%20Offer%2032%20-%20III.%20%E4%BB%8E%E4%B8%8A%E5%88%B0%E4%B8%8B%E6%89%93%E5%8D%B0%E4%BA%8C%E5%8F%89%E6%A0%91%20III/"><div class="item"><time>2022-05-20</time><span>招式</span></div><span>剑指 Offer 32 - III. 从上到下打印二叉树 III</span></a></li><li><a class="widget-last" href="/2022/05/20/%E6%8B%9B%E5%BC%8F_%E5%89%91%E6%8C%87%20Offer%2047.%20%E7%A4%BC%E7%89%A9%E7%9A%84%E6%9C%80%E5%A4%A7%E4%BB%B7%E5%80%BC/"><div class="item"><time>2022-05-20</time><span>招式</span></div><span>剑指 Offer 47. 礼物的最大价值</span></a></li><li><a class="widget-last" href="/2022/05/20/%E6%8B%9B%E5%BC%8F_%E5%89%91%E6%8C%87%20Offer%2046.%20%E6%8A%8A%E6%95%B0%E5%AD%97%E7%BF%BB%E8%AF%91%E6%88%90%E5%AD%97%E7%AC%A6%E4%B8%B2/"><div class="item"><time>2022-05-20</time><span>招式</span></div><span>剑指 Offer 46. 把数字翻译成字符串</span></a></li></ul> 
+  </div> 
+</section> 
+
+  
+
 
 <!-- 没有 pjax 占位会报错 万恶的 pjax -->
-
-  <div class="pjax">
-    <!-- pjax占位 -->
-  </div>
-
-  <div class="pjax">
-    <!-- pjax占位 -->
-  </div>
-
-  <div class="pjax">
-    <!-- pjax占位 -->
-  </div>
 
   <div class="pjax">
     <!-- pjax占位 -->
@@ -2628,7 +2891,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <pjax>
 <script>
   window.pdata={}
-  pdata.ispage=false;
+  pdata.ispage=true;
   pdata.commentPath="";
   pdata.commentPlaceholder="";
   pdata.commentConfig={};
@@ -3580,7 +3843,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"Touale Cula's Blog","url":"https://touale.github.io/","logo":{"@type":"ImageObject","url":"img/touale.jpg","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"Touale Cula","image":{"@type":"ImageObject","url":"img/touale.jpg"},"url":"https://touale.github.io/","sameAs":["https://github.com/volantis-x"],"description":"欢迎来到 Touale Cula 的小世界哦"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://touale.github.io/","name":"Touale Cula's Blog"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"Touale Cula's Blog","url":"https://touale.github.io/","keywords":"内功,心法,招式","description":"欢迎来到 Touale Cula 的小世界哦","author":{"@type":"Person","name":"Touale Cula","image":{"@type":"ImageObject","url":"img/touale.jpg"},"url":"https://touale.github.io/","description":"欢迎来到 Touale Cula 的小世界哦"},"publisher":{"@type":"Organization","name":"Touale Cula's Blog","url":"https://touale.github.io/","logo":{"@type":"ImageObject","url":"img/touale.jpg","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://touale.github.io?s={search_term_string}"},"query-input":"required name=search_term_string"}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"Touale Cula's Blog","url":"https://touale.github.io/","logo":{"@type":"ImageObject","url":"img/touale.jpg","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"Touale Cula","image":{"@type":"ImageObject","url":"img/touale.jpg"},"url":"https://touale.github.io/","sameAs":["https://github.com/volantis-x"],"description":"欢迎来到 Touale Cula 的小世界哦"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://touale.github.io/","name":"Touale Cula's Blog"}},{"@type":"ListItem","position":2,"item":{"@id":"https://touale.github.io/categories/��ʽ/","name":"��ʽ"}},{"@type":"ListItem","position":3,"item":{"@id":"https://touale.github.io/2022/05/20/招式_剑指 Offer 49. 丑数/","name":"��ָ Offer 49. ����"}}]},{"@context":"http://schema.org","@type":"BlogPosting","headline":"��ָ Offer 49. ����","description":"","datePublished":"2022-05-19T16:00:00.000Z","dateModified":"2022-05-20T13:02:28.448Z","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https://touale.github.io/2022/05/20/%E6%8B%9B%E5%BC%8F_%E5%89%91%E6%8C%87%20Offer%2049.%20%E4%B8%91%E6%95%B0/"},"author":{"@type":"Person","name":"Touale Cula","image":{"@type":"ImageObject","url":"img/touale.jpg"},"url":"https://touale.github.io/"},"publisher":{"@type":"Organization","name":"Touale Cula's Blog","logo":{"@type":"ImageObject","url":"img/touale.jpg","width":192,"height":192}},"url":"https://touale.github.io/2022/05/20/%E6%8B%9B%E5%BC%8F_%E5%89%91%E6%8C%87%20Offer%2049.%20%E4%B8%91%E6%95%B0/","wordCount":0,"articleSection":"��ʽ","keywords":"�㷨,����","image":{"@type":"ImageObject","url":"img/touale.jpg","width":192,"height":192}}]</script>
 
 
 
