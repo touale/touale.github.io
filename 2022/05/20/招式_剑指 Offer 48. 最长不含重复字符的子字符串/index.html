@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <!-- SEO相关 -->
   
-  <link rel="canonical" href="https://touale.github.io/2022/04/26/招式_剑指 offer 04. 二维数组中的查找/"/>
+  <link rel="canonical" href="https://touale.github.io/2022/05/20/招式_剑指 offer 48. 最长不含重复字符的子字符串/"/>
   <!-- 渲染优化 -->
     <meta http-equiv='x-dns-prefetch-control' content='on' />
       <link rel='dns-prefetch' href='https://npm.elemecdn.com'>
@@ -31,24 +31,24 @@
   <!-- feed -->
   <!-- 页面元数据 -->
   <pjax>
-  <title>剑指 Offer 04. 二维数组中的查找 - Touale Cula's Blog</title>
+  <title>剑指 Offer 48. 最长不含重复字符的子字符串 - Touale Cula's Blog</title>
   <meta name="keywords" content="算法,力扣,内功,心法,招式">
   <meta desc name="description" content="欢迎来到 Touale Cula 的小世界哦 - Touale Cula - Touale Cula's Blog">
   
 <meta property="og:type" content="article">
-<meta property="og:title" content="剑指 Offer 04. 二维数组中的查找">
-<meta property="og:url" content="https://touale.github.io/2022/04/26/%E6%8B%9B%E5%BC%8F_%E5%89%91%E6%8C%87%20Offer%2004.%20%E4%BA%8C%E7%BB%B4%E6%95%B0%E7%BB%84%E4%B8%AD%E7%9A%84%E6%9F%A5%E6%89%BE/index.html">
+<meta property="og:title" content="剑指 Offer 48. 最长不含重复字符的子字符串">
+<meta property="og:url" content="https://touale.github.io/2022/05/20/%E6%8B%9B%E5%BC%8F_%E5%89%91%E6%8C%87%20Offer%2048.%20%E6%9C%80%E9%95%BF%E4%B8%8D%E5%90%AB%E9%87%8D%E5%A4%8D%E5%AD%97%E7%AC%A6%E7%9A%84%E5%AD%90%E5%AD%97%E7%AC%A6%E4%B8%B2/index.html">
 <meta property="og:site_name" content="Touale Cula&#39;s Blog">
-<meta property="og:description" content="题目内容在一个 n * m 的二维数组中，每一行都按照从左到右递增的顺序排序，每一列都按照从上到下递增的顺序排序。请完成一个高效的函数，输入这样的一个二维数组和一个整数，判断数组中是否含有该整数。   示例: 现有矩阵 matrix 如下： 12345678910[  [1,   4,  7, 11, 15],  [2,   5,  8, 12, 19],  [3,   6,  9, 16, 22">
+<meta property="og:description" content="题目请从字符串中找出一个最长的不包含重复字符的子字符串，计算该最长子字符串的长度。   示例 1: 123输入: &quot;abcabcbb&quot;输出: 3 解释: 因为无重复字符的最长子串是 &quot;abc&quot;，所以其长度为 3。 示例 2: 123输入: &quot;bbbbb&quot;输出: 1解释: 因为无重复字符的最长子串是 &quot;b&quot;，所以其长度为">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://touale.github.io/2022/04/26/%E6%8B%9B%E5%BC%8F_%E5%89%91%E6%8C%87%20Offer%2004.%20%E4%BA%8C%E7%BB%B4%E6%95%B0%E7%BB%84%E4%B8%AD%E7%9A%84%E6%9F%A5%E6%89%BE/img/touale.jpg">
-<meta property="article:published_time" content="2022-04-26T00:54:00.000Z">
-<meta property="article:modified_time" content="2022-05-16T12:33:28.719Z">
+<meta property="og:image" content="https://touale.github.io/2022/05/20/%E6%8B%9B%E5%BC%8F_%E5%89%91%E6%8C%87%20Offer%2048.%20%E6%9C%80%E9%95%BF%E4%B8%8D%E5%90%AB%E9%87%8D%E5%A4%8D%E5%AD%97%E7%AC%A6%E7%9A%84%E5%AD%90%E5%AD%97%E7%AC%A6%E4%B8%B2/img/touale.jpg">
+<meta property="article:published_time" content="2022-05-19T16:00:00.000Z">
+<meta property="article:modified_time" content="2022-05-20T09:30:30.380Z">
 <meta property="article:author" content="Touale Cula">
 <meta property="article:tag" content="算法">
 <meta property="article:tag" content="力扣">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://touale.github.io/2022/04/26/%E6%8B%9B%E5%BC%8F_%E5%89%91%E6%8C%87%20Offer%2004.%20%E4%BA%8C%E7%BB%B4%E6%95%B0%E7%BB%84%E4%B8%AD%E7%9A%84%E6%9F%A5%E6%89%BE/img/touale.jpg">
+<meta name="twitter:image" content="https://touale.github.io/2022/05/20/%E6%8B%9B%E5%BC%8F_%E5%89%91%E6%8C%87%20Offer%2048.%20%E6%9C%80%E9%95%BF%E4%B8%8D%E5%90%AB%E9%87%8D%E5%A4%8D%E5%AD%97%E7%AC%A6%E7%9A%84%E5%AD%90%E5%AD%97%E7%AC%A6%E4%B8%B2/img/touale.jpg">
   </pjax>
   <style>
     /* 首屏样式 */
@@ -2501,7 +2501,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           
 <div id="l_main" class=''>
   <article itemscope itemtype="http://schema.org/Article" class="article post white-box reveal md shadow floatable blur article-type-post" id="post" itemscope itemprop="blogPost">
-  <link itemprop="mainEntityOfPage" href="https://touale.github.io/2022/04/26/%E6%8B%9B%E5%BC%8F_%E5%89%91%E6%8C%87%20Offer%2004.%20%E4%BA%8C%E7%BB%B4%E6%95%B0%E7%BB%84%E4%B8%AD%E7%9A%84%E6%9F%A5%E6%89%BE/">
+  <link itemprop="mainEntityOfPage" href="https://touale.github.io/2022/05/20/%E6%8B%9B%E5%BC%8F_%E5%89%91%E6%8C%87%20Offer%2048.%20%E6%9C%80%E9%95%BF%E4%B8%8D%E5%90%AB%E9%87%8D%E5%A4%8D%E5%AD%97%E7%AC%A6%E7%9A%84%E5%AD%90%E5%AD%97%E7%AC%A6%E4%B8%B2/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="Touale Cula's Blog">
   </span>
@@ -2522,7 +2522,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
     
       <h1 class="title" itemprop="name headline">
-        剑指 Offer 04. 二维数组中的查找
+        剑指 Offer 48. 最长不含重复字符的子字符串
       </h1>
       <div class='new-meta-box'>
         
@@ -2553,10 +2553,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           
         
           
-            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2022-04-26T08:54:00+08:00">
+            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2022-05-20T00:00:00+08:00">
   <a class='notlink'>
     <i class="fa-solid fa-calendar-alt fa-fw" aria-hidden="true"></i>
-    <p>发布于：2022年4月26日</p>
+    <p>发布于：2022年5月20日</p>
   </a>
 </div>
 
@@ -2577,25 +2577,47 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   <div id="layoutHelper-page-plugins"></div>
   <div id="post-body" itemprop="articleBody">
-    <h3 id="题目内容"><a href="#题目内容" class="headerlink" title="题目内容"></a>题目内容</h3><p>在一个 n * m 的二维数组中，每一行都按照从左到右递增的顺序排序，每一列都按照从上到下递增的顺序排序。请完成一个高效的函数，输入这样的一个二维数组和一个整数，判断数组中是否含有该整数。</p>
+    <h3 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h3><p>请从字符串中找出一个最长的不包含重复字符的子字符串，计算该最长子字符串的长度。</p>
 <p> </p>
-<p>示例:</p>
-<p>现有矩阵 matrix 如下：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">[</span><br><span class="line">  [1,   4,  7, 11, 15],</span><br><span class="line">  [2,   5,  8, 12, 19],</span><br><span class="line">  [3,   6,  9, 16, 22],</span><br><span class="line">  [10, 13, 14, 17, 24],</span><br><span class="line">  [18, 21, 23, 26, 30]</span><br><span class="line">]</span><br><span class="line">给定 target = 5，返回 true。</span><br><span class="line"></span><br><span class="line">给定 target = 20，返回 false。</span><br></pre></td></tr></table></figure>
-<p> </p>
-<p>限制：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">0 &lt;= n &lt;= 1000</span><br><span class="line"></span><br><span class="line">0 &lt;= m &lt;= 1000</span><br></pre></td></tr></table></figure>
+<p>示例 1:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">输入: &quot;abcabcbb&quot;</span><br><span class="line">输出: 3 </span><br><span class="line">解释: 因为无重复字符的最长子串是 &quot;abc&quot;，所以其长度为 3。</span><br></pre></td></tr></table></figure>
+<p>示例 2:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">输入: &quot;bbbbb&quot;</span><br><span class="line">输出: 1</span><br><span class="line">解释: 因为无重复字符的最长子串是 &quot;b&quot;，所以其长度为 1。</span><br></pre></td></tr></table></figure>
+<p>示例 3:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">输入: &quot;pwwkew&quot;</span><br><span class="line">输出: 3</span><br><span class="line">解释: 因为无重复字符的最长子串是 &quot;wke&quot;，所以其长度为 3。</span><br><span class="line">     请注意，你的答案必须是 子串 的长度，&quot;pwke&quot; 是一个子序列，不是子串。</span><br></pre></td></tr></table></figure>
 
 <hr>
-<h3 id="解法一：二分法"><a href="#解法一：二分法" class="headerlink" title="解法一：二分法"></a>解法一：二分法</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">class Solution &#123;</span><br><span class="line">public:</span><br><span class="line">    bool findNumberIn2DArray(vector&lt;vector&lt;int&gt;&gt;&amp; matrix, int target) &#123;</span><br><span class="line">        for(vector v:matrix)&#123;</span><br><span class="line">            if(v.empty()) continue;</span><br><span class="line">            if(v[0] &gt; target)&#123;</span><br><span class="line">                break;</span><br><span class="line">            &#125;</span><br><span class="line">            </span><br><span class="line">            if(v[v.size()-1]&lt;target)&#123;</span><br><span class="line">                continue;</span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line">            int l=0,r=v.size()-1;</span><br><span class="line">            while(l&lt;=r)&#123;</span><br><span class="line">                int m = l+((r-l)&gt;&gt;1);</span><br><span class="line">                if(v[m]&gt;target) r = m-1;</span><br><span class="line">                else if(v[m]&lt;target) l = m+1;</span><br><span class="line">                else return 1;   </span><br><span class="line">            &#125;  </span><br><span class="line">        &#125;</span><br><span class="line">        return 0;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+<h3 id="解法一：暴力法"><a href="#解法一：暴力法" class="headerlink" title="解法一：暴力法"></a>解法一：暴力法</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">class Solution &#123;</span><br><span class="line">public:</span><br><span class="line">    int lengthOfLongestSubstring(string s) &#123;</span><br><span class="line"></span><br><span class="line">        int size = s.size();</span><br><span class="line">        if(size == 0)return 0;</span><br><span class="line"></span><br><span class="line">        int m=0;</span><br><span class="line">        for(int l = 0;l&lt;size;l++)&#123;</span><br><span class="line">            unordered_set&lt;char&gt; st;</span><br><span class="line">            st.insert(s[l]);</span><br><span class="line">            int r = l+1;</span><br><span class="line">           </span><br><span class="line">            while(r&lt;size)&#123;</span><br><span class="line">                if(st.find(s[r]) != st.end()) break;</span><br><span class="line">                st.insert(s[r]);</span><br><span class="line">                r++;</span><br><span class="line">            &#125;</span><br><span class="line">            m = max(m,r-l);</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        return m;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
 
-<p>结果</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">执行用时：</span><br><span class="line">16 ms</span><br><span class="line">, 在所有 C++ 提交中击败了</span><br><span class="line">97.15%</span><br><span class="line">的用户</span><br><span class="line">内存消耗：</span><br><span class="line">13.4 MB</span><br><span class="line">, 在所有 C++ 提交中击败了</span><br><span class="line">5.37%</span><br><span class="line">的用户</span><br><span class="line">通过测试用例：</span><br><span class="line">129 / 129</span><br></pre></td></tr></table></figure>
+<p>结果，果然也很暴力</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">执行用时：</span><br><span class="line">732 ms</span><br><span class="line">, 在所有 C++ 提交中击败了</span><br><span class="line">5.09%</span><br><span class="line">的用户</span><br><span class="line">内存消耗：</span><br><span class="line">238.3 MB</span><br><span class="line">, 在所有 C++ 提交中击败了</span><br><span class="line">4.99%</span><br><span class="line">的用户</span><br><span class="line">通过测试用例：</span><br><span class="line">987 / 987</span><br></pre></td></tr></table></figure>
+
 <hr>
-<h3 id="解法二-线性查找"><a href="#解法二-线性查找" class="headerlink" title="解法二:线性查找"></a>解法二:线性查找</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">class Solution &#123;</span><br><span class="line">public:</span><br><span class="line">    bool findNumberIn2DArray(vector&lt;vector&lt;int&gt;&gt;&amp; matrix, int target) &#123;</span><br><span class="line">   </span><br><span class="line">        int row = matrix.size()-1, col = 0;</span><br><span class="line">        </span><br><span class="line">        while(row&gt;=0 &amp;&amp; col &lt; matrix[0].size())&#123;</span><br><span class="line">            if(matrix[row][col]&gt;target) row--;</span><br><span class="line">            else if(matrix[row][col]&lt;target) col++;</span><br><span class="line">            else return 1;</span><br><span class="line">            </span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        return 0;</span><br><span class="line">       </span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>优化一下，如果右指针能到s尾部，直接跳出</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">if(r == size-1)break;</span><br></pre></td></tr></table></figure>
 
-<p>结果：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">执行用时：</span><br><span class="line">20 ms</span><br><span class="line">, 在所有 C++ 提交中击败了</span><br><span class="line">80.79%</span><br><span class="line">的用户</span><br><span class="line">内存消耗：</span><br><span class="line">12.8 MB</span><br><span class="line">, 在所有 C++ 提交中击败了</span><br><span class="line">10.13%</span><br><span class="line">的用户</span><br></pre></td></tr></table></figure>
+<p>结果，好的，更久了靠</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">执行用时：</span><br><span class="line">872 ms</span><br><span class="line">, 在所有 C++ 提交中击败了</span><br><span class="line">5.09%</span><br><span class="line">的用户</span><br><span class="line">内存消耗：</span><br><span class="line">237.2 MB</span><br><span class="line">, 在所有 C++ 提交中击败了</span><br><span class="line">4.99%</span><br><span class="line">的用户</span><br><span class="line">通过测试用例：</span><br><span class="line">987 / 987</span><br></pre></td></tr></table></figure>
+
+<p>看来得另谋他路了</p>
+<p>想到一个思路，有点类似km算法，比如出现123456356时</p>
+<p>指针移动到1 2 3 4 5 6 3处发现出现了重复，此时记录最大长度是 6，通常情况下下一次左指针是移动一个单位，此处考虑左指针不移动到1 2 ，而是直接跨越移动，即移动到1 2 3 4</p>
+<p>实现：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br></pre></td><td class="code"><pre><span class="line">class Solution &#123;</span><br><span class="line">public:</span><br><span class="line">    int lengthOfLongestSubstring(string s) &#123;</span><br><span class="line"></span><br><span class="line">        int size = s.size();</span><br><span class="line">        if(size == 0)return 0;</span><br><span class="line">         if(size == 1)return 1;</span><br><span class="line">        unordered_map&lt;char,int&gt; st;</span><br><span class="line">        int m=0;</span><br><span class="line">        int r = 0;</span><br><span class="line">       </span><br><span class="line">        for(int l = 0;l&lt;size;)&#123;</span><br><span class="line">            cout&lt;&lt;&quot;正在开始&quot;&lt;&lt;s[l]&lt;&lt;endl;</span><br><span class="line">            //if(l&gt;0)st[s[l-1]] = 0;</span><br><span class="line">            st[s[l]] = l+1;</span><br><span class="line">            if(r==l) r =l+1;</span><br><span class="line">            int flag = 0;</span><br><span class="line">            while(r&lt;size)&#123;</span><br><span class="line">                cout&lt;&lt;st[s[r]]&lt;&lt;&quot; &quot;&lt;&lt;s[r]&lt;&lt;endl;</span><br><span class="line">                if(st[s[r]]!=0) &#123;</span><br><span class="line">                    cout&lt;&lt;&quot;移动指针到&quot;&lt;&lt;s[st[s[r]]]&lt;&lt;endl;</span><br><span class="line">                    m = max(m,r-l);</span><br><span class="line">                    cout&lt;&lt;&quot;max&quot;&lt;&lt;m&lt;&lt;endl;</span><br><span class="line">                    l=st[s[r]];</span><br><span class="line">                    st[s[r]] =r+1;</span><br><span class="line">                    </span><br><span class="line">                    r++;               </span><br><span class="line">                    flag = 1;</span><br><span class="line">                    break;</span><br><span class="line">                &#125;</span><br><span class="line">                st[s[r]]=r+1;</span><br><span class="line">                r++;</span><br><span class="line">            &#125;</span><br><span class="line">            if(flag == 0)&#123;l++;&#125;</span><br><span class="line">            </span><br><span class="line">          //  if(r == size-1)break;    </span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        return m;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>改到绝望！</p>
+<p><img src="/img/2022-05-20-17-12-29.png" class="lazyload" data-srcset="/img/2022-05-20-17-12-29.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+<p>喔，发现有个大佬，用一句很简单的话概括了</p>
+<blockquote>
+<p>用一个双端队列当成滑动窗口，当遇到队列中已经存在的数，就从队头开始删(直到删除这个存在的数)，否则就从队尾添加元素</p>
+</blockquote>
+<p>大佬写法</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">class Solution &#123;</span><br><span class="line">public:</span><br><span class="line">    int lengthOfLongestSubstring(string s) &#123;</span><br><span class="line"></span><br><span class="line">        int size = s.size();</span><br><span class="line">        if(size == 0)return 0;</span><br><span class="line">        int res;</span><br><span class="line"></span><br><span class="line">        unordered_set&lt;char&gt; st;</span><br><span class="line">        for(int l = 0,r = 0;r&lt;size;r++)&#123;</span><br><span class="line">            char current = s[r];</span><br><span class="line">            while(st.find(current) != st.end())&#123;</span><br><span class="line">                st.erase(s[l++]);</span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line">            st.insert(s[r]);</span><br><span class="line">            res = max(res,r-l+1);      </span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        return res;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+<p>效率直接提升10倍</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">执行用时：</span><br><span class="line">40 ms</span><br><span class="line">, 在所有 C++ 提交中击败了</span><br><span class="line">8.75%</span><br><span class="line">的用户</span><br><span class="line">内存消耗：</span><br><span class="line">10.6 MB</span><br><span class="line">, 在所有 C++ 提交中击败了</span><br><span class="line">21.50%</span><br><span class="line">的用户</span><br><span class="line">通过测试用例：</span><br><span class="line">987 / 987</span><br></pre></td></tr></table></figure>
+
+<p>我是菜鸡，虽然思路差不多，但是….我写了垃圾，垃圾写垃圾！</p>
+
 
   </div>
   
@@ -2614,7 +2636,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
               
             
               
-                <p>本文永久链接是：<a href=https://touale.github.io/2022/04/26/%E6%8B%9B%E5%BC%8F_%E5%89%91%E6%8C%87%20Offer%2004.%20%E4%BA%8C%E7%BB%B4%E6%95%B0%E7%BB%84%E4%B8%AD%E7%9A%84%E6%9F%A5%E6%89%BE/>https://touale.github.io/2022/04/26/%E6%8B%9B%E5%BC%8F_%E5%89%91%E6%8C%87%20Offer%2004.%20%E4%BA%8C%E7%BB%B4%E6%95%B0%E7%BB%84%E4%B8%AD%E7%9A%84%E6%9F%A5%E6%89%BE/</a></p>
+                <p>本文永久链接是：<a href=https://touale.github.io/2022/05/20/%E6%8B%9B%E5%BC%8F_%E5%89%91%E6%8C%87%20Offer%2048.%20%E6%9C%80%E9%95%BF%E4%B8%8D%E5%90%AB%E9%87%8D%E5%A4%8D%E5%AD%97%E7%AC%A6%E7%9A%84%E5%AD%90%E5%AD%97%E7%AC%A6%E4%B8%B2/>https://touale.github.io/2022/05/20/%E6%8B%9B%E5%BC%8F_%E5%89%91%E6%8C%87%20Offer%2048.%20%E6%9C%80%E9%95%BF%E4%B8%8D%E5%90%AB%E9%87%8D%E5%A4%8D%E5%AD%97%E7%AC%A6%E7%9A%84%E5%AD%90%E5%AD%97%E7%AC%A6%E4%B8%B2/</a></p>
               
             
           </blockquote>
@@ -2631,10 +2653,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateModified" datetime="2022-05-16T20:33:28+08:00">
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2022-05-20T17:30:30+08:00">
   <a class='notlink'>
     <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
-    <p>更新于：2022年5月16日</p>
+    <p>更新于：2022年5月20日</p>
   </a>
 </div>
 
@@ -2657,7 +2679,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://touale.github.io/2022/04/26/%E6%8B%9B%E5%BC%8F_%E5%89%91%E6%8C%87%20Offer%2004.%20%E4%BA%8C%E7%BB%B4%E6%95%B0%E7%BB%84%E4%B8%AD%E7%9A%84%E6%9F%A5%E6%89%BE/&title=剑指 Offer 04. 二维数组中的查找 - Touale Cula's Blog&summary="
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://touale.github.io/2022/05/20/%E6%8B%9B%E5%BC%8F_%E5%89%91%E6%8C%87%20Offer%2048.%20%E6%9C%80%E9%95%BF%E4%B8%8D%E5%90%AB%E9%87%8D%E5%A4%8D%E5%AD%97%E7%AC%A6%E7%9A%84%E5%AD%90%E5%AD%97%E7%AC%A6%E4%B8%B2/&title=剑指 Offer 48. 最长不含重复字符的子字符串 - Touale Cula's Blog&summary="
           
           >
           
@@ -2669,7 +2691,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://touale.github.io/2022/04/26/%E6%8B%9B%E5%BC%8F_%E5%89%91%E6%8C%87%20Offer%2004.%20%E4%BA%8C%E7%BB%B4%E6%95%B0%E7%BB%84%E4%B8%AD%E7%9A%84%E6%9F%A5%E6%89%BE/&title=剑指 Offer 04. 二维数组中的查找 - Touale Cula's Blog&summary="
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://touale.github.io/2022/05/20/%E6%8B%9B%E5%BC%8F_%E5%89%91%E6%8C%87%20Offer%2048.%20%E6%9C%80%E9%95%BF%E4%B8%8D%E5%90%AB%E9%87%8D%E5%A4%8D%E5%AD%97%E7%AC%A6%E7%9A%84%E5%AD%90%E5%AD%97%E7%AC%A6%E4%B8%B2/&title=剑指 Offer 48. 最长不含重复字符的子字符串 - Touale Cula's Blog&summary="
           
           >
           
@@ -2681,7 +2703,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="http://service.weibo.com/share/share.php?url=https://touale.github.io/2022/04/26/%E6%8B%9B%E5%BC%8F_%E5%89%91%E6%8C%87%20Offer%2004.%20%E4%BA%8C%E7%BB%B4%E6%95%B0%E7%BB%84%E4%B8%AD%E7%9A%84%E6%9F%A5%E6%89%BE/&title=剑指 Offer 04. 二维数组中的查找 - Touale Cula's Blog&summary="
+          target="_blank" href="http://service.weibo.com/share/share.php?url=https://touale.github.io/2022/05/20/%E6%8B%9B%E5%BC%8F_%E5%89%91%E6%8C%87%20Offer%2048.%20%E6%9C%80%E9%95%BF%E4%B8%8D%E5%90%AB%E9%87%8D%E5%A4%8D%E5%AD%97%E7%AC%A6%E7%9A%84%E5%AD%90%E5%AD%97%E7%AC%A6%E4%B8%B2/&title=剑指 Offer 48. 最长不含重复字符的子字符串 - Touale Cula's Blog&summary="
           
           >
           
@@ -2714,18 +2736,18 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     <div class="prev-next">
       
-        <a class='prev' href='/2022/04/26/%E5%BF%83%E6%B3%95_%E6%91%A9%E5%B0%94%E6%8A%95%E7%A5%A8%E6%B3%95/'>
-          <p class='title'><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>摩尔投票法</p>
-          <p class='content'>原理
-摩尔投票法的基本思想很简单，在每一轮投票过程中，从数组中找出一对不同的元素，将其从数组中删除。这样不断的删除直到无法再进行投票，如果数组为空，则没有任何元素出现的次数超过该数组长度的一半。...</p>
+        <a class='prev' href='/2022/05/20/%E6%8B%9B%E5%BC%8F_%E5%89%91%E6%8C%87%20Offer%2046.%20%E6%8A%8A%E6%95%B0%E5%AD%97%E7%BF%BB%E8%AF%91%E6%88%90%E5%AD%97%E7%AC%A6%E4%B8%B2/'>
+          <p class='title'><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>剑指 Offer 46. 把数字翻译成字符串</p>
+          <p class='content'>题目给定一个数字，我们按照如下规则把它翻译为字符串：0 翻译成 “a” ，1 翻译成 “b”，……，11 翻译成 “l”，……，25 翻译成 “z”。一个数字可能有多个翻译。请编程实现一个函数，...</p>
         </a>
       
       
-        <a class='next' href='/2022/04/26/%E6%8B%9B%E5%BC%8F_%E5%89%91%E6%8C%87%20Offer%2040.%20%E6%9C%80%E5%B0%8F%E7%9A%84k%E4%B8%AA%E6%95%B0/'>
-          <p class='title'>剑指 Offer 40. 最小的k个数<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
-          <p class='content'>题目内容输入整数数组 arr ，找出其中最小的 k 个数。例如，输入4、5、1、6、2、7、3、8这8个数字，则最小的4个数字是1、2、3、4。
- 
-1234567891011121314示例 ...</p>
+        <a class='next' href='/2022/05/18/%E6%8B%9B%E5%BC%8F_%E5%89%91%E6%8C%87%20Offer%2026.%20%E6%A0%91%E7%9A%84%E5%AD%90%E7%BB%93%E6%9E%84/'>
+          <p class='title'>剑指 Offer 26. 树的子结构<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>输入两棵二叉树A和B，判断B是不是A的子结构。(约定空树不是任意一个树的子结构)
+B是A的子结构， 即 A中有出现和B相同的结构和节点值。
+例如:
+12345678910111213给定的树 A...</p>
         </a>
       
     </div>
@@ -2832,7 +2854,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 
     <div class='content'>
-        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%A2%98%E7%9B%AE%E5%86%85%E5%AE%B9"><span class="toc-text">题目内容</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%A7%A3%E6%B3%95%E4%B8%80%EF%BC%9A%E4%BA%8C%E5%88%86%E6%B3%95"><span class="toc-text">解法一：二分法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%A7%A3%E6%B3%95%E4%BA%8C-%E7%BA%BF%E6%80%A7%E6%9F%A5%E6%89%BE"><span class="toc-text">解法二:线性查找</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%A2%98%E7%9B%AE"><span class="toc-text">题目</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%A7%A3%E6%B3%95%E4%B8%80%EF%BC%9A%E6%9A%B4%E5%8A%9B%E6%B3%95"><span class="toc-text">解法一：暴力法</span></a></li></ol>
     </div>
   </section>
 
@@ -3848,7 +3870,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"Touale Cula's Blog","url":"https://touale.github.io/","logo":{"@type":"ImageObject","url":"img/touale.jpg","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"Touale Cula","image":{"@type":"ImageObject","url":"img/touale.jpg"},"url":"https://touale.github.io/","sameAs":["https://github.com/volantis-x"],"description":"欢迎来到 Touale Cula 的小世界哦"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://touale.github.io/","name":"Touale Cula's Blog"}},{"@type":"ListItem","position":2,"item":{"@id":"https://touale.github.io/categories/招式/","name":"招式"}},{"@type":"ListItem","position":3,"item":{"@id":"https://touale.github.io/2022/04/26/招式_剑指 Offer 04. 二维数组中的查找/","name":"剑指 Offer 04. 二维数组中的查找"}}]},{"@context":"http://schema.org","@type":"BlogPosting","headline":"剑指 Offer 04. 二维数组中的查找","description":"","datePublished":"2022-04-26T00:54:00.000Z","dateModified":"2022-05-16T12:33:28.719Z","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https://touale.github.io/2022/04/26/%E6%8B%9B%E5%BC%8F_%E5%89%91%E6%8C%87%20Offer%2004.%20%E4%BA%8C%E7%BB%B4%E6%95%B0%E7%BB%84%E4%B8%AD%E7%9A%84%E6%9F%A5%E6%89%BE/"},"author":{"@type":"Person","name":"Touale Cula","image":{"@type":"ImageObject","url":"img/touale.jpg"},"url":"https://touale.github.io/"},"publisher":{"@type":"Organization","name":"Touale Cula's Blog","logo":{"@type":"ImageObject","url":"img/touale.jpg","width":192,"height":192}},"url":"https://touale.github.io/2022/04/26/%E6%8B%9B%E5%BC%8F_%E5%89%91%E6%8C%87%20Offer%2004.%20%E4%BA%8C%E7%BB%B4%E6%95%B0%E7%BB%84%E4%B8%AD%E7%9A%84%E6%9F%A5%E6%89%BE/","wordCount":0,"articleSection":"招式","keywords":"算法,力扣","image":{"@type":"ImageObject","url":"img/touale.jpg","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"Touale Cula's Blog","url":"https://touale.github.io/","logo":{"@type":"ImageObject","url":"img/touale.jpg","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"Touale Cula","image":{"@type":"ImageObject","url":"img/touale.jpg"},"url":"https://touale.github.io/","sameAs":["https://github.com/volantis-x"],"description":"欢迎来到 Touale Cula 的小世界哦"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://touale.github.io/","name":"Touale Cula's Blog"}},{"@type":"ListItem","position":2,"item":{"@id":"https://touale.github.io/categories/招式/","name":"招式"}},{"@type":"ListItem","position":3,"item":{"@id":"https://touale.github.io/2022/05/20/招式_剑指 Offer 48. 最长不含重复字符的子字符串/","name":"剑指 Offer 48. 最长不含重复字符的子字符串"}}]},{"@context":"http://schema.org","@type":"BlogPosting","headline":"剑指 Offer 48. 最长不含重复字符的子字符串","description":"","datePublished":"2022-05-19T16:00:00.000Z","dateModified":"2022-05-20T09:30:30.380Z","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https://touale.github.io/2022/05/20/%E6%8B%9B%E5%BC%8F_%E5%89%91%E6%8C%87%20Offer%2048.%20%E6%9C%80%E9%95%BF%E4%B8%8D%E5%90%AB%E9%87%8D%E5%A4%8D%E5%AD%97%E7%AC%A6%E7%9A%84%E5%AD%90%E5%AD%97%E7%AC%A6%E4%B8%B2/"},"author":{"@type":"Person","name":"Touale Cula","image":{"@type":"ImageObject","url":"img/touale.jpg"},"url":"https://touale.github.io/"},"publisher":{"@type":"Organization","name":"Touale Cula's Blog","logo":{"@type":"ImageObject","url":"img/touale.jpg","width":192,"height":192}},"url":"https://touale.github.io/2022/05/20/%E6%8B%9B%E5%BC%8F_%E5%89%91%E6%8C%87%20Offer%2048.%20%E6%9C%80%E9%95%BF%E4%B8%8D%E5%90%AB%E9%87%8D%E5%A4%8D%E5%AD%97%E7%AC%A6%E7%9A%84%E5%AD%90%E5%AD%97%E7%AC%A6%E4%B8%B2/","wordCount":0,"articleSection":"招式","keywords":"算法,力扣","image":{"@type":"ImageObject","url":"img/touale.jpg","width":192,"height":192}}]</script>
 
 
 
