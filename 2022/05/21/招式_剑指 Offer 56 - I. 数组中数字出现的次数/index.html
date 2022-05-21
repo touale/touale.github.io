@@ -4,8 +4,8 @@
   <meta name="generator" content="Hexo 6.1.0">
   <meta charset="utf-8">
   <!-- SEO相关 -->
-  <meta name="robots" content="noindex,follow">
-  <link rel="canonical" href="https://touale.github.io/archives/2022/04/"/>
+  
+  <link rel="canonical" href="https://touale.github.io/2022/05/21/招式_剑指 offer 56 - i. 数组中数字出现的次数/"/>
   <!-- 渲染优化 -->
     <meta http-equiv='x-dns-prefetch-control' content='on' />
       <link rel='dns-prefetch' href='https://npm.elemecdn.com'>
@@ -31,21 +31,24 @@
   <!-- feed -->
   <!-- 页面元数据 -->
   <pjax>
-  <title>归档：2022/4 - Touale Cula's Blog</title>
-  <meta name="keywords" content="内功,心法,招式">
+  <title>��ָ Offer 56 - I. ���������ֳ��ֵĴ��� - Touale Cula's Blog</title>
+  <meta name="keywords" content="�㷨,����,内功,心法,招式">
   <meta desc name="description" content="欢迎来到 Touale Cula 的小世界哦 - Touale Cula - Touale Cula's Blog">
   
-<meta property="og:type" content="website">
-<meta property="og:title" content="Touale Cula&#39;s Blog">
-<meta property="og:url" content="https://touale.github.io/archives/2022/04/index.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="��ָ Offer 56 - I. ���������ֳ��ֵĴ���">
+<meta property="og:url" content="https://touale.github.io/2022/05/21/%E6%8B%9B%E5%BC%8F_%E5%89%91%E6%8C%87%20Offer%2056%20-%20I.%20%E6%95%B0%E7%BB%84%E4%B8%AD%E6%95%B0%E5%AD%97%E5%87%BA%E7%8E%B0%E7%9A%84%E6%AC%A1%E6%95%B0/index.html">
 <meta property="og:site_name" content="Touale Cula&#39;s Blog">
-<meta property="og:description" content="欢迎来到 Touale Cula 的小世界哦">
+<meta property="og:description" content="��Ŀ����һ���������� nums �����������֮�⣬�������ֶ����������Ρ���д�����ҳ�������ֻ����һ�ε����֡�Ҫ��ʱ�临�Ӷ���O(n)���ռ临�Ӷ���O(1)�� ? ʾ�� 1�� 12���룺nums &#x3D; [4,1,4,6]�����[1,6] �� [6,1] ʾ�� 2�� 12���룺nums &#x3D; [1,2,10">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://touale.github.io/archives/2022/04/img/touale.jpg">
+<meta property="og:image" content="https://touale.github.io/2022/05/21/%E6%8B%9B%E5%BC%8F_%E5%89%91%E6%8C%87%20Offer%2056%20-%20I.%20%E6%95%B0%E7%BB%84%E4%B8%AD%E6%95%B0%E5%AD%97%E5%87%BA%E7%8E%B0%E7%9A%84%E6%AC%A1%E6%95%B0/img/touale.jpg">
+<meta property="article:published_time" content="2022-05-20T16:00:00.000Z">
+<meta property="article:modified_time" content="2022-05-21T02:37:24.451Z">
 <meta property="article:author" content="Touale Cula">
-<meta property="article:tag" content="内功,心法,招式">
+<meta property="article:tag" content="�㷨">
+<meta property="article:tag" content="����">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://touale.github.io/archives/2022/04/img/touale.jpg">
+<meta name="twitter:image" content="https://touale.github.io/2022/05/21/%E6%8B%9B%E5%BC%8F_%E5%89%91%E6%8C%87%20Offer%2056%20-%20I.%20%E6%95%B0%E7%BB%84%E4%B8%AD%E6%95%B0%E5%AD%97%E5%87%BA%E7%8E%B0%E7%9A%84%E6%AC%A1%E6%95%B0/img/touale.jpg">
   </pjax>
   <style>
     /* 首屏样式 */
@@ -2153,7 +2156,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <!-- Custom Files bodyBegin begin-->
     
     <!-- Custom Files bodyBegin end-->
-    <header itemscope itemtype="http://schema.org/WPHeader" id="l_header" class="l_header auto shadow floatable blur " style='opacity: 0' >
+    <header itemscope itemtype="http://schema.org/WPHeader" id="l_header" class="l_header auto shadow floatable blur show" style='opacity: 0' >
   <div class='container'>
   <div id='wrapper'>
     <div class='nav-sub'>
@@ -2422,7 +2425,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     
       <!-- see: /layout/_partial/scripts/_ctrl/coverCtrl.ejs -->
-      <div id="half" class='cover-wrapper  dock' style="display: ;">
+      <div id="none" class='cover-wrapper post dock' style="display: none;">
         
   <div class='cover-bg lazyload placeholder' data-bg="https://api.yimian.xyz/img?type=moe&size=1920x1080"></div>
 
@@ -2497,36 +2500,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         <div class="body-wrapper">
           
 <div id="l_main" class=''>
-	
-		
-  <section class="post-list">
-    
-      
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-      
-    
-    
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://touale.github.io/2022/04/29/%E6%8B%9B%E5%BC%8F_%E5%89%91%E6%8C%87%20Offer%2050.%20%E7%AC%AC%E4%B8%80%E4%B8%AA%E5%8F%AA%E5%87%BA%E7%8E%B0%E4%B8%80%E6%AC%A1%E7%9A%84%E5%AD%97%E7%AC%A6/">
+  <article itemscope itemtype="http://schema.org/Article" class="article post white-box reveal md shadow floatable blur article-type-post" id="post" itemscope itemprop="blogPost">
+  <link itemprop="mainEntityOfPage" href="https://touale.github.io/2022/05/21/%E6%8B%9B%E5%BC%8F_%E5%89%91%E6%8C%87%20Offer%2056%20-%20I.%20%E6%95%B0%E7%BB%84%E4%B8%AD%E6%95%B0%E5%AD%97%E5%87%BA%E7%8E%B0%E7%9A%84%E6%AC%A1%E6%95%B0/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="Touale Cula's Blog">
   </span>
@@ -2535,559 +2510,293 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <meta itemprop="description" content="欢迎来到 Touale Cula 的小世界哦">
   </span>
   
-  
+
+
   
     <span hidden>
       <meta itemprop="image" content="img/touale.jpg">
     </span>
   
-  
+  <div class="article-meta" id="top">
     
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2022/04/29/%E6%8B%9B%E5%BC%8F_%E5%89%91%E6%8C%87%20Offer%2050.%20%E7%AC%AC%E4%B8%80%E4%B8%AA%E5%8F%AA%E5%87%BA%E7%8E%B0%E4%B8%80%E6%AC%A1%E7%9A%84%E5%AD%97%E7%AC%A6/"  itemprop="url">
-        剑指 Offer 50. 第一个只出现一次的字符
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
     
-      
-        题目内容在字符串 s 中找出第一个只出现一次的字符。如果没有，返回一个单空格。 s 只包含小写字母。
-12345678910111213示例 1:输入：s = &quot;abaccdeff&quot;输出：&#x27;b&#x27;示例 2:输入：s = &quot;&quot; 输出：&#x27; &#x27; 限制：0 &lt;= s 的长度 &lt;= 50000
+    
+      <h1 class="title" itemprop="name headline">
+        ��ָ Offer 56 - I. ���������ֳ��ֵĴ���
+      </h1>
+      <div class='new-meta-box'>
+        
+          
+            
+<div class='new-meta-item author' itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <a itemprop="url" class='author' href="/" rel="nofollow">
+    <img itemprop="image" src="https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/apple-touch-icon.png" class="lazyload" data-srcset="https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/apple-touch-icon.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+    <p itemprop="name">Touale</p>
+  </a>
+</div>
 
-
-解法一： 哈希...
-      
+          
+        
+          
+            
+  <div class='new-meta-item category'>
+    <i class="fa-solid fa-folder-open fa-fw" aria-hidden="true"></i>
+    <a class="category-link" href="/categories/%EF%BF%BD%EF%BF%BD%CA%BD/">��ʽ</a>
+    
+      <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
+        <a href="/categories/%EF%BF%BD%EF%BF%BD%CA%BD/" itemprop="url"><span itemprop="name">��ʽ</span></a>
+      </span>
     
   </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2022-04-29T00:00:00+08:00">2022-04-29</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E6%8B%9B%E5%BC%8F/">招式</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/%E6%8B%9B%E5%BC%8F/" itemprop="url"><span itemprop="name">招式</span></a>
-            </span>
+
+
           
         
+          
+            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2022-05-21T00:00:00+08:00">
+  <a class='notlink'>
+    <i class="fa-solid fa-calendar-alt fa-fw" aria-hidden="true"></i>
+    <p>发布于：2022年5月21日</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+
+          
+        
+        <!-- Custom Files topMeta begin-->
+        
+        <!-- Custom Files topMeta end-->
       </div>
+    
+  </div>
+
+
+  <div id="layoutHelper-page-plugins"></div>
+  <div id="post-body" itemprop="articleBody">
+    <h3 id="��L����"><a href="#��L����" class="headerlink" title="��Ŀ����"></a>��Ŀ����</h3><p>һ���������� nums �����������֮�⣬�������ֶ����������Ρ���д�����ҳ�������ֻ����һ�ε����֡�Ҫ��ʱ�临�Ӷ���O(n)���ռ临�Ӷ���O(1)��</p>
+<p>?</p>
+<p>ʾ�� 1��</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">���룺nums = [4,1,4,6]</span><br><span class="line">�����[1,6] �� [6,1]</span><br></pre></td></tr></table></figure>
+<p>ʾ�� 2��</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">���룺nums = [1,2,10,4,1,4,3,3]</span><br><span class="line">�����[2,10] �� [10,2]</span><br></pre></td></tr></table></figure>
+
+<p>���ƣ�</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">2 &lt;= nums.length &lt;= 10000</span><br></pre></td></tr></table></figure>
+<hr>
+<h3 id="�ⷨһ�����"><a href="#�ⷨһ�����" class="headerlink" title="�ⷨһ�����"></a>�ⷨһ�����</h3><p>����Ҫ��ʱ�临�Ӷ���O(n)���ռ临�Ӷ���O(1)��<br>��˲����� map���ռ临�Ӷ�Ϊ O(n) ��˫��ѭ��Ƕ�ף��ռ临�Ӷ�Ϊ O(n^2))</p>
+<blockquote>
+<p>��ʾ��<br>4 ^ 1 ^ 4 ^ 6 &#x3D;&gt; 1 ^ 6</p>
+</blockquote>
+<blockquote>
+<p>6 ��Ӧ�Ķ����ƣ� 110<br>1 ��Ӧ�Ķ����ƣ� 001<br>1 ^ 6  �����ƣ� 111<br>��ʱ�����޷�ͨ�� 111�������ƣ���ȥ��� 110 �� 001��<br>��ô�����ǿ��԰������Ϊ������������ô�Ϳ���֪�������������ֲ�ͬ�ˡ�</p>
+</blockquote>
+<p>ͨ�� &amp; �������ж�һλ���ֲ�ͬ���ɷ�Ϊ���飬��ô�������������ͬ����������Ҳ��һλ��ͬ�ɣ�<br>����ֻ��Ҫ�ҳ���λ��ͬ������mask��������ɷ��飨 &amp; mask ��������</p>
+<p>�������������Ľ��������������λ��ͬ�����ֱ�۱��֣��������ǿ���ͨ������Ľ��ȥ�� mask��<br>���еĿ��� mask ��������������1��λ���йء�</p>
+<table>
+<thead>
+<tr>
+<th>example</th>
+<th>1</th>
+<th>2</th>
+<th>3</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>num1:</td>
+<td>101110</td>
+<td>110</td>
+<td>1111</td>
+</tr>
+<tr>
+<td>num2:</td>
+<td>111110</td>
+<td>001</td>
+<td>1001</td>
+</tr>
+<tr>
+<td>num1^num2:</td>
+<td>010000</td>
+<td>111</td>
+<td>0110</td>
+</tr>
+<tr>
+<td>���е�mask:</td>
+<td>010000</td>
+<td>001</td>
+<td>0010</td>
+</tr>
+<tr>
+<td>.</td>
+<td></td>
+<td>010</td>
+<td>0100</td>
+</tr>
+<tr>
+<td>.</td>
+<td></td>
+<td>100</td>
+<td>.</td>
+</tr>
+</tbody></table>
+<p>Ϊ�˲������㣬����ֻȥ�����λ��mask:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">class Solution &#123;</span><br><span class="line">public:</span><br><span class="line">    vector&lt;int&gt; singleNumbers(vector&lt;int&gt;&amp; nums) &#123;</span><br><span class="line">        int sum = 0;</span><br><span class="line">        for(auto num : nums)&#123;</span><br><span class="line">            sum ^= num;</span><br><span class="line">        &#125;</span><br><span class="line">        int flag = 1;</span><br><span class="line"></span><br><span class="line">        while((flag &amp; sum) == 0) flag &lt;&lt;= 1;</span><br><span class="line"></span><br><span class="line">        vector&lt;int&gt; res(2);</span><br><span class="line">        res[0] = res[1] = 0;</span><br><span class="line">        for(int num:nums)&#123;</span><br><span class="line">            if(flag &amp; num) res[0] ^= num;</span><br><span class="line">            else res[1] ^= num;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        return res;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>���</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">ִ����ʱ��</span><br><span class="line">12 ms</span><br><span class="line">, ������ C++ �ύ�л�����</span><br><span class="line">90.67%</span><br><span class="line">���û�</span><br><span class="line">�ڴ����ģ�</span><br><span class="line">15.7 MB</span><br><span class="line">, ������ C++ �ύ�л�����</span><br><span class="line">58.62%</span><br><span class="line">���û�</span><br><span class="line">ͨ������������</span><br><span class="line">35 / 35</span><br></pre></td></tr></table></figure>
+
+  </div>
+  
+  
+    
+    <div class='footer'>
       
-        <div>
-          <a class='readmore' href='/2022/04/29/%E6%8B%9B%E5%BC%8F_%E5%89%91%E6%8C%87%20Offer%2050.%20%E7%AC%AC%E4%B8%80%E4%B8%AA%E5%8F%AA%E5%87%BA%E7%8E%B0%E4%B8%80%E6%AC%A1%E7%9A%84%E5%AD%97%E7%AC%A6/' itemprop="url">
-            阅读全文
-          </a>
+      
+      
+        <div class='copyright'>
+          <blockquote>
+            
+              
+                <p>感谢您的观看哦！</p>
+
+              
+            
+              
+                <p>本文永久链接是：<a href=https://touale.github.io/2022/05/21/%E6%8B%9B%E5%BC%8F_%E5%89%91%E6%8C%87%20Offer%2056%20-%20I.%20%E6%95%B0%E7%BB%84%E4%B8%AD%E6%95%B0%E5%AD%97%E5%87%BA%E7%8E%B0%E7%9A%84%E6%AC%A1%E6%95%B0/>https://touale.github.io/2022/05/21/%E6%8B%9B%E5%BC%8F_%E5%89%91%E6%8C%87%20Offer%2056%20-%20I.%20%E6%95%B0%E7%BB%84%E4%B8%AD%E6%95%B0%E5%AD%97%E5%87%BA%E7%8E%B0%E7%9A%84%E6%AC%A1%E6%95%B0/</a></p>
+              
+            
+          </blockquote>
         </div>
+      
       
     </div>
   
+  
+    
 
+
+  <div class='article-meta' id="bottom">
+    <div class='new-meta-box'>
+      
+        
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2022-05-21T10:37:24+08:00">
+  <a class='notlink'>
+    <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
+    <p>更新于：2022年5月21日</p>
+  </a>
 </div>
 
-          </div>
         
       
         
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://touale.github.io/2022/04/27/%E5%BF%83%E6%B3%95_%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="Touale Cula's Blog">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="Touale Cula's Blog">
-    <meta itemprop="description" content="欢迎来到 Touale Cula 的小世界哦">
-  </span>
+          
   
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="img/touale.jpg">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2022/04/27/%E5%BF%83%E6%B3%95_%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3/"  itemprop="url">
-        滑动窗口
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/%EF%BF%BD%E3%B7%A8/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>�㷨</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>����</p></a></div>
+  <span hidden itemprop="keywords">�㷨 ����</span>
+
+
+        
+      
+        
+          
+  <div class="new-meta-item share -mob-share-list">
+  <div class="-mob-share-list share-body">
     
       
-        原理
-滑动窗口可以看成数组中框起来的一个部分。在一些数组类题目中，我们可以用滑动窗口来观察可能的候选结果。当滑动窗口从数组的左边滑到了右边，我们就可以从所有的候选结果中找到最优的结果。
-
-
-相关题目
-
-
-
-序号
-题目内容
-
-
-
-1
-剑指 Offer 57 - II. 和为s的连续正数序列
-
-
-2
-剑指 Offer 48. 最长不含重复字符的子字符串
-
-
-
-
+        <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://touale.github.io/2022/05/21/%E6%8B%9B%E5%BC%8F_%E5%89%91%E6%8C%87%20Offer%2056%20-%20I.%20%E6%95%B0%E7%BB%84%E4%B8%AD%E6%95%B0%E5%AD%97%E5%87%BA%E7%8E%B0%E7%9A%84%E6%AC%A1%E6%95%B0/&title=��ָ Offer 56 - I. ���������ֳ��ֵĴ��� - Touale Cula's Blog&summary="
+          
+          >
+          
+            <img src="https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/logo/128/qq.png" class="lazyload" data-srcset="https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/logo/128/qq.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://touale.github.io/2022/05/21/%E6%8B%9B%E5%BC%8F_%E5%89%91%E6%8C%87%20Offer%2056%20-%20I.%20%E6%95%B0%E7%BB%84%E4%B8%AD%E6%95%B0%E5%AD%97%E5%87%BA%E7%8E%B0%E7%9A%84%E6%AC%A1%E6%95%B0/&title=��ָ Offer 56 - I. ���������ֳ��ֵĴ��� - Touale Cula's Blog&summary="
+          
+          >
+          
+            <img src="https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/logo/128/qzone.png" class="lazyload" data-srcset="https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/logo/128/qzone.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://service.weibo.com/share/share.php?url=https://touale.github.io/2022/05/21/%E6%8B%9B%E5%BC%8F_%E5%89%91%E6%8C%87%20Offer%2056%20-%20I.%20%E6%95%B0%E7%BB%84%E4%B8%AD%E6%95%B0%E5%AD%97%E5%87%BA%E7%8E%B0%E7%9A%84%E6%AC%A1%E6%95%B0/&title=��ָ Offer 56 - I. ���������ֳ��ֵĴ��� - Touale Cula's Blog&summary="
+          
+          >
+          
+            <img src="https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/logo/128/weibo.png" class="lazyload" data-srcset="https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/logo/128/weibo.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+    
       
     
   </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2022-04-27T08:54:00+08:00">2022-04-27</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E5%BF%83%E6%B3%95/">心法</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/%E5%BF%83%E6%B3%95/" itemprop="url"><span itemprop="name">心法</span></a>
-            </span>
-          
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2022/04/27/%E5%BF%83%E6%B3%95_%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
 </div>
 
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://touale.github.io/2022/04/26/%E5%BF%83%E6%B3%95_%E6%91%A9%E5%B0%94%E6%8A%95%E7%A5%A8%E6%B3%95/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="Touale Cula's Blog">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="Touale Cula's Blog">
-    <meta itemprop="description" content="欢迎来到 Touale Cula 的小世界哦">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="img/touale.jpg">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2022/04/26/%E5%BF%83%E6%B3%95_%E6%91%A9%E5%B0%94%E6%8A%95%E7%A5%A8%E6%B3%95/"  itemprop="url">
-        摩尔投票法
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        原理
-摩尔投票法的基本思想很简单，在每一轮投票过程中，从数组中找出一对不同的元素，将其从数组中删除。这样不断的删除直到无法再进行投票，如果数组为空，则没有任何元素出现的次数超过该数组长度的一半。如果只存在一种元素，那么这个元素则可能为目标元素。
 
-理解用一个很好的例子可以介绍一下！
-假设有一个擂台，有一组人，每个人有编号，相同编号为一组，依次上场，没人时上去的便是擂主（x），若有人，编号相同...
+
+        
       
+    </div>
+    <!-- Custom Files bottomMeta begin -->
     
+    <!-- Custom Files bottomMeta end -->
   </div>
+
+
   
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2022-04-26T09:13:05+08:00">2022-04-26</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E5%BF%83%E6%B3%95/">心法</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/%E5%BF%83%E6%B3%95/" itemprop="url"><span itemprop="name">心法</span></a>
-            </span>
-          
-        
-      </div>
+  
+
+  
+    <div class="prev-next">
       
-        <div>
-          <a class='readmore' href='/2022/04/26/%E5%BF%83%E6%B3%95_%E6%91%A9%E5%B0%94%E6%8A%95%E7%A5%A8%E6%B3%95/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
+        <a class='prev' href='/2022/05/21/%E5%BF%83%E6%B3%95_%E5%BC%82%E6%88%96/'>
+          <p class='title'><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>λ����_���</p>
+          <p class='content'>ԭ��
+��ͬ�������Ϊ0����ͬ�����Ϊ1��0���κ��������������������
+
+
+��������������ɣ���(a^b)^c &#x3D;&#x3D; ...</p>
+        </a>
+      
+      
+        <a class='next' href='/2022/05/20/%E6%8B%9B%E5%BC%8F_%E5%89%91%E6%8C%87%20Offer%2033.%20%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91%E7%9A%84%E5%90%8E%E5%BA%8F%E9%81%8D%E5%8E%86%E5%BA%8F%E5%88%97/'>
+          <p class='title'>剑指 Offer 33. 二叉搜索树的后序遍历序列<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>输入一个整数数组，判断该数组是不是某二叉搜索树的后序遍历结果。如果是则返回 true，否则返回 false。假设输入的数组的任意两个数字都互不相同。
+12345678参考以下这颗二叉搜索树：  ...</p>
+        </a>
       
     </div>
   
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://touale.github.io/2022/04/26/%E6%8B%9B%E5%BC%8F_%E5%89%91%E6%8C%87%20Offer%2004.%20%E4%BA%8C%E7%BB%B4%E6%95%B0%E7%BB%84%E4%B8%AD%E7%9A%84%E6%9F%A5%E6%89%BE/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="Touale Cula's Blog">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="Touale Cula's Blog">
-    <meta itemprop="description" content="欢迎来到 Touale Cula 的小世界哦">
-  </span>
+  <!-- Custom Files postEnd begin-->
   
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="img/touale.jpg">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2022/04/26/%E6%8B%9B%E5%BC%8F_%E5%89%91%E6%8C%87%20Offer%2004.%20%E4%BA%8C%E7%BB%B4%E6%95%B0%E7%BB%84%E4%B8%AD%E7%9A%84%E6%9F%A5%E6%89%BE/"  itemprop="url">
-        剑指 Offer 04. 二维数组中的查找
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        题目内容在一个 n * m 的二维数组中，每一行都按照从左到右递增的顺序排序，每一列都按照从上到下递增的顺序排序。请完成一个高效的函数，输入这样的一个二维数组和一个整数，判断数组中是否含有该整数。
- 
-示例:
-现有矩阵 matrix 如下：
-12345678910[  [1,   4,  7, 11, 15],  [2,   5,  8, 12, 19],  [3,   6,  9, 16,...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2022-04-26T08:54:00+08:00">2022-04-26</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E6%8B%9B%E5%BC%8F/">招式</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/%E6%8B%9B%E5%BC%8F/" itemprop="url"><span itemprop="name">招式</span></a>
-            </span>
-          
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2022/04/26/%E6%8B%9B%E5%BC%8F_%E5%89%91%E6%8C%87%20Offer%2004.%20%E4%BA%8C%E7%BB%B4%E6%95%B0%E7%BB%84%E4%B8%AD%E7%9A%84%E6%9F%A5%E6%89%BE/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://touale.github.io/2022/04/26/%E6%8B%9B%E5%BC%8F_%E5%89%91%E6%8C%87%20Offer%2040.%20%E6%9C%80%E5%B0%8F%E7%9A%84k%E4%B8%AA%E6%95%B0/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="Touale Cula's Blog">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="Touale Cula's Blog">
-    <meta itemprop="description" content="欢迎来到 Touale Cula 的小世界哦">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="img/touale.jpg">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2022/04/26/%E6%8B%9B%E5%BC%8F_%E5%89%91%E6%8C%87%20Offer%2040.%20%E6%9C%80%E5%B0%8F%E7%9A%84k%E4%B8%AA%E6%95%B0/"  itemprop="url">
-        剑指 Offer 40. 最小的k个数
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        题目内容输入整数数组 arr ，找出其中最小的 k 个数。例如，输入4、5、1、6、2、7、3、8这8个数字，则最小的4个数字是1、2、3、4。
- 
-1234567891011121314示例 1：输入：arr = [3,2,1], k = 2输出：[1,2] 或者 [2,1]示例 2：输入：arr = [0,1,2,1], k = 1输出：[0] 限制：0 &lt;= k &lt;= ar...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2022-04-26T08:54:00+08:00">2022-04-26</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E6%8B%9B%E5%BC%8F/">招式</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/%E6%8B%9B%E5%BC%8F/" itemprop="url"><span itemprop="name">招式</span></a>
-            </span>
-          
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2022/04/26/%E6%8B%9B%E5%BC%8F_%E5%89%91%E6%8C%87%20Offer%2040.%20%E6%9C%80%E5%B0%8F%E7%9A%84k%E4%B8%AA%E6%95%B0/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://touale.github.io/2022/04/26/%E6%8B%9B%E5%BC%8F_%E5%89%91%E6%8C%87Offer%2039.%20%E6%95%B0%E7%BB%84%E4%B8%AD%E5%87%BA%E7%8E%B0%E6%AC%A1%E6%95%B0%E8%B6%85%E8%BF%87%E4%B8%80%E5%8D%8A%E7%9A%84%E6%95%B0%E5%AD%97/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="Touale Cula's Blog">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="Touale Cula's Blog">
-    <meta itemprop="description" content="欢迎来到 Touale Cula 的小世界哦">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="img/touale.jpg">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2022/04/26/%E6%8B%9B%E5%BC%8F_%E5%89%91%E6%8C%87Offer%2039.%20%E6%95%B0%E7%BB%84%E4%B8%AD%E5%87%BA%E7%8E%B0%E6%AC%A1%E6%95%B0%E8%B6%85%E8%BF%87%E4%B8%80%E5%8D%8A%E7%9A%84%E6%95%B0%E5%AD%97/"  itemprop="url">
-        剑指Offer 39. 数组中出现次数超过一半的数字
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        题目内容数组中有一个数字出现的次数超过数组长度的一半，请找出这个数字。
-你可以假设数组是非空的，并且给定的数组总是存在多数元素。
-123456789示例?1:输入: [1, 2, 3, 2, 2, 2, 5, 4, 2]输出: 2?限制：1 &lt;= 数组长度 &lt;= 50000
+  <!-- Custom Files postEnd end-->
+</article>
 
 
-解法一： 哈希表(暴力法)思路：利用map存储，后遍历取出
-123456789101112131415...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2022-04-26T08:54:00+08:00">2022-04-26</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E6%8B%9B%E5%BC%8F/">招式</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/%E6%8B%9B%E5%BC%8F/" itemprop="url"><span itemprop="name">招式</span></a>
-            </span>
-          
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2022/04/26/%E6%8B%9B%E5%BC%8F_%E5%89%91%E6%8C%87Offer%2039.%20%E6%95%B0%E7%BB%84%E4%B8%AD%E5%87%BA%E7%8E%B0%E6%AC%A1%E6%95%B0%E8%B6%85%E8%BF%87%E4%B8%80%E5%8D%8A%E7%9A%84%E6%95%B0%E5%AD%97/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
   
 
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://touale.github.io/2022/04/26/%E6%8B%9B%E5%BC%8F_%E5%89%91%E6%8C%87%20Offer%2042.%20%E8%BF%9E%E7%BB%AD%E5%AD%90%E6%95%B0%E7%BB%84%E7%9A%84%E6%9C%80%E5%A4%A7%E5%92%8C/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="Touale Cula's Blog">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="Touale Cula's Blog">
-    <meta itemprop="description" content="欢迎来到 Touale Cula 的小世界哦">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="img/touale.jpg">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2022/04/26/%E6%8B%9B%E5%BC%8F_%E5%89%91%E6%8C%87%20Offer%2042.%20%E8%BF%9E%E7%BB%AD%E5%AD%90%E6%95%B0%E7%BB%84%E7%9A%84%E6%9C%80%E5%A4%A7%E5%92%8C/"  itemprop="url">
-        剑指 Offer 42. 连续子数组的最大和
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        题目内容输入一个整型数组，数组中的一个或连续多个整数组成一个子数组。求所有子数组的和的最大值。
-要求时间复杂度为O(n)。
- 
-1234567891011示例1:输入: nums = [-2,1,-3,4,-1,2,1,-5,4]输出: 6解释: 连续子数组 [4,-1,2,1] 的和最大，为 6。 提示：1 &lt;= arr.length &lt;= 10^5-100 &lt;= arr...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2022-04-26T00:00:00+08:00">2022-04-26</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E6%8B%9B%E5%BC%8F/">招式</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/%E6%8B%9B%E5%BC%8F/" itemprop="url"><span itemprop="name">招式</span></a>
-            </span>
-          
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2022/04/26/%E6%8B%9B%E5%BC%8F_%E5%89%91%E6%8C%87%20Offer%2042.%20%E8%BF%9E%E7%BB%AD%E5%AD%90%E6%95%B0%E7%BB%84%E7%9A%84%E6%9C%80%E5%A4%A7%E5%92%8C/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://touale.github.io/2022/04/25/%E6%8B%9B%E5%BC%8F_js%E6%94%BB%E9%98%B2%E5%AF%B9%E6%8A%97%E4%B9%8B%E6%B7%B7%E6%B7%86%E5%8A%A0%E5%BC%BA/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="Touale Cula's Blog">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="Touale Cula's Blog">
-    <meta itemprop="description" content="欢迎来到 Touale Cula 的小世界哦">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="img/touale.jpg">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2022/04/25/%E6%8B%9B%E5%BC%8F_js%E6%94%BB%E9%98%B2%E5%AF%B9%E6%8A%97%E4%B9%8B%E6%B7%B7%E6%B7%86%E5%8A%A0%E5%BC%BA/"  itemprop="url">
-        js攻防对抗之混淆加强
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        此题来源于某一个对抗网站，无聊玩玩分析和对抗，锻炼锻炼自己的逻辑和分析能力！
-该题还是有些东西了，需要运用一些技巧，分析过程极其头疼，调试过程中经常出现运行结果和执行结果不同！
-
-题目内容任务5：抓取全部5页直播间热度，计算前5名直播间热度的加和
-注：本页cookie有效期仅有50秒钟
-
-
-初步分析请求内容如下：
-12345678910111213141516171819GET https:...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2022-04-25T21:05:00+08:00">2022-04-25</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E6%8B%9B%E5%BC%8F/">招式</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/%E6%8B%9B%E5%BC%8F/" itemprop="url"><span itemprop="name">招式</span></a>
-            </span>
-          
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2022/04/25/%E6%8B%9B%E5%BC%8F_js%E6%94%BB%E9%98%B2%E5%AF%B9%E6%8A%97%E4%B9%8B%E6%B7%B7%E6%B7%86%E5%8A%A0%E5%BC%BA/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-    
-  </section>
-  
-    
   
 
 
-	
+
+
+
 </div>
 <aside id='l_side' itemscope itemtype="http://schema.org/WPSideBar">
   
@@ -3163,73 +2872,22 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     
     
-  
 
-  <section class="widget category shadow floatable blur desktop pjax">
+
+
+  <section class="widget toc-wrapper shadow floatable blur desktop mobile pjax" id="toc-div" >
     
   <header>
     
-      <a href='/blog/categories/'><i class="fa-solid fa-folder-open fa-fw" aria-hidden="true"></i><span class='name'>文章分类</span></a>
+      <i class="fa-solid fa-list fa-fw" aria-hidden="true"></i><span class='name'>本文目录</span>
     
   </header>
 
 
     <div class='content'>
-      <ul class="entry navigation">
-        
-          <li><a class="flat-box"
-            title="/categories/%E5%86%85%E5%8A%9F/" href="/categories/%E5%86%85%E5%8A%9F/"
-            active-action="action-categoriesE58685E58A9F"
-            ><div class='name'>内功</div><div class='badge'>(5)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/categories/%E5%BF%83%E6%B3%95/" href="/categories/%E5%BF%83%E6%B3%95/"
-            active-action="action-categoriesE5BF83E6B395"
-            ><div class='name'>心法</div><div class='badge'>(3)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/categories/%E6%8B%9B%E5%BC%8F/" href="/categories/%E6%8B%9B%E5%BC%8F/"
-            active-action="action-categoriesE68B9BE5BC8F"
-            ><div class='name'>招式</div><div class='badge'>(27)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/categories/%EF%BF%BDk%EF%BF%BD/" href="/categories/%EF%BF%BDk%EF%BF%BD/"
-            active-action="action-categoriesEFBFBDkEFBFBD"
-            ><div class='name'>�ķ�</div><div class='badge'>(1)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/categories/%EF%BF%BD%EF%BF%BD%CA%BD/" href="/categories/%EF%BF%BD%EF%BF%BD%CA%BD/"
-            active-action="action-categoriesEFBFBDEFBFBDCABD"
-            ><div class='name'>��ʽ</div><div class='badge'>(1)</div></a></li>
-        
-      </ul>
+        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%EF%BF%BD%EF%BF%BDL%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD"><span class="toc-text">��Ŀ����</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%EF%BF%BD%E2%B7%A8%D2%BB%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD"><span class="toc-text">�ⷨһ�����</span></a></li></ol>
     </div>
   </section>
-
-
-  
-
-  
-    
-    
-  
-
-  <section class="widget tagcloud shadow floatable blur desktop mobile pjax">
-    
-  <header>
-    
-      <a href='/blog/tags/'><i class="fa-solid fa-tags fa-fw" aria-hidden="true"></i><span class='name'>热门标签</span></a>
-    
-  </header>
-
-
-    <div class='content'>
-      <a href="/tags/js%E5%8A%A0%E5%AF%86/" style="font-size: 16.5px; color: #888">js加密</a> <a href="/tags/%E5%86%85%E5%8A%9F/" style="font-size: 14px; color: #999">内功</a> <a href="/tags/%E5%8A%9B%E6%89%A3/" style="font-size: 21.5px; color: #666">力扣</a> <a href="/tags/%E5%AF%B9%E6%8A%97/" style="font-size: 16.5px; color: #888">对抗</a> <a href="/tags/%E6%94%BB%E9%98%B2/" style="font-size: 16.5px; color: #888">攻防</a> <a href="/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" style="font-size: 19px; color: #777">数据结构</a> <a href="/tags/%E6%B7%B7%E6%B7%86/" style="font-size: 16.5px; color: #888">混淆</a> <a href="/tags/%E7%AE%97%E6%B3%95/" style="font-size: 24px; color: #555">算法</a> <a href="/tags/%EF%BF%BD%E3%B7%A8/" style="font-size: 16.5px; color: #888">�㷨</a> <a href="/tags/%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD/" style="font-size: 14px; color: #999">����</a>
-    </div>
-  </section>
-
-
-  
 
   
 
@@ -3273,11 +2931,16 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <!-- pjax占位 -->
   </div>
 
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
+
 
   <!-- Custom Files side begin -->
   
   <!-- Custom Files side end -->
 </aside>
+
 
 
           <!--此文件用来存放一些不方便取值的变量-->
@@ -3286,7 +2949,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <pjax>
 <script>
   window.pdata={}
-  pdata.ispage=false;
+  pdata.ispage=true;
   pdata.commentPath="";
   pdata.commentPlaceholder="";
   pdata.commentConfig={};
@@ -3295,14 +2958,14 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     // header
     var l_header=document.getElementById("l_header");
     
-    l_header.classList.remove("show");
+    l_header.classList.add("show");
     
     
       // cover
       var cover_wrapper=document.querySelector('#l_cover .cover-wrapper');
       var scroll_down=document.getElementById('scroll-down');
-      cover_wrapper.id="half";
-      cover_wrapper.style.display="";
+      cover_wrapper.id="none";
+      cover_wrapper.style.display="none";
       scroll_down.style.display="none";
     
   
@@ -4238,7 +3901,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"Touale Cula's Blog","url":"https://touale.github.io/","logo":{"@type":"ImageObject","url":"img/touale.jpg","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"Touale Cula","image":{"@type":"ImageObject","url":"img/touale.jpg"},"url":"https://touale.github.io/","sameAs":["https://github.com/volantis-x"],"description":"欢迎来到 Touale Cula 的小世界哦"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://touale.github.io/","name":"Touale Cula's Blog"}},{"@type":"ListItem","position":2,"item":{"@id":"https://touale.github.io/archives/","name":"Archive"}},{"@type":"ListItem","position":3,"item":{"@id":"https://touale.github.io/archives/2022/","name":"2022年"}},{"@type":"ListItem","position":4,"item":{"@id":"https://touale.github.io/archives/2022/4/","name":"4月"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"Touale Cula's Blog","url":"https://touale.github.io/","keywords":"内功,心法,招式","description":"欢迎来到 Touale Cula 的小世界哦","author":{"@type":"Person","name":"Touale Cula","image":{"@type":"ImageObject","url":"img/touale.jpg"},"url":"https://touale.github.io/","description":"欢迎来到 Touale Cula 的小世界哦"},"publisher":{"@type":"Organization","name":"Touale Cula's Blog","url":"https://touale.github.io/","logo":{"@type":"ImageObject","url":"img/touale.jpg","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://touale.github.io?s={search_term_string}"},"query-input":"required name=search_term_string"}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"Touale Cula's Blog","url":"https://touale.github.io/","logo":{"@type":"ImageObject","url":"img/touale.jpg","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"Touale Cula","image":{"@type":"ImageObject","url":"img/touale.jpg"},"url":"https://touale.github.io/","sameAs":["https://github.com/volantis-x"],"description":"欢迎来到 Touale Cula 的小世界哦"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://touale.github.io/","name":"Touale Cula's Blog"}},{"@type":"ListItem","position":2,"item":{"@id":"https://touale.github.io/categories/��ʽ/","name":"��ʽ"}},{"@type":"ListItem","position":3,"item":{"@id":"https://touale.github.io/2022/05/21/招式_剑指 Offer 56 - I. 数组中数字出现的次数/","name":"��ָ Offer 56 - I. ���������ֳ��ֵĴ���"}}]},{"@context":"http://schema.org","@type":"BlogPosting","headline":"��ָ Offer 56 - I. ���������ֳ��ֵĴ���","description":"","datePublished":"2022-05-20T16:00:00.000Z","dateModified":"2022-05-21T02:37:24.451Z","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https://touale.github.io/2022/05/21/%E6%8B%9B%E5%BC%8F_%E5%89%91%E6%8C%87%20Offer%2056%20-%20I.%20%E6%95%B0%E7%BB%84%E4%B8%AD%E6%95%B0%E5%AD%97%E5%87%BA%E7%8E%B0%E7%9A%84%E6%AC%A1%E6%95%B0/"},"author":{"@type":"Person","name":"Touale Cula","image":{"@type":"ImageObject","url":"img/touale.jpg"},"url":"https://touale.github.io/"},"publisher":{"@type":"Organization","name":"Touale Cula's Blog","logo":{"@type":"ImageObject","url":"img/touale.jpg","width":192,"height":192}},"url":"https://touale.github.io/2022/05/21/%E6%8B%9B%E5%BC%8F_%E5%89%91%E6%8C%87%20Offer%2056%20-%20I.%20%E6%95%B0%E7%BB%84%E4%B8%AD%E6%95%B0%E5%AD%97%E5%87%BA%E7%8E%B0%E7%9A%84%E6%AC%A1%E6%95%B0/","wordCount":0,"articleSection":"��ʽ","keywords":"�㷨,����","image":{"@type":"ImageObject","url":"img/touale.jpg","width":192,"height":192}}]</script>
 
 
 
