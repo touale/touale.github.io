@@ -1750,7 +1750,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     debug: false,
     cdn: {"js":{"app":"/js/app.3690b000.js","parallax":"/js/plugins/parallax.8bf0ab10.js","rightMenu":"/js/plugins/rightMenu.1d2dd3e0.js","rightMenus":"/js/plugins/rightMenus.68379f6b.js","sites":"/js/plugins/tags/sites.76bf19b8.js","friends":"/js/plugins/tags/friends.f372da57.js","contributors":"/js/plugins/tags/contributors.aec80453.js","search":"/js/search/hexo.06d40311.js"},"css":{"style":"/css/style.8a038721.css"}},
     default: {"avatar":"https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/placeholder/avatar/round/3442075.svg","link":"https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/placeholder/cover/76b86c0226ffd.svg","image":"https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1653100793215),
+    lastupdate: new Date(1653101255708),
     sidebar: {
       for_page: ["blogger","category","tagcloud","donate","lastupdate"],
       for_post: ["blogger","toc","lastupdate"],
@@ -2605,18 +2605,20 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
     <h2 class="article-title"  itemprop="name headline">
       <a href="/2022/05/21/%E5%BF%83%E6%B3%95_%E5%BC%82%E6%88%96/"  itemprop="url">
-        λ����_���
+        位运算_异或
       </a>
     </h2>
   
   <div class='md article-desc' itemprop="articleBody">
     
       
-        ԭ��
-��ͬ�������Ϊ0����ͬ�����Ϊ1��0���κ��������������������
+        原理
+相同的数异或为0，不同的异或为1。0和任何数异或等于这个数本身。
 
 
-��������������ɣ���(a^b)^c &#x3D;&#x3D; a^(b^c)�������κ���x������x^x&#x3D;0��x^0&#x3D;x�Է��� A XOR B XOR B &#x3D; A xor 0 &#x3D; A —&gt; A X...
+性质交换律结合律（即(a^b)^c &#x3D;&#x3D; a^(b^c)）对于任何数x，都有x^x&#x3D;0，x^0&#x3D;x自反性 A XOR B XOR B &#x3D; A xor 0 &#x3D; A —&gt; A XOR B &#x3D; C 则 C XOR B &#x3D; A
+
+例子1-1...
       
     
   </div>
@@ -2627,10 +2629,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         <time itemprop="dateCreated datePublished" datetime="2022-05-21T00:00:00+08:00">2022-05-21</time>
         
           <span class="dot"></span>
-          <a class="category-link" href="/categories/%EF%BF%BDk%EF%BF%BD/">�ķ�</a>
+          <a class="category-link" href="/categories/%E5%BF%83%E6%B3%95/">心法</a>
           
             <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/%EF%BF%BDk%EF%BF%BD/" itemprop="url"><span itemprop="name">�ķ�</span></a>
+              <a href="/categories/%E5%BF%83%E6%B3%95/" itemprop="url"><span itemprop="name">心法</span></a>
             </span>
           
         
@@ -2672,19 +2674,22 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
     <h2 class="article-title"  itemprop="name headline">
       <a href="/2022/05/21/%E6%8B%9B%E5%BC%8F_%E5%89%91%E6%8C%87%20Offer%2056%20-%20I.%20%E6%95%B0%E7%BB%84%E4%B8%AD%E6%95%B0%E5%AD%97%E5%87%BA%E7%8E%B0%E7%9A%84%E6%AC%A1%E6%95%B0/"  itemprop="url">
-        ��ָ Offer 56 - I. ���������ֳ��ֵĴ���
+        剑指 Offer 56 - I. 数组中数字出现的次数
       </a>
     </h2>
   
   <div class='md article-desc' itemprop="articleBody">
     
       
-        ��Ŀ����һ���������� nums �����������֮�⣬�������ֶ����������Ρ���д�����ҳ�������ֻ����һ�ε����֡�Ҫ��ʱ�临�Ӷ���O(n)���ռ临�Ӷ���O(1)��
-?
-ʾ�� 1��
-12���룺nums = [4,1,4,6]�����[1,6] �� [6,1]
-ʾ�� 2��
-12���룺nums = [1,2...
+        题目内容一个整型数组 nums 里除两个数字之外，其他数字都出现了两次。请写程序找出这两个只出现一次的数字。要求时间复杂度是O(n)，空间复杂度是O(1)。
+ 
+示例 1：
+12输入：nums = [4,1,4,6]输出：[1,6] 或 [6,1]
+示例 2：
+12输入：nums = [1,2,10,4,1,4,3,3]输出：[2,10] 或 [10,2]
+
+限制：
+12 &lt;= num...
       
     
   </div>
@@ -2695,10 +2700,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         <time itemprop="dateCreated datePublished" datetime="2022-05-21T00:00:00+08:00">2022-05-21</time>
         
           <span class="dot"></span>
-          <a class="category-link" href="/categories/%EF%BF%BD%EF%BF%BD%CA%BD/">��ʽ</a>
+          <a class="category-link" href="/categories/%E6%8B%9B%E5%BC%8F/">招式</a>
           
             <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/%EF%BF%BD%EF%BF%BD%CA%BD/" itemprop="url"><span itemprop="name">��ʽ</span></a>
+              <a href="/categories/%E6%8B%9B%E5%BC%8F/" itemprop="url"><span itemprop="name">招式</span></a>
             </span>
           
         
@@ -3071,6 +3076,72 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         
           <div class='post-wrapper'>
             <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
+  <link itemprop="mainEntityOfPage" href="https://touale.github.io/2022/05/20/%E6%8B%9B%E5%BC%8F_%E5%89%91%E6%8C%87%20Offer%2047.%20%E7%A4%BC%E7%89%A9%E7%9A%84%E6%9C%80%E5%A4%A7%E4%BB%B7%E5%80%BC/">
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="Touale Cula's Blog">
+  </span>
+  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
+    <meta itemprop="name" content="Touale Cula's Blog">
+    <meta itemprop="description" content="欢迎来到 Touale Cula 的小世界哦">
+  </span>
+  
+  
+  
+    <span hidden>
+      <meta itemprop="image" content="img/touale.jpg">
+    </span>
+  
+  
+    
+    <h2 class="article-title"  itemprop="name headline">
+      <a href="/2022/05/20/%E6%8B%9B%E5%BC%8F_%E5%89%91%E6%8C%87%20Offer%2047.%20%E7%A4%BC%E7%89%A9%E7%9A%84%E6%9C%80%E5%A4%A7%E4%BB%B7%E5%80%BC/"  itemprop="url">
+        剑指 Offer 47. 礼物的最大价值
+      </a>
+    </h2>
+  
+  <div class='md article-desc' itemprop="articleBody">
+    
+      
+        题目在一个 m*n 的棋盘的每一格都放有一个礼物，每个礼物都有一定的价值（价值大于 0）。你可以从棋盘的左上角开始拿格子里的礼物，并每次向右或者向下移动一格、直到到达棋盘的右下角。给定一个棋盘及其上面的礼物的价值，请计算你最多能拿到多少价值的礼物？
+ 
+示例 1:
+12345678输入: [  [1,3,1],  [1,5,1],  [4,2,1]]输出: 12解释: 路径 1→3→5→2→...
+      
+    
+  </div>
+  
+    <div class='meta-v3' line_style='solid'>
+      <div>
+        
+        <time itemprop="dateCreated datePublished" datetime="2022-05-20T00:00:00+08:00">2022-05-20</time>
+        
+          <span class="dot"></span>
+          <a class="category-link" href="/categories/%E6%8B%9B%E5%BC%8F/">招式</a>
+          
+            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
+              <a href="/categories/%E6%8B%9B%E5%BC%8F/" itemprop="url"><span itemprop="name">招式</span></a>
+            </span>
+          
+        
+      </div>
+      
+        <div>
+          <a class='readmore' href='/2022/05/20/%E6%8B%9B%E5%BC%8F_%E5%89%91%E6%8C%87%20Offer%2047.%20%E7%A4%BC%E7%89%A9%E7%9A%84%E6%9C%80%E5%A4%A7%E4%BB%B7%E5%80%BC/' itemprop="url">
+            阅读全文
+          </a>
+        </div>
+      
+    </div>
+  
+
+</div>
+
+          </div>
+        
+      
+        
+          <div class='post-wrapper'>
+            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
   <link itemprop="mainEntityOfPage" href="https://touale.github.io/2022/05/20/%E6%8B%9B%E5%BC%8F_%E5%89%91%E6%8C%87%20Offer%2048.%20%E6%9C%80%E9%95%BF%E4%B8%8D%E5%90%AB%E9%87%8D%E5%A4%8D%E5%AD%97%E7%AC%A6%E7%9A%84%E5%AD%90%E5%AD%97%E7%AC%A6%E4%B8%B2/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="Touale Cula's Blog">
@@ -3124,72 +3195,6 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <div>
           <a class='readmore' href='/2022/05/20/%E6%8B%9B%E5%BC%8F_%E5%89%91%E6%8C%87%20Offer%2048.%20%E6%9C%80%E9%95%BF%E4%B8%8D%E5%90%AB%E9%87%8D%E5%A4%8D%E5%AD%97%E7%AC%A6%E7%9A%84%E5%AD%90%E5%AD%97%E7%AC%A6%E4%B8%B2/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://touale.github.io/2022/05/20/%E6%8B%9B%E5%BC%8F_%E5%89%91%E6%8C%87%20Offer%2047.%20%E7%A4%BC%E7%89%A9%E7%9A%84%E6%9C%80%E5%A4%A7%E4%BB%B7%E5%80%BC/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="Touale Cula's Blog">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="Touale Cula's Blog">
-    <meta itemprop="description" content="欢迎来到 Touale Cula 的小世界哦">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="img/touale.jpg">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2022/05/20/%E6%8B%9B%E5%BC%8F_%E5%89%91%E6%8C%87%20Offer%2047.%20%E7%A4%BC%E7%89%A9%E7%9A%84%E6%9C%80%E5%A4%A7%E4%BB%B7%E5%80%BC/"  itemprop="url">
-        剑指 Offer 47. 礼物的最大价值
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        题目在一个 m*n 的棋盘的每一格都放有一个礼物，每个礼物都有一定的价值（价值大于 0）。你可以从棋盘的左上角开始拿格子里的礼物，并每次向右或者向下移动一格、直到到达棋盘的右下角。给定一个棋盘及其上面的礼物的价值，请计算你最多能拿到多少价值的礼物？
- 
-示例 1:
-12345678输入: [  [1,3,1],  [1,5,1],  [4,2,1]]输出: 12解释: 路径 1→3→5→2→...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2022-05-20T00:00:00+08:00">2022-05-20</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E6%8B%9B%E5%BC%8F/">招式</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/%E6%8B%9B%E5%BC%8F/" itemprop="url"><span itemprop="name">招式</span></a>
-            </span>
-          
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2022/05/20/%E6%8B%9B%E5%BC%8F_%E5%89%91%E6%8C%87%20Offer%2047.%20%E7%A4%BC%E7%89%A9%E7%9A%84%E6%9C%80%E5%A4%A7%E4%BB%B7%E5%80%BC/' itemprop="url">
             阅读全文
           </a>
         </div>
@@ -3392,22 +3397,12 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           <li><a class="flat-box"
             title="/categories/%E5%BF%83%E6%B3%95/" href="/categories/%E5%BF%83%E6%B3%95/"
             active-action="action-categoriesE5BF83E6B395"
-            ><div class='name'>心法</div><div class='badge'>(3)</div></a></li>
+            ><div class='name'>心法</div><div class='badge'>(4)</div></a></li>
         
           <li><a class="flat-box"
             title="/categories/%E6%8B%9B%E5%BC%8F/" href="/categories/%E6%8B%9B%E5%BC%8F/"
             active-action="action-categoriesE68B9BE5BC8F"
-            ><div class='name'>招式</div><div class='badge'>(27)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/categories/%EF%BF%BDk%EF%BF%BD/" href="/categories/%EF%BF%BDk%EF%BF%BD/"
-            active-action="action-categoriesEFBFBDkEFBFBD"
-            ><div class='name'>�ķ�</div><div class='badge'>(1)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/categories/%EF%BF%BD%EF%BF%BD%CA%BD/" href="/categories/%EF%BF%BD%EF%BF%BD%CA%BD/"
-            active-action="action-categoriesEFBFBDEFBFBDCABD"
-            ><div class='name'>��ʽ</div><div class='badge'>(1)</div></a></li>
+            ><div class='name'>招式</div><div class='badge'>(28)</div></a></li>
         
       </ul>
     </div>
@@ -3431,7 +3426,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 
     <div class='content'>
-      <a href="/tags/js%E5%8A%A0%E5%AF%86/" style="font-size: 16.5px; color: #888">js加密</a> <a href="/tags/%E5%86%85%E5%8A%9F/" style="font-size: 14px; color: #999">内功</a> <a href="/tags/%E5%8A%9B%E6%89%A3/" style="font-size: 21.5px; color: #666">力扣</a> <a href="/tags/%E5%AF%B9%E6%8A%97/" style="font-size: 16.5px; color: #888">对抗</a> <a href="/tags/%E6%94%BB%E9%98%B2/" style="font-size: 16.5px; color: #888">攻防</a> <a href="/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" style="font-size: 19px; color: #777">数据结构</a> <a href="/tags/%E6%B7%B7%E6%B7%86/" style="font-size: 16.5px; color: #888">混淆</a> <a href="/tags/%E7%AE%97%E6%B3%95/" style="font-size: 24px; color: #555">算法</a> <a href="/tags/%EF%BF%BD%E3%B7%A8/" style="font-size: 16.5px; color: #888">�㷨</a> <a href="/tags/%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD/" style="font-size: 14px; color: #999">����</a>
+      <a href="/tags/js%E5%8A%A0%E5%AF%86/" style="font-size: 16.5px; color: #888">js加密</a> <a href="/tags/%E5%86%85%E5%8A%9F/" style="font-size: 14px; color: #999">内功</a> <a href="/tags/%E5%8A%9B%E6%89%A3/" style="font-size: 21.5px; color: #666">力扣</a> <a href="/tags/%E5%AF%B9%E6%8A%97/" style="font-size: 16.5px; color: #888">对抗</a> <a href="/tags/%E6%94%BB%E9%98%B2/" style="font-size: 16.5px; color: #888">攻防</a> <a href="/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" style="font-size: 19px; color: #777">数据结构</a> <a href="/tags/%E6%B7%B7%E6%B7%86/" style="font-size: 16.5px; color: #888">混淆</a> <a href="/tags/%E7%AE%97%E6%B3%95/" style="font-size: 24px; color: #555">算法</a>
     </div>
   </section>
 
@@ -3455,7 +3450,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
  
   <div class='content'> 
-    <ul class="list entry navigation"><li><a class="widget-last" href="/2022/05/21/%E6%8B%9B%E5%BC%8F_%E5%89%91%E6%8C%87%20Offer%2056%20-%20I.%20%E6%95%B0%E7%BB%84%E4%B8%AD%E6%95%B0%E5%AD%97%E5%87%BA%E7%8E%B0%E7%9A%84%E6%AC%A1%E6%95%B0/"><div class="item"><time>2022-05-21</time><span>��ʽ</span></div><span>��ָ Offer 56 - I. ���������ֳ��ֵĴ���</span></a></li><li><a class="widget-last" href="/2022/05/21/%E5%BF%83%E6%B3%95_%E5%BC%82%E6%88%96/"><div class="item"><time>2022-05-21</time><span>�ķ�</span></div><span>λ����_���</span></a></li><li><a class="widget-last" href="/2022/04/27/%E5%BF%83%E6%B3%95_%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3/"><div class="item"><time>2022-05-21</time><span>心法</span></div><span>滑动窗口</span></a></li><li><a class="widget-last" href="/2022/05/20/%E6%8B%9B%E5%BC%8F_%E5%89%91%E6%8C%87%20Offer%2049.%20%E4%B8%91%E6%95%B0/"><div class="item"><time>2022-05-21</time><span>招式</span></div><span>剑指 Offer 49. 丑数</span></a></li><li><a class="widget-last" href="/2022/05/20/%E6%8B%9B%E5%BC%8F_%E5%89%91%E6%8C%87%20Offer%2048.%20%E6%9C%80%E9%95%BF%E4%B8%8D%E5%90%AB%E9%87%8D%E5%A4%8D%E5%AD%97%E7%AC%A6%E7%9A%84%E5%AD%90%E5%AD%97%E7%AC%A6%E4%B8%B2/"><div class="item"><time>2022-05-20</time><span>招式</span></div><span>剑指 Offer 48. 最长不含重复字符的子字符串</span></a></li></ul> 
+    <ul class="list entry navigation"><li><a class="widget-last" href="/2022/05/21/%E5%BF%83%E6%B3%95_%E5%BC%82%E6%88%96/"><div class="item"><time>2022-05-21</time><span>心法</span></div><span>位运算_异或</span></a></li><li><a class="widget-last" href="/2022/05/21/%E6%8B%9B%E5%BC%8F_%E5%89%91%E6%8C%87%20Offer%2056%20-%20I.%20%E6%95%B0%E7%BB%84%E4%B8%AD%E6%95%B0%E5%AD%97%E5%87%BA%E7%8E%B0%E7%9A%84%E6%AC%A1%E6%95%B0/"><div class="item"><time>2022-05-21</time><span>招式</span></div><span>剑指 Offer 56 - I. 数组中数字出现的次数</span></a></li><li><a class="widget-last" href="/2022/04/27/%E5%BF%83%E6%B3%95_%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3/"><div class="item"><time>2022-05-21</time><span>心法</span></div><span>滑动窗口</span></a></li><li><a class="widget-last" href="/2022/05/20/%E6%8B%9B%E5%BC%8F_%E5%89%91%E6%8C%87%20Offer%2049.%20%E4%B8%91%E6%95%B0/"><div class="item"><time>2022-05-21</time><span>招式</span></div><span>剑指 Offer 49. 丑数</span></a></li><li><a class="widget-last" href="/2022/05/20/%E6%8B%9B%E5%BC%8F_%E5%89%91%E6%8C%87%20Offer%2048.%20%E6%9C%80%E9%95%BF%E4%B8%8D%E5%90%AB%E9%87%8D%E5%A4%8D%E5%AD%97%E7%AC%A6%E7%9A%84%E5%AD%90%E5%AD%97%E7%AC%A6%E4%B8%B2/"><div class="item"><time>2022-05-20</time><span>招式</span></div><span>剑指 Offer 48. 最长不含重复字符的子字符串</span></a></li></ul> 
   </div> 
 </section> 
 
