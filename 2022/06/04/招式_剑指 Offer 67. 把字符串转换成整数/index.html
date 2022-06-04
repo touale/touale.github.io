@@ -4,8 +4,8 @@
   <meta name="generator" content="Hexo 6.1.0">
   <meta charset="utf-8">
   <!-- SEO相关 -->
-  <meta name="robots" content="noindex,follow">
-  <link rel="canonical" href="https://touale.github.io/tags/数据结构/"/>
+  
+  <link rel="canonical" href="https://touale.github.io/2022/06/04/招式_剑指 offer 67. 把字符串转换成整数/"/>
   <!-- 渲染优化 -->
     <meta http-equiv='x-dns-prefetch-control' content='on' />
       <link rel='dns-prefetch' href='https://npm.elemecdn.com'>
@@ -31,21 +31,24 @@
   <!-- feed -->
   <!-- 页面元数据 -->
   <pjax>
-  <title>标签：数据结构 - Touale Cula's Blog</title>
-  <meta name="keywords" content="内功,心法,招式">
+  <title>剑指 Offer 67. 把字符串转换成整数 - Touale Cula's Blog</title>
+  <meta name="keywords" content="算法,力扣,内功,心法,招式">
   <meta desc name="description" content="欢迎来到 Touale Cula 的小世界哦 - Touale Cula - Touale Cula's Blog">
   
-<meta property="og:type" content="website">
-<meta property="og:title" content="Touale Cula&#39;s Blog">
-<meta property="og:url" content="https://touale.github.io/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/index.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="剑指 Offer 67. 把字符串转换成整数">
+<meta property="og:url" content="https://touale.github.io/2022/06/04/%E6%8B%9B%E5%BC%8F_%E5%89%91%E6%8C%87%20Offer%2067.%20%E6%8A%8A%E5%AD%97%E7%AC%A6%E4%B8%B2%E8%BD%AC%E6%8D%A2%E6%88%90%E6%95%B4%E6%95%B0/index.html">
 <meta property="og:site_name" content="Touale Cula&#39;s Blog">
-<meta property="og:description" content="欢迎来到 Touale Cula 的小世界哦">
+<meta property="og:description" content="题目内容写一个函数 StrToInt，实现把字符串转换成整数这个功能。不能使用 atoi 或者其他类似的库函数。   首先，该函数会根据需要丢弃无用的开头空格字符，直到寻找到第一个非空格的字符为止。 当我们寻找到的第一个非空字符为正或者负号时，则将该符号与之后面尽可能多的连续数字组合起来，作为该整数的正负号；假如第一个非空字符是数字，则直接将其与之后连续的数字字符组合起来，形成整数。 该字符串除了">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://touale.github.io/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/img/touale.jpg">
+<meta property="og:image" content="https://touale.github.io/2022/06/04/%E6%8B%9B%E5%BC%8F_%E5%89%91%E6%8C%87%20Offer%2067.%20%E6%8A%8A%E5%AD%97%E7%AC%A6%E4%B8%B2%E8%BD%AC%E6%8D%A2%E6%88%90%E6%95%B4%E6%95%B0/img/touale.jpg">
+<meta property="article:published_time" content="2022-06-03T16:00:00.000Z">
+<meta property="article:modified_time" content="2022-06-04T08:15:30.008Z">
 <meta property="article:author" content="Touale Cula">
-<meta property="article:tag" content="内功,心法,招式">
+<meta property="article:tag" content="算法">
+<meta property="article:tag" content="力扣">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://touale.github.io/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/img/touale.jpg">
+<meta name="twitter:image" content="https://touale.github.io/2022/06/04/%E6%8B%9B%E5%BC%8F_%E5%89%91%E6%8C%87%20Offer%2067.%20%E6%8A%8A%E5%AD%97%E7%AC%A6%E4%B8%B2%E8%BD%AC%E6%8D%A2%E6%88%90%E6%95%B4%E6%95%B0/img/touale.jpg">
   </pjax>
   <style>
     /* 首屏样式 */
@@ -2422,7 +2425,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     
       <!-- see: /layout/_partial/scripts/_ctrl/coverCtrl.ejs -->
-      <div id="none" class='cover-wrapper  dock' style="display: none;">
+      <div id="none" class='cover-wrapper post dock' style="display: none;">
         
   <div class='cover-bg lazyload placeholder' data-bg="https://api.yimian.xyz/img?type=moe&size=1920x1080"></div>
 
@@ -2496,37 +2499,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       <div id="safearea">
         <div class="body-wrapper">
           
-
 <div id="l_main" class=''>
-  
-    
-      
-  <section class="post-list">
-    
-      
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-      
-    
-    
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://touale.github.io/2022/05/30/%E5%BF%83%E6%B3%95_%E5%86%85%E9%83%A8%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95%E7%9A%84%E6%AF%94%E8%BE%83%E5%8F%8A%E5%BA%94%E7%94%A8/">
+  <article itemscope itemtype="http://schema.org/Article" class="article post white-box reveal md shadow floatable blur article-type-post" id="post" itemscope itemprop="blogPost">
+  <link itemprop="mainEntityOfPage" href="https://touale.github.io/2022/06/04/%E6%8B%9B%E5%BC%8F_%E5%89%91%E6%8C%87%20Offer%2067.%20%E6%8A%8A%E5%AD%97%E7%AC%A6%E4%B8%B2%E8%BD%AC%E6%8D%A2%E6%88%90%E6%95%B4%E6%95%B0/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="Touale Cula's Blog">
   </span>
@@ -2535,589 +2510,251 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <meta itemprop="description" content="欢迎来到 Touale Cula 的小世界哦">
   </span>
   
-  
+
+
   
     <span hidden>
       <meta itemprop="image" content="img/touale.jpg">
     </span>
   
+  <div class="article-meta" id="top">
+    
+    
+    
+      <h1 class="title" itemprop="name headline">
+        剑指 Offer 67. 把字符串转换成整数
+      </h1>
+      <div class='new-meta-box'>
+        
+          
+            
+<div class='new-meta-item author' itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <a itemprop="url" class='author' href="/" rel="nofollow">
+    <img itemprop="image" src="https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/apple-touch-icon.png" class="lazyload" data-srcset="https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/apple-touch-icon.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+    <p itemprop="name">Touale</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+  <div class='new-meta-item category'>
+    <i class="fa-solid fa-folder-open fa-fw" aria-hidden="true"></i>
+    <a class="category-link" href="/categories/%E6%8B%9B%E5%BC%8F/">招式</a>
+    
+      <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
+        <a href="/categories/%E6%8B%9B%E5%BC%8F/" itemprop="url"><span itemprop="name">招式</span></a>
+      </span>
+    
+  </div>
+
+
+          
+        
+          
+            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2022-06-04T00:00:00+08:00">
+  <a class='notlink'>
+    <i class="fa-solid fa-calendar-alt fa-fw" aria-hidden="true"></i>
+    <p>发布于：2022年6月4日</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+
+          
+        
+        <!-- Custom Files topMeta begin-->
+        
+        <!-- Custom Files topMeta end-->
+      </div>
+    
+  </div>
+
+
+  <div id="layoutHelper-page-plugins"></div>
+  <div id="post-body" itemprop="articleBody">
+    <h3 id="题目内容"><a href="#题目内容" class="headerlink" title="题目内容"></a>题目内容</h3><p>写一个函数 StrToInt，实现把字符串转换成整数这个功能。不能使用 atoi 或者其他类似的库函数。</p>
+<p> </p>
+<p>首先，该函数会根据需要丢弃无用的开头空格字符，直到寻找到第一个非空格的字符为止。</p>
+<p>当我们寻找到的第一个非空字符为正或者负号时，则将该符号与之后面尽可能多的连续数字组合起来，作为该整数的正负号；假如第一个非空字符是数字，则直接将其与之后连续的数字字符组合起来，形成整数。</p>
+<p>该字符串除了有效的整数部分之后也可能会存在多余的字符，这些字符可以被忽略，它们对于函数不应该造成影响。</p>
+<p>注意：假如该字符串中的第一个非空格字符不是一个有效整数字符、字符串为空或字符串仅包含空白字符时，则你的函数不需要进行转换。</p>
+<p>在任何情况下，若函数不能进行有效的转换时，请返回 0。</p>
+<p>说明：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">假设我们的环境只能存储 32 位大小的有符号整数，那么其数值范围为 [−231,  231 − 1]。</span><br><span class="line">如果数值超过这个范围，请返回  INT_MAX (231 − 1) 或 INT_MIN (−231) 。</span><br></pre></td></tr></table></figure>
+<p>示例 1:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">输入: &quot;42&quot;</span><br><span class="line">输出: 42</span><br></pre></td></tr></table></figure>
+<p>示例 2:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">输入: &quot;   -42&quot;</span><br><span class="line">输出: -42</span><br><span class="line">解释: 第一个非空白字符为 &#x27;-&#x27;, 它是一个负号。</span><br><span class="line">     我们尽可能将负号与后面所有连续出现的数字组合起来，最后得到 -42 。</span><br></pre></td></tr></table></figure>
+<p>示例 3:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">输入: &quot;4193 with words&quot;</span><br><span class="line">输出: 4193</span><br><span class="line">解释: 转换截止于数字 &#x27;3&#x27; ，因为它的下一个字符不为数字。</span><br></pre></td></tr></table></figure>
+<p>示例 4:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">输入: &quot;words and 987&quot;</span><br><span class="line">输出: 0</span><br><span class="line">解释: 第一个非空字符是 &#x27;w&#x27;, 但它不是数字或正、负号。</span><br><span class="line">     因此无法执行有效的转换。</span><br></pre></td></tr></table></figure>
+<p>示例 5:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">输入: &quot;-91283472332&quot;</span><br><span class="line">输出: -2147483648</span><br><span class="line">解释: 数字 &quot;-91283472332&quot; 超过 32 位有符号整数范围。 </span><br><span class="line">     因此返回 INT_MIN (−231) 。</span><br></pre></td></tr></table></figure>
+
+
+<hr>
+<h3 id="解法一：暴力法"><a href="#解法一：暴力法" class="headerlink" title="解法一：暴力法"></a>解法一：暴力法</h3><p>思路：遍历，这个越界我吐了</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line">class Solution &#123;</span><br><span class="line">public:</span><br><span class="line"></span><br><span class="line">    int strToInt(string str) &#123;</span><br><span class="line"></span><br><span class="line">        int res = 0;</span><br><span class="line">        int i = 0;</span><br><span class="line">        int flag = 1;</span><br><span class="line">        int find = 0; // 是否找到真正的数字了</span><br><span class="line">        int b = 214748364;</span><br><span class="line"></span><br><span class="line">        for(char s:str)&#123;</span><br><span class="line">            if(s == &#x27; &#x27; )&#123;</span><br><span class="line">                if(find == 0)continue;</span><br><span class="line">                else break;</span><br><span class="line">            &#125;</span><br><span class="line">            </span><br><span class="line">            find = 1;</span><br><span class="line"></span><br><span class="line">            if((int(s)&gt;=48 &amp;&amp; int(s)&lt;=57))</span><br><span class="line">            &#123;   </span><br><span class="line">                if(res&lt;b || (res==b &amp;&amp; (int(s) - 48)&lt;=7) ) res = res * 10 + (int(s) - 48);</span><br><span class="line">                else return flag == 1 ?INT_MAX : INT_MIN;</span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line">            else if((int(s) == 43 &amp;&amp; i == 0)) flag = 1;</span><br><span class="line">            else if( (int(s) == 45 &amp;&amp; i == 0))flag = 0;</span><br><span class="line">            else break;</span><br><span class="line">            </span><br><span class="line">            i=1;</span><br><span class="line">        &#125;</span><br><span class="line">        res = flag == 1 ? res : res* -1;</span><br><span class="line">        return (res);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+
+<p>结果</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">执行用时：</span><br><span class="line">0 ms</span><br><span class="line">, 在所有 C++ 提交中击败了</span><br><span class="line">100.00%</span><br><span class="line">的用户</span><br><span class="line">内存消耗：</span><br><span class="line">6.2 MB</span><br><span class="line">, 在所有 C++ 提交中击败了</span><br><span class="line">25.22%</span><br><span class="line">的用户</span><br><span class="line">通过测试用例：</span><br><span class="line">1079 / 1079</span><br></pre></td></tr></table></figure>
+
+  </div>
+  
   
     
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2022/05/30/%E5%BF%83%E6%B3%95_%E5%86%85%E9%83%A8%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95%E7%9A%84%E6%AF%94%E8%BE%83%E5%8F%8A%E5%BA%94%E7%94%A8/"  itemprop="url">
-        内部排序算法的比较及应用.
-      </a>
-    </h2>
+    <div class='footer'>
+      
+      
+      
+        <div class='copyright'>
+          <blockquote>
+            
+              
+                <p>感谢您的观看哦！</p>
+
+              
+            
+              
+                <p>本文永久链接是：<a href=https://touale.github.io/2022/06/04/%E6%8B%9B%E5%BC%8F_%E5%89%91%E6%8C%87%20Offer%2067.%20%E6%8A%8A%E5%AD%97%E7%AC%A6%E4%B8%B2%E8%BD%AC%E6%8D%A2%E6%88%90%E6%95%B4%E6%95%B0/>https://touale.github.io/2022/06/04/%E6%8B%9B%E5%BC%8F_%E5%89%91%E6%8C%87%20Offer%2067.%20%E6%8A%8A%E5%AD%97%E7%AC%A6%E4%B8%B2%E8%BD%AC%E6%8D%A2%E6%88%90%E6%95%B4%E6%95%B0/</a></p>
+              
+            
+          </blockquote>
+        </div>
+      
+      
+    </div>
   
-  <div class='md article-desc' itemprop="articleBody">
+  
+    
+
+
+  <div class='article-meta' id="bottom">
+    <div class='new-meta-box'>
+      
+        
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2022-06-04T16:15:30+08:00">
+  <a class='notlink'>
+    <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
+    <p>更新于：2022年6月4日</p>
+  </a>
+</div>
+
+        
+      
+        
+          
+  
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/%E7%AE%97%E6%B3%95/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>算法</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/%E5%8A%9B%E6%89%A3/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>力扣</p></a></div>
+  <span hidden itemprop="keywords">算法 力扣</span>
+
+
+        
+      
+        
+          
+  <div class="new-meta-item share -mob-share-list">
+  <div class="-mob-share-list share-body">
     
       
-        前言算法对比：
+        <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://touale.github.io/2022/06/04/%E6%8B%9B%E5%BC%8F_%E5%89%91%E6%8C%87%20Offer%2067.%20%E6%8A%8A%E5%AD%97%E7%AC%A6%E4%B8%B2%E8%BD%AC%E6%8D%A2%E6%88%90%E6%95%B4%E6%95%B0/&title=剑指 Offer 67. 把字符串转换成整数 - Touale Cula's Blog&summary="
+          
+          >
+          
+            <img src="https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/logo/128/qq.png" class="lazyload" data-srcset="https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/logo/128/qq.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://touale.github.io/2022/06/04/%E6%8B%9B%E5%BC%8F_%E5%89%91%E6%8C%87%20Offer%2067.%20%E6%8A%8A%E5%AD%97%E7%AC%A6%E4%B8%B2%E8%BD%AC%E6%8D%A2%E6%88%90%E6%95%B4%E6%95%B0/&title=剑指 Offer 67. 把字符串转换成整数 - Touale Cula's Blog&summary="
+          
+          >
+          
+            <img src="https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/logo/128/qzone.png" class="lazyload" data-srcset="https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/logo/128/qzone.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://service.weibo.com/share/share.php?url=https://touale.github.io/2022/06/04/%E6%8B%9B%E5%BC%8F_%E5%89%91%E6%8C%87%20Offer%2067.%20%E6%8A%8A%E5%AD%97%E7%AC%A6%E4%B8%B2%E8%BD%AC%E6%8D%A2%E6%88%90%E6%95%B4%E6%95%B0/&title=剑指 Offer 67. 把字符串转换成整数 - Touale Cula's Blog&summary="
+          
+          >
+          
+            <img src="https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/logo/128/weibo.png" class="lazyload" data-srcset="https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/logo/128/weibo.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+
+
+        
+      
+    </div>
+    <!-- Custom Files bottomMeta begin -->
+    
+    <!-- Custom Files bottomMeta end -->
+  </div>
+
+
+  
+  
+
+  
+    <div class="prev-next">
+      
+        <a class='prev' href='/2022/06/04/%E6%8B%9B%E5%BC%8F_%E5%89%91%E6%8C%87%20Offer%2066.%20%E6%9E%84%E5%BB%BA%E4%B9%98%E7%A7%AF%E6%95%B0%E7%BB%84/'>
+          <p class='title'><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>剑指 Offer 66. 构建乘积数组</p>
+          <p class='content'>题目内容给定一个数组 A[0,1,…,n-1]，请构建一个数组 B[0,1,…,n-1]，其中?B[i] 的值是数组 A 中除了下标 i 以外的元素的积, 即?B[i]&#x3D;A[0]×A[...</p>
+        </a>
+      
+      
+        <a class='next' href='/2022/05/30/%E5%BF%83%E6%B3%95_%E5%86%85%E9%83%A8%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95%E7%9A%84%E6%AF%94%E8%BE%83%E5%8F%8A%E5%BA%94%E7%94%A8/'>
+          <p class='title'>内部排序算法的比较及应用.<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>前言算法对比：
 时空复杂度、算法的稳定性、算法的过程特征
 
 时间复杂度简单选择排序、直接插入排序和冒泡排序平均情况是 O(n^2^)
 直接插入排序和冒泡排序最好情况是 O(n)
-简单选择排序与初始状态无关（需要遍历求出最小或者最大的数字）
-希尔排序对大规模的的排序可以达到很高的效率
-堆排序可以在线性时间内完成建堆
-快速排序基于分治思想，平均性能可以达到 O(nlog2n),在实际应用中常常由...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2022-05-30T00:00:00+08:00">2022-05-30</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E5%86%85%E5%8A%9F/">内功</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/%E5%86%85%E5%8A%9F/" itemprop="url"><span itemprop="name">内功</span></a>
-            </span>
-          
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2022/05/30/%E5%BF%83%E6%B3%95_%E5%86%85%E9%83%A8%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95%E7%9A%84%E6%AF%94%E8%BE%83%E5%8F%8A%E5%BA%94%E7%94%A8/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
+简单选择排序与初...</p>
+        </a>
       
     </div>
   
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://touale.github.io/2022/05/30/%E5%BF%83%E6%B3%95_%E5%A4%96%E9%83%A8%E6%8E%92%E5%BA%8F/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="Touale Cula's Blog">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="Touale Cula's Blog">
-    <meta itemprop="description" content="欢迎来到 Touale Cula 的小世界哦">
-  </span>
+  <!-- Custom Files postEnd begin-->
   
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="img/touale.jpg">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2022/05/30/%E5%BF%83%E6%B3%95_%E5%A4%96%E9%83%A8%E6%8E%92%E5%BA%8F/"  itemprop="url">
-        外部排序(多路平衡归并与败者树、置换-选择排序、最佳归并树)
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        前言外部排序用于待排序文件较大、内存无法一次性读取
-
-外部排序原理当数据元素较大时，通过在本地建立输入缓冲区和输出缓冲区，每次读取一小块数据进行排序后放回！
+  <!-- Custom Files postEnd end-->
+</article>
 
 
-模拟
-初始化数据分布如下
-
-
-
-
-读入两块数据
-
-
-进行排序
-
-映射输出缓冲区，并写出两块数据
-
-
-
-
-重复上述操作，构造归并段
-
-
-
-
-
-进行第一趟归并
-
-
-将两块归并段分别放入输入缓冲区
-
-将输入缓冲区前三个放入到输出缓冲区中并...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2022-05-30T00:00:00+08:00">2022-05-30</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E5%86%85%E5%8A%9F/">内功</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/%E5%86%85%E5%8A%9F/" itemprop="url"><span itemprop="name">内功</span></a>
-            </span>
-          
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2022/05/30/%E5%BF%83%E6%B3%95_%E5%A4%96%E9%83%A8%E6%8E%92%E5%BA%8F/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
   
 
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://touale.github.io/2022/05/16/%E5%86%85%E5%8A%9F_%E5%BD%92%E5%B9%B6%E6%8E%92%E5%BA%8F%E5%92%8C%E5%9F%BA%E6%95%B0%E6%8E%92%E5%BA%8F/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="Touale Cula's Blog">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="Touale Cula's Blog">
-    <meta itemprop="description" content="欢迎来到 Touale Cula 的小世界哦">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="img/touale.jpg">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2022/05/16/%E5%86%85%E5%8A%9F_%E5%BD%92%E5%B9%B6%E6%8E%92%E5%BA%8F%E5%92%8C%E5%9F%BA%E6%95%B0%E6%8E%92%E5%BA%8F/"  itemprop="url">
-        归并排序和基数排序
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        一、归并排序算法思想: 
-将两个或两个以上的有序表组合成一个新的有序表。采用分治思想！
-二路排序：
-
-
-思路排序：
-
-模拟实现：
-
-
-算法实现：
-123456789101112131415161718192021222324int *B = (int *)malloc((n+1)*sizeof(int));void merge(int A[],int low,int mid,int high...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2022-05-16T00:00:00+08:00">2022-05-16</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E5%86%85%E5%8A%9F/">内功</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/%E5%86%85%E5%8A%9F/" itemprop="url"><span itemprop="name">内功</span></a>
-            </span>
-          
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2022/05/16/%E5%86%85%E5%8A%9F_%E5%BD%92%E5%B9%B6%E6%8E%92%E5%BA%8F%E5%92%8C%E5%9F%BA%E6%95%B0%E6%8E%92%E5%BA%8F/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://touale.github.io/2022/05/10/%E5%86%85%E5%8A%9F_%E9%80%89%E6%8B%A9%E6%8E%92%E5%BA%8F/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="Touale Cula's Blog">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="Touale Cula's Blog">
-    <meta itemprop="description" content="欢迎来到 Touale Cula 的小世界哦">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="img/touale.jpg">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2022/05/10/%E5%86%85%E5%8A%9F_%E9%80%89%E6%8B%A9%E6%8E%92%E5%BA%8F/"  itemprop="url">
-        选择排序(简单选择排序和堆排序)
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        前言交换排序主要分为：简单选择排序和堆排序
-思想：每一趟在待排序元素中选取关键字最小的元素。
-应用：点名，哈希碰撞排序（统计词频）
-
-一、简单选择排序算法思想: 
-太简单了，还是看代码更快吧！
-
-算法实现
-123456789void sort(int A[],int n)&#123;    for(int i = 0;i &lt; n-1 ;i++)&#123;        min = i...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2022-05-10T00:00:00+08:00">2022-05-10</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E5%86%85%E5%8A%9F/">内功</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/%E5%86%85%E5%8A%9F/" itemprop="url"><span itemprop="name">内功</span></a>
-            </span>
-          
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2022/05/10/%E5%86%85%E5%8A%9F_%E9%80%89%E6%8B%A9%E6%8E%92%E5%BA%8F/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://touale.github.io/2022/05/09/%E5%86%85%E5%8A%9F_%E4%BA%A4%E6%8D%A2%E6%8E%92%E5%BA%8F/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="Touale Cula's Blog">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="Touale Cula's Blog">
-    <meta itemprop="description" content="欢迎来到 Touale Cula 的小世界哦">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="img/touale.jpg">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2022/05/09/%E5%86%85%E5%8A%9F_%E4%BA%A4%E6%8D%A2%E6%8E%92%E5%BA%8F/"  itemprop="url">
-        交换排序(冒泡排序和快速排序)
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        前言交换排序主要分为：冒泡排序和快速排序
-思想：将序列中的两个元素关键字进行比较，后交换两个记录在序列中的位置
-应用：队伍排队
-
-一、冒泡排序算法思想: 
-
-初始化下标为最后第一个，从后往前（或从前往后）两两比较相邻的元素，若（A[i-1]&gt;A[i]）,则进行交换
-下标往前移动
-
-
-模拟实现：
-
-
-
--
--
--
--
--
--
--
-
-
-
-49
-13
-13
-13
-13
-13
-13
-
-
-38
-...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2022-05-09T19:54:44+08:00">2022-05-09</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E5%86%85%E5%8A%9F/">内功</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/%E5%86%85%E5%8A%9F/" itemprop="url"><span itemprop="name">内功</span></a>
-            </span>
-          
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2022/05/09/%E5%86%85%E5%8A%9F_%E4%BA%A4%E6%8D%A2%E6%8E%92%E5%BA%8F/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://touale.github.io/2022/05/07/%E5%86%85%E5%8A%9F_%E6%8F%92%E5%85%A5%E6%8E%92%E5%BA%8F/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="Touale Cula's Blog">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="Touale Cula's Blog">
-    <meta itemprop="description" content="欢迎来到 Touale Cula 的小世界哦">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="img/touale.jpg">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2022/05/07/%E5%86%85%E5%8A%9F_%E6%8F%92%E5%85%A5%E6%8E%92%E5%BA%8F/"  itemprop="url">
-        插入排序(直接插入排序、折半插入排序、希尔排序)
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        前言插入排序主要分为：直接插入排序、折半插入排序、希尔排序
-思想：每步将一个待排序对象与前面已排序序列进行比较并插入到适当的位置上。
-应用：打扑克牌、打麻将时你所用到的排序方法
-
-一、直接插入排序算法思想:
-当存在一个待排序表，$L[1…n]$，某状态下：
-
-
-
-有序序列$L[1…i-1]$
-$L[i]$
-无序序列$L[i+1…n]$
-
-
-
-
-查找$L[i]$在$L[1…i-1]$中的插入位...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2022-05-07T15:57:23+08:00">2022-05-07</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E5%86%85%E5%8A%9F/">内功</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/%E5%86%85%E5%8A%9F/" itemprop="url"><span itemprop="name">内功</span></a>
-            </span>
-          
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2022/05/07/%E5%86%85%E5%8A%9F_%E6%8F%92%E5%85%A5%E6%8E%92%E5%BA%8F/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://touale.github.io/2022/05/07/%E5%86%85%E5%8A%9F_%E6%8E%92%E5%BA%8F/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="Touale Cula's Blog">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="Touale Cula's Blog">
-    <meta itemprop="description" content="欢迎来到 Touale Cula 的小世界哦">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="img/touale.jpg">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2022/05/07/%E5%86%85%E5%8A%9F_%E6%8E%92%E5%BA%8F/"  itemprop="url">
-        排序
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        框架排序分为内部排序和外部排序
-
-内部排序
-插入排序  1.直接插入排序  2.折半插入排序  3.希尔排序
-交换排序  1.冒泡排序  2.快速排序
-选择排序  1.简单选择排序  2.堆排序
-归并排序
-基数排序
-
-
-外部排序
-多路归并排序
-
-
-
-
-简解该章节起，会对数据结构的排序进行一系列的总结和磨合，细节如下
-
-
-
-序号
-栏目
-
-
-
-1
-插入排序
-
-
-2
-交换排序
-
-
-3
-选择排序
-
-...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2022-05-07T15:52:33+08:00">2022-05-07</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E5%86%85%E5%8A%9F/">内功</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/%E5%86%85%E5%8A%9F/" itemprop="url"><span itemprop="name">内功</span></a>
-            </span>
-          
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2022/05/07/%E5%86%85%E5%8A%9F_%E6%8E%92%E5%BA%8F/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-    
-  </section>
-  
-    
   
 
 
-    
-  
+
+
+
 </div>
 <aside id='l_side' itemscope itemtype="http://schema.org/WPSideBar">
   
@@ -3193,63 +2830,22 @@ $L[i]$
   
     
     
-  
 
-  <section class="widget category shadow floatable blur desktop pjax">
+
+
+  <section class="widget toc-wrapper shadow floatable blur desktop mobile pjax" id="toc-div" >
     
   <header>
     
-      <a href='/blog/categories/'><i class="fa-solid fa-folder-open fa-fw" aria-hidden="true"></i><span class='name'>文章分类</span></a>
+      <i class="fa-solid fa-list fa-fw" aria-hidden="true"></i><span class='name'>本文目录</span>
     
   </header>
 
 
     <div class='content'>
-      <ul class="entry navigation">
-        
-          <li><a class="flat-box"
-            title="/categories/%E5%86%85%E5%8A%9F/" href="/categories/%E5%86%85%E5%8A%9F/"
-            active-action="action-categoriesE58685E58A9F"
-            ><div class='name'>内功</div><div class='badge'>(7)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/categories/%E5%BF%83%E6%B3%95/" href="/categories/%E5%BF%83%E6%B3%95/"
-            active-action="action-categoriesE5BF83E6B395"
-            ><div class='name'>心法</div><div class='badge'>(5)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/categories/%E6%8B%9B%E5%BC%8F/" href="/categories/%E6%8B%9B%E5%BC%8F/"
-            active-action="action-categoriesE68B9BE5BC8F"
-            ><div class='name'>招式</div><div class='badge'>(36)</div></a></li>
-        
-      </ul>
+        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%A2%98%E7%9B%AE%E5%86%85%E5%AE%B9"><span class="toc-text">题目内容</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%A7%A3%E6%B3%95%E4%B8%80%EF%BC%9A%E6%9A%B4%E5%8A%9B%E6%B3%95"><span class="toc-text">解法一：暴力法</span></a></li></ol>
     </div>
   </section>
-
-
-  
-
-  
-    
-    
-  
-
-  <section class="widget tagcloud shadow floatable blur desktop mobile pjax">
-    
-  <header>
-    
-      <a href='/blog/tags/'><i class="fa-solid fa-tags fa-fw" aria-hidden="true"></i><span class='name'>热门标签</span></a>
-    
-  </header>
-
-
-    <div class='content'>
-      <a href="/tags/js%E5%8A%A0%E5%AF%86/" style="font-size: 14px; color: #999">js加密</a> <a href="/tags/%E5%85%AB%E8%82%A1%E6%96%87/" style="font-size: 14px; color: #999">八股文</a> <a href="/tags/%E5%86%85%E5%8A%9F/" style="font-size: 16.5px; color: #888">内功</a> <a href="/tags/%E5%8A%9B%E6%89%A3/" style="font-size: 21.5px; color: #666">力扣</a> <a href="/tags/%E5%AF%B9%E6%8A%97/" style="font-size: 14px; color: #999">对抗</a> <a href="/tags/%E6%94%BB%E9%98%B2/" style="font-size: 14px; color: #999">攻防</a> <a href="/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" style="font-size: 19px; color: #777">数据结构</a> <a href="/tags/%E6%B7%B7%E6%B7%86/" style="font-size: 14px; color: #999">混淆</a> <a href="/tags/%E7%AE%97%E6%B3%95/" style="font-size: 24px; color: #555">算法</a>
-    </div>
-  </section>
-
-
-  
 
   
 
@@ -3293,11 +2889,16 @@ $L[i]$
     <!-- pjax占位 -->
   </div>
 
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
+
 
   <!-- Custom Files side begin -->
   
   <!-- Custom Files side end -->
 </aside>
+
 
 
           <!--此文件用来存放一些不方便取值的变量-->
@@ -3306,7 +2907,7 @@ $L[i]$
 <pjax>
 <script>
   window.pdata={}
-  pdata.ispage=false;
+  pdata.ispage=true;
   pdata.commentPath="";
   pdata.commentPlaceholder="";
   pdata.commentConfig={};
@@ -4258,7 +3859,7 @@ $L[i]$
 
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"Touale Cula's Blog","url":"https://touale.github.io/","logo":{"@type":"ImageObject","url":"img/touale.jpg","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"Touale Cula","image":{"@type":"ImageObject","url":"img/touale.jpg"},"url":"https://touale.github.io/","sameAs":["https://github.com/volantis-x"],"description":"欢迎来到 Touale Cula 的小世界哦"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://touale.github.io/","name":"Touale Cula's Blog"}},{"@type":"ListItem","position":2,"item":{"@id":"https://touale.github.io/tags/数据结构/","name":"数据结构"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"Touale Cula's Blog","url":"https://touale.github.io/","keywords":"内功,心法,招式","description":"欢迎来到 Touale Cula 的小世界哦","author":{"@type":"Person","name":"Touale Cula","image":{"@type":"ImageObject","url":"img/touale.jpg"},"url":"https://touale.github.io/","description":"欢迎来到 Touale Cula 的小世界哦"},"publisher":{"@type":"Organization","name":"Touale Cula's Blog","url":"https://touale.github.io/","logo":{"@type":"ImageObject","url":"img/touale.jpg","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://touale.github.io?s={search_term_string}"},"query-input":"required name=search_term_string"}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"Touale Cula's Blog","url":"https://touale.github.io/","logo":{"@type":"ImageObject","url":"img/touale.jpg","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"Touale Cula","image":{"@type":"ImageObject","url":"img/touale.jpg"},"url":"https://touale.github.io/","sameAs":["https://github.com/volantis-x"],"description":"欢迎来到 Touale Cula 的小世界哦"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://touale.github.io/","name":"Touale Cula's Blog"}},{"@type":"ListItem","position":2,"item":{"@id":"https://touale.github.io/categories/招式/","name":"招式"}},{"@type":"ListItem","position":3,"item":{"@id":"https://touale.github.io/2022/06/04/招式_剑指 Offer 67. 把字符串转换成整数/","name":"剑指 Offer 67. 把字符串转换成整数"}}]},{"@context":"http://schema.org","@type":"BlogPosting","headline":"剑指 Offer 67. 把字符串转换成整数","description":"","datePublished":"2022-06-03T16:00:00.000Z","dateModified":"2022-06-04T08:15:30.008Z","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https://touale.github.io/2022/06/04/%E6%8B%9B%E5%BC%8F_%E5%89%91%E6%8C%87%20Offer%2067.%20%E6%8A%8A%E5%AD%97%E7%AC%A6%E4%B8%B2%E8%BD%AC%E6%8D%A2%E6%88%90%E6%95%B4%E6%95%B0/"},"author":{"@type":"Person","name":"Touale Cula","image":{"@type":"ImageObject","url":"img/touale.jpg"},"url":"https://touale.github.io/"},"publisher":{"@type":"Organization","name":"Touale Cula's Blog","logo":{"@type":"ImageObject","url":"img/touale.jpg","width":192,"height":192}},"url":"https://touale.github.io/2022/06/04/%E6%8B%9B%E5%BC%8F_%E5%89%91%E6%8C%87%20Offer%2067.%20%E6%8A%8A%E5%AD%97%E7%AC%A6%E4%B8%B2%E8%BD%AC%E6%8D%A2%E6%88%90%E6%95%B4%E6%95%B0/","wordCount":0,"articleSection":"招式","keywords":"算法,力扣","image":{"@type":"ImageObject","url":"img/touale.jpg","width":192,"height":192}}]</script>
 
 
 
