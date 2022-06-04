@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <!-- SEO相关 -->
   
-  <link rel="canonical" href="https://touale.github.io/2022/05/18/招式_剑指 offer 32 - i. 从上到下打印二叉树/"/>
+  <link rel="canonical" href="https://touale.github.io/2022/06/04/招式_剑指 offer 63. 股票的最大利润/"/>
   <!-- 渲染优化 -->
     <meta http-equiv='x-dns-prefetch-control' content='on' />
       <link rel='dns-prefetch' href='https://npm.elemecdn.com'>
@@ -31,24 +31,24 @@
   <!-- feed -->
   <!-- 页面元数据 -->
   <pjax>
-  <title>剑指 Offer 32 - I. 从上到下打印二叉树 - Touale Cula's Blog</title>
+  <title>剑指 Offer 63. 股票的最大利润 - Touale Cula's Blog</title>
   <meta name="keywords" content="算法,力扣,内功,心法,招式">
   <meta desc name="description" content="欢迎来到 Touale Cula 的小世界哦 - Touale Cula - Touale Cula's Blog">
   
 <meta property="og:type" content="article">
-<meta property="og:title" content="剑指 Offer 32 - I. 从上到下打印二叉树">
-<meta property="og:url" content="https://touale.github.io/2022/05/18/%E6%8B%9B%E5%BC%8F_%E5%89%91%E6%8C%87%20Offer%2032%20-%20I.%20%E4%BB%8E%E4%B8%8A%E5%88%B0%E4%B8%8B%E6%89%93%E5%8D%B0%E4%BA%8C%E5%8F%89%E6%A0%91/index.html">
+<meta property="og:title" content="剑指 Offer 63. 股票的最大利润">
+<meta property="og:url" content="https://touale.github.io/2022/06/04/%E6%8B%9B%E5%BC%8F_%E5%89%91%E6%8C%87%20Offer%2063.%20%E8%82%A1%E7%A5%A8%E7%9A%84%E6%9C%80%E5%A4%A7%E5%88%A9%E6%B6%A6/index.html">
 <meta property="og:site_name" content="Touale Cula&#39;s Blog">
-<meta property="og:description" content="题目内容从上到下打印出二叉树的每个节点，同一层的节点按照从左到右的顺序打印。   例如: 1234567891011给定二叉树: [3,9,20,null,null,15,7],    3   &#x2F; \  9  20    &#x2F;  \   15   7返回：[3,9,20,15,7]  提示： 1节点总数 &lt;&#x3D; 1000    解法一:层次遍历12345678910111213141516171">
+<meta property="og:description" content="题目内容假设把某股票的价格按照时间先后顺序存储在数组中，请问买卖该股票一次可能获得的最大利润是多少？   示例 1: 1234输入: [7,1,5,3,6,4]输出: 5解释: 在第 2 天（股票价格 &#x3D; 1）的时候买入，在第 5 天（股票价格 &#x3D; 6）的时候卖出，最大利润 &#x3D; 6-1 &#x3D; 5 。     注意利润不能是 7-1 &#x3D; 6, 因为卖出价格需要大于买入价格。 示例 2: 123输入:">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://touale.github.io/2022/05/18/%E6%8B%9B%E5%BC%8F_%E5%89%91%E6%8C%87%20Offer%2032%20-%20I.%20%E4%BB%8E%E4%B8%8A%E5%88%B0%E4%B8%8B%E6%89%93%E5%8D%B0%E4%BA%8C%E5%8F%89%E6%A0%91/img/touale.jpg">
-<meta property="article:published_time" content="2022-05-17T16:00:00.000Z">
-<meta property="article:modified_time" content="2022-05-18T13:51:52.861Z">
+<meta property="og:image" content="https://touale.github.io/2022/06/04/%E6%8B%9B%E5%BC%8F_%E5%89%91%E6%8C%87%20Offer%2063.%20%E8%82%A1%E7%A5%A8%E7%9A%84%E6%9C%80%E5%A4%A7%E5%88%A9%E6%B6%A6/img/touale.jpg">
+<meta property="article:published_time" content="2022-06-03T16:00:00.000Z">
+<meta property="article:modified_time" content="2022-06-04T03:45:46.634Z">
 <meta property="article:author" content="Touale Cula">
 <meta property="article:tag" content="算法">
 <meta property="article:tag" content="力扣">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://touale.github.io/2022/05/18/%E6%8B%9B%E5%BC%8F_%E5%89%91%E6%8C%87%20Offer%2032%20-%20I.%20%E4%BB%8E%E4%B8%8A%E5%88%B0%E4%B8%8B%E6%89%93%E5%8D%B0%E4%BA%8C%E5%8F%89%E6%A0%91/img/touale.jpg">
+<meta name="twitter:image" content="https://touale.github.io/2022/06/04/%E6%8B%9B%E5%BC%8F_%E5%89%91%E6%8C%87%20Offer%2063.%20%E8%82%A1%E7%A5%A8%E7%9A%84%E6%9C%80%E5%A4%A7%E5%88%A9%E6%B6%A6/img/touale.jpg">
   </pjax>
   <style>
     /* 首屏样式 */
@@ -2501,7 +2501,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           
 <div id="l_main" class=''>
   <article itemscope itemtype="http://schema.org/Article" class="article post white-box reveal md shadow floatable blur article-type-post" id="post" itemscope itemprop="blogPost">
-  <link itemprop="mainEntityOfPage" href="https://touale.github.io/2022/05/18/%E6%8B%9B%E5%BC%8F_%E5%89%91%E6%8C%87%20Offer%2032%20-%20I.%20%E4%BB%8E%E4%B8%8A%E5%88%B0%E4%B8%8B%E6%89%93%E5%8D%B0%E4%BA%8C%E5%8F%89%E6%A0%91/">
+  <link itemprop="mainEntityOfPage" href="https://touale.github.io/2022/06/04/%E6%8B%9B%E5%BC%8F_%E5%89%91%E6%8C%87%20Offer%2063.%20%E8%82%A1%E7%A5%A8%E7%9A%84%E6%9C%80%E5%A4%A7%E5%88%A9%E6%B6%A6/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="Touale Cula's Blog">
   </span>
@@ -2522,7 +2522,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
     
       <h1 class="title" itemprop="name headline">
-        剑指 Offer 32 - I. 从上到下打印二叉树
+        剑指 Offer 63. 股票的最大利润
       </h1>
       <div class='new-meta-box'>
         
@@ -2553,10 +2553,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           
         
           
-            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2022-05-18T00:00:00+08:00">
+            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2022-06-04T00:00:00+08:00">
   <a class='notlink'>
     <i class="fa-solid fa-calendar-alt fa-fw" aria-hidden="true"></i>
-    <p>发布于：2022年5月18日</p>
+    <p>发布于：2022年6月4日</p>
   </a>
 </div>
 
@@ -2577,19 +2577,34 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   <div id="layoutHelper-page-plugins"></div>
   <div id="post-body" itemprop="articleBody">
-    <h3 id="题目内容"><a href="#题目内容" class="headerlink" title="题目内容"></a>题目内容</h3><p>从上到下打印出二叉树的每个节点，同一层的节点按照从左到右的顺序打印。</p>
+    <h3 id="题目内容"><a href="#题目内容" class="headerlink" title="题目内容"></a>题目内容</h3><p>假设把某股票的价格按照时间先后顺序存储在数组中，请问买卖该股票一次可能获得的最大利润是多少？</p>
 <p> </p>
-<p>例如:</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">给定二叉树: [3,9,20,null,null,15,7],</span><br><span class="line"></span><br><span class="line">    3</span><br><span class="line">   / \</span><br><span class="line">  9  20</span><br><span class="line">    /  \</span><br><span class="line">   15   7</span><br><span class="line">返回：</span><br><span class="line"></span><br><span class="line">[3,9,20,15,7]</span><br><span class="line"> </span><br></pre></td></tr></table></figure>
-<p>提示：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">节点总数 &lt;= 1000</span><br></pre></td></tr></table></figure>
-
+<p>示例 1:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">输入: [7,1,5,3,6,4]</span><br><span class="line">输出: 5</span><br><span class="line">解释: 在第 2 天（股票价格 = 1）的时候买入，在第 5 天（股票价格 = 6）的时候卖出，最大利润 = 6-1 = 5 。</span><br><span class="line">     注意利润不能是 7-1 = 6, 因为卖出价格需要大于买入价格。</span><br></pre></td></tr></table></figure>
+<p>示例 2:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">输入: [7,6,4,3,1]</span><br><span class="line">输出: 0</span><br><span class="line">解释: 在这种情况下, 没有交易完成, 所以最大利润为 0。</span><br></pre></td></tr></table></figure>
 
 <hr>
-<h3 id="解法一-层次遍历"><a href="#解法一-层次遍历" class="headerlink" title="解法一:层次遍历"></a>解法一:层次遍历</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line">/**</span><br><span class="line"> * Definition for a binary tree node.</span><br><span class="line"> * struct TreeNode &#123;</span><br><span class="line"> *     int val;</span><br><span class="line"> *     TreeNode *left;</span><br><span class="line"> *     TreeNode *right;</span><br><span class="line"> *     TreeNode(int x) : val(x), left(NULL), right(NULL) &#123;&#125;</span><br><span class="line"> * &#125;;</span><br><span class="line"> */</span><br><span class="line">class Solution &#123;</span><br><span class="line">public:</span><br><span class="line">    vector&lt;int&gt; levelOrder(TreeNode* root) &#123;</span><br><span class="line">        vector&lt;int&gt; res;</span><br><span class="line">        queue&lt;TreeNode*&gt; que;</span><br><span class="line">        if(!root)&#123;return &#123;&#125;;&#125;</span><br><span class="line">        que.push(root);</span><br><span class="line">        </span><br><span class="line">        while(!que.empty())&#123;</span><br><span class="line">            TreeNode* node = que.front();</span><br><span class="line">            que.pop();</span><br><span class="line">            res.push_back(node-&gt;val);</span><br><span class="line">            if(node-&gt;left)que.push(node-&gt;left);</span><br><span class="line">            if(node-&gt;right)que.push(node-&gt;right);</span><br><span class="line">        &#125;</span><br><span class="line">        return res;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+<h3 id="解法一：依次遍历"><a href="#解法一：依次遍历" class="headerlink" title="解法一：依次遍历"></a>解法一：依次遍历</h3><p>思路：寻找最低价格和最高价格</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">class Solution &#123;</span><br><span class="line">public:</span><br><span class="line">    int maxProfit(vector&lt;int&gt;&amp; prices) &#123;</span><br><span class="line">        if(prices.size()&lt;=1)return 0;</span><br><span class="line"></span><br><span class="line">        int in = prices[0];</span><br><span class="line">        int res = 0;</span><br><span class="line">        for(int price:prices)&#123;</span><br><span class="line">            in = min(in,price);</span><br><span class="line">            res = max(price-in,res);</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        return res &gt; 0 ? res : 0;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
 
 <p>结果：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">执行用时：</span><br><span class="line">4 ms</span><br><span class="line">, 在所有 C++ 提交中击败了</span><br><span class="line">67.39%</span><br><span class="line">的用户</span><br><span class="line">内存消耗：</span><br><span class="line">11.8 MB</span><br><span class="line">, 在所有 C++ 提交中击败了</span><br><span class="line">47.37%</span><br><span class="line">的用户</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">执行用时：</span><br><span class="line">0 ms</span><br><span class="line">, 在所有 C++ 提交中击败了</span><br><span class="line">100.00%</span><br><span class="line">的用户</span><br><span class="line">内存消耗：</span><br><span class="line">12.6 MB</span><br><span class="line">, 在所有 C++ 提交中击败了</span><br><span class="line">13.89%</span><br><span class="line">的用户</span><br><span class="line">通过测试用例：</span><br><span class="line">200 / 200</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h3 id="解法二：动态规划"><a href="#解法二：动态规划" class="headerlink" title="解法二：动态规划"></a>解法二：动态规划</h3><p>思路:dp[i] &#x3D; max(dp[i-1],prices[i] - min(prices[0]…prices[i]))</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">class Solution &#123;</span><br><span class="line">public:</span><br><span class="line">    int maxProfit(vector&lt;int&gt;&amp; prices) &#123;</span><br><span class="line">        if(prices.size()&lt;=1)return 0;</span><br><span class="line"></span><br><span class="line">        vector&lt;int&gt; dp(prices.size());</span><br><span class="line">        // dp[i] = max(dp[i-1],prices[i] - min(prices[0]...prices[i]))</span><br><span class="line"></span><br><span class="line">        int in = prices[0];</span><br><span class="line">        dp[0] = 0;</span><br><span class="line">        for(int i=01;i&lt;dp.size();i++)&#123;</span><br><span class="line">            in = min(in,prices[i]);</span><br><span class="line">            dp[i] = max(dp[i-1],prices[i] - in);</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        return dp[dp.size()-1];</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>结果</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">执行用时：</span><br><span class="line">4 ms</span><br><span class="line">, 在所有 C++ 提交中击败了</span><br><span class="line">88.62%</span><br><span class="line">的用户</span><br><span class="line">内存消耗：</span><br><span class="line">12.7 MB</span><br><span class="line">, 在所有 C++ 提交中击败了</span><br><span class="line">9.50%</span><br><span class="line">的用户</span><br><span class="line">通过测试用例：</span><br><span class="line">200 / 200</span><br></pre></td></tr></table></figure>
+
+<p>优化一下</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">class Solution &#123;</span><br><span class="line">public:</span><br><span class="line">    int maxProfit(vector&lt;int&gt;&amp; prices) &#123;</span><br><span class="line">        if(prices.size()&lt;=1)return 0;</span><br><span class="line"></span><br><span class="line">        int in = prices[0];</span><br><span class="line">        int l = 0,r = 0;</span><br><span class="line">        for(int i=01;i&lt;prices.size();i++)&#123;</span><br><span class="line">            in = min(in,prices[i]);</span><br><span class="line">            r = max(l,prices[i] - in);</span><br><span class="line">            l = r;</span><br><span class="line">        &#125;</span><br><span class="line">        return l;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>结果</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">执行用时：</span><br><span class="line">4 ms</span><br><span class="line">, 在所有 C++ 提交中击败了</span><br><span class="line">88.62%</span><br><span class="line">的用户</span><br><span class="line">内存消耗：</span><br><span class="line">12.3 MB</span><br><span class="line">, 在所有 C++ 提交中击败了</span><br><span class="line">98.50%</span><br><span class="line">的用户</span><br><span class="line">通过测试用例：</span><br><span class="line">200 / 200</span><br></pre></td></tr></table></figure>
+
+
 
   </div>
   
@@ -2608,7 +2623,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
               
             
               
-                <p>本文永久链接是：<a href=https://touale.github.io/2022/05/18/%E6%8B%9B%E5%BC%8F_%E5%89%91%E6%8C%87%20Offer%2032%20-%20I.%20%E4%BB%8E%E4%B8%8A%E5%88%B0%E4%B8%8B%E6%89%93%E5%8D%B0%E4%BA%8C%E5%8F%89%E6%A0%91/>https://touale.github.io/2022/05/18/%E6%8B%9B%E5%BC%8F_%E5%89%91%E6%8C%87%20Offer%2032%20-%20I.%20%E4%BB%8E%E4%B8%8A%E5%88%B0%E4%B8%8B%E6%89%93%E5%8D%B0%E4%BA%8C%E5%8F%89%E6%A0%91/</a></p>
+                <p>本文永久链接是：<a href=https://touale.github.io/2022/06/04/%E6%8B%9B%E5%BC%8F_%E5%89%91%E6%8C%87%20Offer%2063.%20%E8%82%A1%E7%A5%A8%E7%9A%84%E6%9C%80%E5%A4%A7%E5%88%A9%E6%B6%A6/>https://touale.github.io/2022/06/04/%E6%8B%9B%E5%BC%8F_%E5%89%91%E6%8C%87%20Offer%2063.%20%E8%82%A1%E7%A5%A8%E7%9A%84%E6%9C%80%E5%A4%A7%E5%88%A9%E6%B6%A6/</a></p>
               
             
           </blockquote>
@@ -2625,10 +2640,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateModified" datetime="2022-05-18T21:51:52+08:00">
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2022-06-04T11:45:46+08:00">
   <a class='notlink'>
     <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
-    <p>更新于：2022年5月18日</p>
+    <p>更新于：2022年6月4日</p>
   </a>
 </div>
 
@@ -2651,7 +2666,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://touale.github.io/2022/05/18/%E6%8B%9B%E5%BC%8F_%E5%89%91%E6%8C%87%20Offer%2032%20-%20I.%20%E4%BB%8E%E4%B8%8A%E5%88%B0%E4%B8%8B%E6%89%93%E5%8D%B0%E4%BA%8C%E5%8F%89%E6%A0%91/&title=剑指 Offer 32 - I. 从上到下打印二叉树 - Touale Cula's Blog&summary="
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://touale.github.io/2022/06/04/%E6%8B%9B%E5%BC%8F_%E5%89%91%E6%8C%87%20Offer%2063.%20%E8%82%A1%E7%A5%A8%E7%9A%84%E6%9C%80%E5%A4%A7%E5%88%A9%E6%B6%A6/&title=剑指 Offer 63. 股票的最大利润 - Touale Cula's Blog&summary="
           
           >
           
@@ -2663,7 +2678,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://touale.github.io/2022/05/18/%E6%8B%9B%E5%BC%8F_%E5%89%91%E6%8C%87%20Offer%2032%20-%20I.%20%E4%BB%8E%E4%B8%8A%E5%88%B0%E4%B8%8B%E6%89%93%E5%8D%B0%E4%BA%8C%E5%8F%89%E6%A0%91/&title=剑指 Offer 32 - I. 从上到下打印二叉树 - Touale Cula's Blog&summary="
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://touale.github.io/2022/06/04/%E6%8B%9B%E5%BC%8F_%E5%89%91%E6%8C%87%20Offer%2063.%20%E8%82%A1%E7%A5%A8%E7%9A%84%E6%9C%80%E5%A4%A7%E5%88%A9%E6%B6%A6/&title=剑指 Offer 63. 股票的最大利润 - Touale Cula's Blog&summary="
           
           >
           
@@ -2675,7 +2690,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="http://service.weibo.com/share/share.php?url=https://touale.github.io/2022/05/18/%E6%8B%9B%E5%BC%8F_%E5%89%91%E6%8C%87%20Offer%2032%20-%20I.%20%E4%BB%8E%E4%B8%8A%E5%88%B0%E4%B8%8B%E6%89%93%E5%8D%B0%E4%BA%8C%E5%8F%89%E6%A0%91/&title=剑指 Offer 32 - I. 从上到下打印二叉树 - Touale Cula's Blog&summary="
+          target="_blank" href="http://service.weibo.com/share/share.php?url=https://touale.github.io/2022/06/04/%E6%8B%9B%E5%BC%8F_%E5%89%91%E6%8C%87%20Offer%2063.%20%E8%82%A1%E7%A5%A8%E7%9A%84%E6%9C%80%E5%A4%A7%E5%88%A9%E6%B6%A6/&title=剑指 Offer 63. 股票的最大利润 - Touale Cula's Blog&summary="
           
           >
           
@@ -2708,21 +2723,22 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     <div class="prev-next">
       
-        <a class='prev' href='/2022/05/18/%E6%8B%9B%E5%BC%8F_%E5%89%91%E6%8C%87%20Offer%2032%20-%20III.%20%E4%BB%8E%E4%B8%8A%E5%88%B0%E4%B8%8B%E6%89%93%E5%8D%B0%E4%BA%8C%E5%8F%89%E6%A0%91%20III/'>
-          <p class='title'><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>剑指 Offer 32 - III. 从上到下打印二叉树 III</p>
-          <p class='content'>题目内容请实现一个函数按照之字形顺序打印二叉树，即第一行按照从左到右的顺序打印，第二层按照从右到左的顺序打印，第三行再按照从左到右的顺序打印，其他行以此类推。
+        <a class='prev' href='/2022/06/04/%E6%8B%9B%E5%BC%8F_%E5%89%91%E6%8C%87%20Offer%2060.%20n%E4%B8%AA%E9%AA%B0%E5%AD%90%E7%9A%84%E7%82%B9%E6%95%B0/'>
+          <p class='title'><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>剑指 Offer 60. n个骰子的点数</p>
+          <p class='content'>题目内容把n个骰子扔在地上，所有骰子朝上一面的点数之和为s。输入n，打印出s的所有可能的值出现的概率。
  
-例如:
-123456789给定...</p>
+你需要用一个浮点数数组返回答案，其中第 i 个元素代表这 n 个骰子所能掷出的点数集合...</p>
         </a>
       
       
-        <a class='next' href='/2022/05/18/%E6%8B%9B%E5%BC%8F_%E5%89%91%E6%8C%87%20Offer%2026.%20%E6%A0%91%E7%9A%84%E5%AD%90%E7%BB%93%E6%9E%84/'>
-          <p class='title'>剑指 Offer 26. 树的子结构<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
-          <p class='content'>输入两棵二叉树A和B，判断B是不是A的子结构。(约定空树不是任意一个树的子结构)
-B是A的子结构， 即 A中有出现和B相同的结构和节点值。
-例如:
-12345678910111213给定的树 A...</p>
+        <a class='next' href='/2022/05/30/%E5%BF%83%E6%B3%95_%E5%86%85%E9%83%A8%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95%E7%9A%84%E6%AF%94%E8%BE%83%E5%8F%8A%E5%BA%94%E7%94%A8/'>
+          <p class='title'>内部排序算法的比较及应用.<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>前言算法对比：
+时空复杂度、算法的稳定性、算法的过程特征
+
+时间复杂度简单选择排序、直接插入排序和冒泡排序平均情况是 O(n^2^)
+直接插入排序和冒泡排序最好情况是 O(n)
+简单选择排序与初...</p>
         </a>
       
     </div>
@@ -2829,7 +2845,7 @@ B是A的子结构， 即 A中有出现和B相同的结构和节点值。
 
 
     <div class='content'>
-        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%A2%98%E7%9B%AE%E5%86%85%E5%AE%B9"><span class="toc-text">题目内容</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%A7%A3%E6%B3%95%E4%B8%80-%E5%B1%82%E6%AC%A1%E9%81%8D%E5%8E%86"><span class="toc-text">解法一:层次遍历</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%A2%98%E7%9B%AE%E5%86%85%E5%AE%B9"><span class="toc-text">题目内容</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%A7%A3%E6%B3%95%E4%B8%80%EF%BC%9A%E4%BE%9D%E6%AC%A1%E9%81%8D%E5%8E%86"><span class="toc-text">解法一：依次遍历</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%A7%A3%E6%B3%95%E4%BA%8C%EF%BC%9A%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92"><span class="toc-text">解法二：动态规划</span></a></li></ol>
     </div>
   </section>
 
@@ -3845,7 +3861,7 @@ B是A的子结构， 即 A中有出现和B相同的结构和节点值。
 
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"Touale Cula's Blog","url":"https://touale.github.io/","logo":{"@type":"ImageObject","url":"img/touale.jpg","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"Touale Cula","image":{"@type":"ImageObject","url":"img/touale.jpg"},"url":"https://touale.github.io/","sameAs":["https://github.com/volantis-x"],"description":"欢迎来到 Touale Cula 的小世界哦"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://touale.github.io/","name":"Touale Cula's Blog"}},{"@type":"ListItem","position":2,"item":{"@id":"https://touale.github.io/categories/招式/","name":"招式"}},{"@type":"ListItem","position":3,"item":{"@id":"https://touale.github.io/2022/05/18/招式_剑指 Offer 32 - I. 从上到下打印二叉树/","name":"剑指 Offer 32 - I. 从上到下打印二叉树"}}]},{"@context":"http://schema.org","@type":"BlogPosting","headline":"剑指 Offer 32 - I. 从上到下打印二叉树","description":"","datePublished":"2022-05-17T16:00:00.000Z","dateModified":"2022-05-18T13:51:52.861Z","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https://touale.github.io/2022/05/18/%E6%8B%9B%E5%BC%8F_%E5%89%91%E6%8C%87%20Offer%2032%20-%20I.%20%E4%BB%8E%E4%B8%8A%E5%88%B0%E4%B8%8B%E6%89%93%E5%8D%B0%E4%BA%8C%E5%8F%89%E6%A0%91/"},"author":{"@type":"Person","name":"Touale Cula","image":{"@type":"ImageObject","url":"img/touale.jpg"},"url":"https://touale.github.io/"},"publisher":{"@type":"Organization","name":"Touale Cula's Blog","logo":{"@type":"ImageObject","url":"img/touale.jpg","width":192,"height":192}},"url":"https://touale.github.io/2022/05/18/%E6%8B%9B%E5%BC%8F_%E5%89%91%E6%8C%87%20Offer%2032%20-%20I.%20%E4%BB%8E%E4%B8%8A%E5%88%B0%E4%B8%8B%E6%89%93%E5%8D%B0%E4%BA%8C%E5%8F%89%E6%A0%91/","wordCount":0,"articleSection":"招式","keywords":"算法,力扣","image":{"@type":"ImageObject","url":"img/touale.jpg","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"Touale Cula's Blog","url":"https://touale.github.io/","logo":{"@type":"ImageObject","url":"img/touale.jpg","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"Touale Cula","image":{"@type":"ImageObject","url":"img/touale.jpg"},"url":"https://touale.github.io/","sameAs":["https://github.com/volantis-x"],"description":"欢迎来到 Touale Cula 的小世界哦"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://touale.github.io/","name":"Touale Cula's Blog"}},{"@type":"ListItem","position":2,"item":{"@id":"https://touale.github.io/categories/招式/","name":"招式"}},{"@type":"ListItem","position":3,"item":{"@id":"https://touale.github.io/2022/06/04/招式_剑指 Offer 63. 股票的最大利润/","name":"剑指 Offer 63. 股票的最大利润"}}]},{"@context":"http://schema.org","@type":"BlogPosting","headline":"剑指 Offer 63. 股票的最大利润","description":"","datePublished":"2022-06-03T16:00:00.000Z","dateModified":"2022-06-04T03:45:46.634Z","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https://touale.github.io/2022/06/04/%E6%8B%9B%E5%BC%8F_%E5%89%91%E6%8C%87%20Offer%2063.%20%E8%82%A1%E7%A5%A8%E7%9A%84%E6%9C%80%E5%A4%A7%E5%88%A9%E6%B6%A6/"},"author":{"@type":"Person","name":"Touale Cula","image":{"@type":"ImageObject","url":"img/touale.jpg"},"url":"https://touale.github.io/"},"publisher":{"@type":"Organization","name":"Touale Cula's Blog","logo":{"@type":"ImageObject","url":"img/touale.jpg","width":192,"height":192}},"url":"https://touale.github.io/2022/06/04/%E6%8B%9B%E5%BC%8F_%E5%89%91%E6%8C%87%20Offer%2063.%20%E8%82%A1%E7%A5%A8%E7%9A%84%E6%9C%80%E5%A4%A7%E5%88%A9%E6%B6%A6/","wordCount":0,"articleSection":"招式","keywords":"算法,力扣","image":{"@type":"ImageObject","url":"img/touale.jpg","width":192,"height":192}}]</script>
 
 
 
