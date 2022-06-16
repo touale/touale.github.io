@@ -1753,7 +1753,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     debug: false,
     cdn: {"js":{"app":"/js/app.3690b000.js","parallax":"/js/plugins/parallax.8bf0ab10.js","rightMenu":"/js/plugins/rightMenu.1d2dd3e0.js","rightMenus":"/js/plugins/rightMenus.68379f6b.js","sites":"/js/plugins/tags/sites.76bf19b8.js","friends":"/js/plugins/tags/friends.f372da57.js","contributors":"/js/plugins/tags/contributors.aec80453.js","search":"/js/search/hexo.06d40311.js"},"css":{"style":"/css/style.8a038721.css"}},
     default: {"avatar":"https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/placeholder/avatar/round/3442075.svg","link":"https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/placeholder/cover/76b86c0226ffd.svg","image":"https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1654341765877),
+    lastupdate: new Date(1655356453870),
     sidebar: {
       for_page: ["blogger","category","tagcloud","donate","lastupdate"],
       for_post: ["blogger","toc","lastupdate"],
@@ -2427,7 +2427,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       <!-- see: /layout/_partial/scripts/_ctrl/coverCtrl.ejs -->
       <div id="none" class='cover-wrapper post dock' style="display: none;">
         
-  <div class='cover-bg lazyload placeholder' data-bg="https://api.yimian.xyz/img?type=moe&size=1920x1080"></div>
+  <div class='cover-bg' style='background-image:url(https://api.yimian.xyz/img?type=moe&size=1920x1080)'></div>
 
 <div class='cover-body'>
   <div class='top'>
@@ -2530,7 +2530,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
 <div class='new-meta-item author' itemprop="author" itemscope itemtype="http://schema.org/Person">
   <a itemprop="url" class='author' href="/" rel="nofollow">
-    <img itemprop="image" src="https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/apple-touch-icon.png" class="lazyload" data-srcset="https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/apple-touch-icon.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+    <img itemprop="image" src="https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/apple-touch-icon.png">
     <p itemprop="name">Touale</p>
   </a>
 </div>
@@ -2602,7 +2602,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <li>大根堆 $L[i] &gt;&#x3D; L[2i]$ 且 $L[i] &gt;&#x3D; L[2i+1]$ （最大元素在根节点）</li>
 <li>小根堆 $L[i] &lt;&#x3D; L[2i]$ 且 $L[i] &lt;&#x3D; L[2i+1]$ （相反）</li>
 </ul>
-<p><img src="/img/2022-05-10-19-48-20.png" class="lazyload" data-srcset="/img/2022-05-10-19-48-20.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+<p><img src="/img/2022-05-10-19-48-20.png"></p>
 <p>其中，对于 $i$</p>
 <ul>
 <li>$i$ 的左孩子 —— [2$i$]</li>
@@ -2612,8 +2612,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 </ul>
 <hr>
 <p><strong>存储视角</strong>：</p>
-<p><img src="/img/2022-05-10-19-52-45.png" class="lazyload" data-srcset="/img/2022-05-10-19-52-45.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
-<p><strong>逻辑视角</strong>：<br><img src="/img/2022-05-10-19-53-11.png" class="lazyload" data-srcset="/img/2022-05-10-19-53-11.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+<p><img src="/img/2022-05-10-19-52-45.png"></p>
+<p><strong>逻辑视角</strong>：<br><img src="/img/2022-05-10-19-53-11.png"></p>
 <hr>
 <p><strong>思路：</strong></p>
 <p>把所有非终端节点都检查一遍，是否满足大根堆的要求，如果不满足，则进行调整。</p>
@@ -2621,38 +2621,38 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <hr>
 <p><strong>算法模拟:</strong> </p>
 <h4 id="1、建立大根堆方法"><a href="#1、建立大根堆方法" class="headerlink" title="1、建立大根堆方法"></a>1、建立大根堆方法</h4><p><strong>（1）、初始化序列如下，指针指向09</strong></p>
-<p><img src="/img/2022-05-10-19-56-31.png" class="lazyload" data-srcset="/img/2022-05-10-19-56-31.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+<p><img src="/img/2022-05-10-19-56-31.png"></p>
 <hr>
 <p><strong>（2）、09与其左孩子比较，发现不满足根&gt;&#x3D;左、右，于是发生交换，同时指针往前移动</strong></p>
-<p><img src="/img/2022-05-10-19-57-45.png" class="lazyload" data-srcset="/img/2022-05-10-19-57-45.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+<p><img src="/img/2022-05-10-19-57-45.png"></p>
 <hr>
 <p><strong>（3）、78与左右孩子进行比较，同理进行交换87</strong></p>
-<p><img src="/img/2022-05-10-19-58-28.png" class="lazyload" data-srcset="/img/2022-05-10-19-58-28.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
-<p><img src="/img/2022-05-10-19-58-54.png" class="lazyload" data-srcset="/img/2022-05-10-19-58-54.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+<p><img src="/img/2022-05-10-19-58-28.png"></p>
+<p><img src="/img/2022-05-10-19-58-54.png"></p>
 <hr>
 <p><strong>（4）、17与32和45比较，若皆小于，则交换较大的</strong></p>
-<p><img src="/img/2022-05-10-19-59-58.png" class="lazyload" data-srcset="/img/2022-05-10-19-59-58.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
-<p><img src="/img/2022-05-10-20-00-40.png" class="lazyload" data-srcset="/img/2022-05-10-20-00-40.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+<p><img src="/img/2022-05-10-19-59-58.png"></p>
+<p><img src="/img/2022-05-10-20-00-40.png"></p>
 <hr>
-<p><strong>（5）、根节点53与左右孩子比较，交换87；交换后发现子树不符合要求，需要继续迭代交换直至符合</strong><br><img src="/img/2022-05-10-20-02-01.png" class="lazyload" data-srcset="/img/2022-05-10-20-02-01.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
-<p><img src="/img/2022-05-10-20-02-15.png" class="lazyload" data-srcset="/img/2022-05-10-20-02-15.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+<p><strong>（5）、根节点53与左右孩子比较，交换87；交换后发现子树不符合要求，需要继续迭代交换直至符合</strong><br><img src="/img/2022-05-10-20-02-01.png"></p>
+<p><img src="/img/2022-05-10-20-02-15.png"></p>
 <hr>
 <h4 id="2、基于大根堆排序"><a href="#2、基于大根堆排序" class="headerlink" title="2、基于大根堆排序"></a>2、基于大根堆排序</h4><p><strong>1、每一趟将栈顶元素加入有序子序列（与最后一个元素交换）</strong></p>
 <p>建立大根堆后：</p>
-<p><img src="/img/2022-05-10-20-12-44.png" class="lazyload" data-srcset="/img/2022-05-10-20-12-44.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+<p><img src="/img/2022-05-10-20-12-44.png"></p>
 <p>交换元素：</p>
-<p><img src="/img/2022-05-10-20-13-10.png" class="lazyload" data-srcset="/img/2022-05-10-20-13-10.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+<p><img src="/img/2022-05-10-20-13-10.png"></p>
 <p><strong>2、建立L[1…n-1]大根堆</strong></p>
 <p>初始状态：</p>
-<p><img src="/img/2022-05-10-20-14-05.png" class="lazyload" data-srcset="/img/2022-05-10-20-14-05.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+<p><img src="/img/2022-05-10-20-14-05.png"></p>
 <p>建立大根堆：</p>
-<p><img src="/img/2022-05-10-20-16-08.png" class="lazyload" data-srcset="/img/2022-05-10-20-16-08.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+<p><img src="/img/2022-05-10-20-16-08.png"></p>
 <hr>
 <p><strong>3、栈顶与倒数第二个元素交换</strong></p>
-<p><img src="/img/2022-05-10-20-15-03.png" class="lazyload" data-srcset="/img/2022-05-10-20-15-03.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+<p><img src="/img/2022-05-10-20-15-03.png"></p>
 <hr>
 <p><strong>4、循环上面操作直至只剩下一个元素</strong></p>
-<p><img src="/img/2022-05-10-20-16-54.png" class="lazyload" data-srcset="/img/2022-05-10-20-16-54.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+<p><img src="/img/2022-05-10-20-16-54.png"></p>
 <hr>
 <p><strong>算法实现:</strong></p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">// 建立大根堆</span><br><span class="line">void buildMaxHeap(int A[],int len)&#123;</span><br><span class="line">    for(int i=len/2;i&gt;0;i--);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// 将以k为根的子树调整为大根堆</span><br><span class="line">void headAdjust(int A[],int k,int len)&#123;</span><br><span class="line">    A[0] = A[k];    // A[0]暂存子树的根节点</span><br><span class="line">    for(int i = 2 * k ; i &lt;= len;i *= 2)&#123; // 保证后续节点都满足条件</span><br><span class="line">        if(i&lt;len &amp;&amp; A[i] &lt; A[i+1] )&#123;</span><br><span class="line">            i++; // 取左右孩子最大的一个</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        if(A[0] &gt;= A[i]) break; // 无需调整</span><br><span class="line">        else&#123;</span><br><span class="line">            A[k] = A[i]; // 将A[i]调整到双亲节点</span><br><span class="line">            k = i； // 修改k，以继续修改</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    A[k] = A[0];</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
@@ -2733,7 +2733,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           
           >
           
-            <img src="https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/logo/128/qq.png" class="lazyload" data-srcset="https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/logo/128/qq.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+            <img src="https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/logo/128/qq.png">
           
         </a>
       
@@ -2745,7 +2745,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           
           >
           
-            <img src="https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/logo/128/qzone.png" class="lazyload" data-srcset="https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/logo/128/qzone.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+            <img src="https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/logo/128/qzone.png">
           
         </a>
       
@@ -2757,7 +2757,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           
           >
           
-            <img src="https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/logo/128/weibo.png" class="lazyload" data-srcset="https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/logo/128/weibo.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+            <img src="https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/logo/128/weibo.png">
           
         </a>
       
@@ -2929,7 +2929,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
  
   <div class='content'> 
-    <ul class="list entry navigation"><li><a class="widget-last" href="/2022/06/04/%E6%8B%9B%E5%BC%8F_%E5%89%91%E6%8C%87%20Offer%2037.%20%E5%BA%8F%E5%88%97%E5%8C%96%E4%BA%8C%E5%8F%89%E6%A0%91/"><div class="item"><time>2022-06-04</time><span>招式</span></div><span>剑指 Offer 37. 序列化二叉树</span></a></li><li><a class="widget-last" href="/2022/05/18/%E6%8B%9B%E5%BC%8F_%E5%89%91%E6%8C%87%20Offer%2034.%20%E4%BA%8C%E5%8F%89%E6%A0%91%E4%B8%AD%E5%92%8C%E4%B8%BA%E6%9F%90%E4%B8%80%E5%80%BC%E7%9A%84%E8%B7%AF%E5%BE%84/"><div class="item"><time>2022-06-04</time><span>招式</span></div><span>剑指 Offer 34. 二叉树中和为某一值的路径</span></a></li><li><a class="widget-last" href="/2022/06/04/%E6%8B%9B%E5%BC%8F_%E5%89%91%E6%8C%87%20Offer%2066.%20%E6%9E%84%E5%BB%BA%E4%B9%98%E7%A7%AF%E6%95%B0%E7%BB%84/"><div class="item"><time>2022-06-04</time><span>招式</span></div><span>剑指 Offer 66. 构建乘积数组</span></a></li><li><a class="widget-last" href="/2022/06/04/%E6%8B%9B%E5%BC%8F_%E5%89%91%E6%8C%87%20Offer%2059%20-%20II.%20%E9%98%9F%E5%88%97%E7%9A%84%E6%9C%80%E5%A4%A7%E5%80%BC/"><div class="item"><time>2022-06-04</time><span>招式</span></div><span>剑指 Offer 59 - II. 队列的最大值</span></a></li><li><a class="widget-last" href="/2022/06/04/%E6%8B%9B%E5%BC%8F_%E5%89%91%E6%8C%87%20Offer%2067.%20%E6%8A%8A%E5%AD%97%E7%AC%A6%E4%B8%B2%E8%BD%AC%E6%8D%A2%E6%88%90%E6%95%B4%E6%95%B0/"><div class="item"><time>2022-06-04</time><span>招式</span></div><span>剑指 Offer 67. 把字符串转换成整数</span></a></li></ul> 
+    <ul class="list entry navigation"><li><a class="widget-last" href="/2022/06/16/%E5%86%85%E5%8A%9F_%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86/"><div class="item"><time>2022-06-16</time><span>内功</span></div><span>项目管理</span></a></li><li><a class="widget-last" href="/2022/05/30/%E5%BF%83%E6%B3%95_%E5%A4%96%E9%83%A8%E6%8E%92%E5%BA%8F/"><div class="item"><time>2022-06-04</time><span>内功</span></div><span>外部排序(多路平衡归并与败者树、置换-选择排序、最佳归并树)</span></a></li><li><a class="widget-last" href="/2022/06/04/%E6%8B%9B%E5%BC%8F_%E5%89%91%E6%8C%87%20Offer%2037.%20%E5%BA%8F%E5%88%97%E5%8C%96%E4%BA%8C%E5%8F%89%E6%A0%91/"><div class="item"><time>2022-06-04</time><span>招式</span></div><span>剑指 Offer 37. 序列化二叉树</span></a></li><li><a class="widget-last" href="/2022/05/18/%E6%8B%9B%E5%BC%8F_%E5%89%91%E6%8C%87%20Offer%2034.%20%E4%BA%8C%E5%8F%89%E6%A0%91%E4%B8%AD%E5%92%8C%E4%B8%BA%E6%9F%90%E4%B8%80%E5%80%BC%E7%9A%84%E8%B7%AF%E5%BE%84/"><div class="item"><time>2022-06-04</time><span>招式</span></div><span>剑指 Offer 34. 二叉树中和为某一值的路径</span></a></li><li><a class="widget-last" href="/2022/06/04/%E6%8B%9B%E5%BC%8F_%E5%89%91%E6%8C%87%20Offer%2066.%20%E6%9E%84%E5%BB%BA%E4%B9%98%E7%A7%AF%E6%95%B0%E7%BB%84/"><div class="item"><time>2022-06-04</time><span>招式</span></div><span>剑指 Offer 66. 构建乘积数组</span></a></li></ul> 
   </div> 
 </section> 
 
@@ -3510,33 +3510,6 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 </script>
 
 
-
-
-  <script defer src="https://npm.elemecdn.com/volantis-static@0.0.1649552113628/libs/vanilla-lazyload/dist/lazyload.min.js"></script>
-<script>
-  // https://www.npmjs.com/package/vanilla-lazyload
-  // Set the options globally
-  // to make LazyLoad self-initialize
-  window.lazyLoadOptions = {
-    elements_selector: ".lazyload",
-    threshold: 0
-  };
-  // Listen to the initialization event
-  // and get the instance of LazyLoad
-  window.addEventListener(
-    "LazyLoad::Initialized",
-    function (event) {
-      window.lazyLoadInstance = event.detail.instance;
-    },
-    false
-  );
-  document.addEventListener('DOMContentLoaded', function () {
-    lazyLoadInstance.update();
-  });
-  document.addEventListener('pjax:complete', function () {
-    lazyLoadInstance.update();
-  });
-</script>
 
 
 

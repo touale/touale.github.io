@@ -43,7 +43,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://touale.github.io/2022/05/30/%E5%BF%83%E6%B3%95_%E5%A4%96%E9%83%A8%E6%8E%92%E5%BA%8F/img/touale.jpg">
 <meta property="article:published_time" content="2022-05-29T16:00:00.000Z">
-<meta property="article:modified_time" content="2022-05-30T14:19:34.397Z">
+<meta property="article:modified_time" content="2022-06-04T13:24:31.425Z">
 <meta property="article:author" content="Touale Cula">
 <meta property="article:tag" content="数据结构">
 <meta property="article:tag" content="内功">
@@ -1753,7 +1753,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     debug: false,
     cdn: {"js":{"app":"/js/app.3690b000.js","parallax":"/js/plugins/parallax.8bf0ab10.js","rightMenu":"/js/plugins/rightMenu.1d2dd3e0.js","rightMenus":"/js/plugins/rightMenus.68379f6b.js","sites":"/js/plugins/tags/sites.76bf19b8.js","friends":"/js/plugins/tags/friends.f372da57.js","contributors":"/js/plugins/tags/contributors.aec80453.js","search":"/js/search/hexo.06d40311.js"},"css":{"style":"/css/style.8a038721.css"}},
     default: {"avatar":"https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/placeholder/avatar/round/3442075.svg","link":"https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/placeholder/cover/76b86c0226ffd.svg","image":"https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1654341765877),
+    lastupdate: new Date(1655356453870),
     sidebar: {
       for_page: ["blogger","category","tagcloud","donate","lastupdate"],
       for_post: ["blogger","toc","lastupdate"],
@@ -2427,7 +2427,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       <!-- see: /layout/_partial/scripts/_ctrl/coverCtrl.ejs -->
       <div id="none" class='cover-wrapper post dock' style="display: none;">
         
-  <div class='cover-bg lazyload placeholder' data-bg="https://api.yimian.xyz/img?type=moe&size=1920x1080"></div>
+  <div class='cover-bg' style='background-image:url(https://api.yimian.xyz/img?type=moe&size=1920x1080)'></div>
 
 <div class='cover-body'>
   <div class='top'>
@@ -2530,7 +2530,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
 <div class='new-meta-item author' itemprop="author" itemscope itemtype="http://schema.org/Person">
   <a itemprop="url" class='author' href="/" rel="nofollow">
-    <img itemprop="image" src="https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/apple-touch-icon.png" class="lazyload" data-srcset="https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/apple-touch-icon.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+    <img itemprop="image" src="https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/apple-touch-icon.png">
     <p itemprop="name">Touale</p>
   </a>
 </div>
@@ -2577,73 +2577,73 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   <div id="layoutHelper-page-plugins"></div>
   <div id="post-body" itemprop="articleBody">
-    <h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>外部排序用于待排序文件较大、内存无法一次性读取</p>
+    <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>外部排序用于待排序文件较大、内存无法一次性读取</p>
 <hr>
-<h3 id="外部排序原理"><a href="#外部排序原理" class="headerlink" title="外部排序原理"></a>外部排序原理</h3><p>当数据元素较大时，通过在本地建立输入缓冲区和输出缓冲区，每次读取一小块数据进行排序后放回！</p>
-<p><img src="/img/2022-05-30-21-56-23.png" class="lazyload" data-srcset="/img/2022-05-30-21-56-23.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+<h1 id="外部排序原理"><a href="#外部排序原理" class="headerlink" title="外部排序原理"></a>外部排序原理</h1><p>当数据元素较大时，通过在本地建立输入缓冲区和输出缓冲区，每次读取一小块数据进行排序后放回！</p>
+<p><img src="/img/2022-05-30-21-56-23.png"></p>
 <hr>
-<h3 id="模拟"><a href="#模拟" class="headerlink" title="模拟"></a>模拟</h3><ol>
+<h1 id="模拟"><a href="#模拟" class="headerlink" title="模拟"></a>模拟</h1><ol>
 <li>初始化数据分布如下</li>
 </ol>
-<p><img src="/img/2022-05-30-21-58-01.png" class="lazyload" data-srcset="/img/2022-05-30-21-58-01.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+<p><img src="/img/2022-05-30-21-58-01.png"></p>
 <hr>
 <ol start="2">
 <li>读入两块数据</li>
 </ol>
-<p><img src="/img/2022-05-30-21-58-35.png" class="lazyload" data-srcset="/img/2022-05-30-21-58-35.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+<p><img src="/img/2022-05-30-21-58-35.png"></p>
 <p>进行排序</p>
-<p><img src="/img/2022-05-30-21-59-08.png" class="lazyload" data-srcset="/img/2022-05-30-21-59-08.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+<p><img src="/img/2022-05-30-21-59-08.png"></p>
 <p>映射输出缓冲区，并写出两块数据</p>
-<p><img src="/img/2022-05-30-21-59-27.png" class="lazyload" data-srcset="/img/2022-05-30-21-59-27.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
-<p><img src="/img/2022-05-30-21-59-54.png" class="lazyload" data-srcset="/img/2022-05-30-21-59-54.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+<p><img src="/img/2022-05-30-21-59-27.png"></p>
+<p><img src="/img/2022-05-30-21-59-54.png"></p>
 <hr>
 <ol start="2">
 <li>重复上述操作，构造归并段</li>
 </ol>
-<p><img src="/img/2022-05-30-22-00-28.png" class="lazyload" data-srcset="/img/2022-05-30-22-00-28.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
-<p><img src="/img/2022-05-30-22-00-48.png" class="lazyload" data-srcset="/img/2022-05-30-22-00-48.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+<p><img src="/img/2022-05-30-22-00-28.png"></p>
+<p><img src="/img/2022-05-30-22-00-48.png"></p>
 <hr>
 <ol start="3">
 <li>进行第一趟归并</li>
 </ol>
-<p><img src="/img/2022-05-30-22-01-35.png" class="lazyload" data-srcset="/img/2022-05-30-22-01-35.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+<p><img src="/img/2022-05-30-22-01-35.png"></p>
 <p>将两块归并段分别放入输入缓冲区</p>
-<p><img src="/img/2022-05-30-22-02-09.png" class="lazyload" data-srcset="/img/2022-05-30-22-02-09.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+<p><img src="/img/2022-05-30-22-02-09.png"></p>
 <p>将输入缓冲区前三个放入到输出缓冲区中并输出</p>
-<p><img src="/img/2022-05-30-22-02-53.png" class="lazyload" data-srcset="/img/2022-05-30-22-02-53.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
-<p><img src="/img/2022-05-30-22-03-26.png" class="lazyload" data-srcset="/img/2022-05-30-22-03-26.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+<p><img src="/img/2022-05-30-22-02-53.png"></p>
+<p><img src="/img/2022-05-30-22-03-26.png"></p>
 <p>继续排序输入缓冲区，直到输入缓冲区无数据，此时读取一个新的磁盘块进入</p>
-<p><img src="/img/2022-05-30-22-04-10.png" class="lazyload" data-srcset="/img/2022-05-30-22-04-10.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
-<p><img src="/img/2022-05-30-22-04-35.png" class="lazyload" data-srcset="/img/2022-05-30-22-04-35.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+<p><img src="/img/2022-05-30-22-04-10.png"></p>
+<p><img src="/img/2022-05-30-22-04-35.png"></p>
 <p>继续排序和输出，当输入缓冲区空了，继续读取下一个</p>
-<p><img src="/img/2022-05-30-22-05-09.png" class="lazyload" data-srcset="/img/2022-05-30-22-05-09.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
-<p><img src="/img/2022-05-30-22-05-20.png" class="lazyload" data-srcset="/img/2022-05-30-22-05-20.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+<p><img src="/img/2022-05-30-22-05-09.png"></p>
+<p><img src="/img/2022-05-30-22-05-20.png"></p>
 <p>归并成新的归并段</p>
-<p><img src="/img/2022-05-30-22-05-51.png" class="lazyload" data-srcset="/img/2022-05-30-22-05-51.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+<p><img src="/img/2022-05-30-22-05-51.png"></p>
 <p>重复上述操作，完成第二第三第四</p>
-<p><img src="/img/2022-05-30-22-06-12.png" class="lazyload" data-srcset="/img/2022-05-30-22-06-12.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+<p><img src="/img/2022-05-30-22-06-12.png"></p>
 <hr>
 <ol start="4">
 <li>第二趟归并</li>
 </ol>
 <p>初始值</p>
-<p><img src="/img/2022-05-30-22-06-42.png" class="lazyload" data-srcset="/img/2022-05-30-22-06-42.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+<p><img src="/img/2022-05-30-22-06-42.png"></p>
 <p>读入两个缓冲区</p>
-<p><img src="/img/2022-05-30-22-06-58.png" class="lazyload" data-srcset="/img/2022-05-30-22-06-58.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+<p><img src="/img/2022-05-30-22-06-58.png"></p>
 <p>排序输出，空了补入新的缓冲区</p>
-<p><img src="/img/2022-05-30-22-07-23.png" class="lazyload" data-srcset="/img/2022-05-30-22-07-23.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><br><img src="/img/2022-05-30-22-07-30.png" class="lazyload" data-srcset="/img/2022-05-30-22-07-30.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
-<p><img src="/img/2022-05-30-22-08-04.png" class="lazyload" data-srcset="/img/2022-05-30-22-08-04.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
-<p><img src="/img/2022-05-30-22-08-19.png" class="lazyload" data-srcset="/img/2022-05-30-22-08-19.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+<p><img src="/img/2022-05-30-22-07-23.png"><br><img src="/img/2022-05-30-22-07-30.png"></p>
+<p><img src="/img/2022-05-30-22-08-04.png"></p>
+<p><img src="/img/2022-05-30-22-08-19.png"></p>
 <p>重复操作，完成后两个归并段归并</p>
-<p><img src="/img/2022-05-30-22-09-26.png" class="lazyload" data-srcset="/img/2022-05-30-22-09-26.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+<p><img src="/img/2022-05-30-22-09-26.png"></p>
 <ol start="5">
 <li>第三趟归并</li>
 </ol>
-<p><img src="/img/2022-05-30-22-09-49.png" class="lazyload" data-srcset="/img/2022-05-30-22-09-49.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+<p><img src="/img/2022-05-30-22-09-49.png"></p>
 <hr>
-<h3 id="优化：多路归并"><a href="#优化：多路归并" class="headerlink" title="优化：多路归并"></a>优化：多路归并</h3><p>比如：2路变成4路</p>
-<p>2路:<br><img src="/img/2022-05-30-22-16-02.png" class="lazyload" data-srcset="/img/2022-05-30-22-16-02.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
-<p>4路：<br><img src="/img/2022-05-30-22-16-32.png" class="lazyload" data-srcset="/img/2022-05-30-22-16-32.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+<h1 id="优化：多路归并"><a href="#优化：多路归并" class="headerlink" title="优化：多路归并"></a>优化：多路归并</h1><p>比如：2路变成4路</p>
+<p>2路:<br><img src="/img/2022-05-30-22-16-02.png"></p>
+<p>4路：<br><img src="/img/2022-05-30-22-16-32.png"></p>
 <p>采用多路归并可以减少归并趟数，从而减少了磁盘I0读写次数</p>
 <p>对于r个初始归并段，做k路归并</p>
 <p>若树高h，则归并次数 &#x3D; h - 1 &#x3D; log<del>k</del>r</p>
@@ -2653,7 +2653,89 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <li>较少初始归并段数量r</li>
 </ul>
 <hr>
-<h3 id="败者树"><a href="#败者树" class="headerlink" title="败者树"></a>败者树</h3>
+<h1 id="败者树"><a href="#败者树" class="headerlink" title="败者树"></a>败者树</h1><p>使用k路平衡归并策略，选出一个最小元素需要对比关键字k-1次，导致内部归并所需时间增加</p>
+<p>败者树：<br>比如100个人，选出一个最强者，如果比较99次，极其浪费。败者树采用篮球比赛的队伍决胜，比如：</p>
+<p><img src="/img/2022-06-04-19-34-06.png"></p>
+<h1 id="模拟-1"><a href="#模拟-1" class="headerlink" title="模拟"></a>模拟</h1><ol>
+<li>初始化，此时存在8个归并段</li>
+</ol>
+<p><img src="/img/2022-06-04-19-35-23.png"></p>
+<hr>
+<ol start="2">
+<li>赋值</li>
+</ol>
+<p><img src="/img/2022-06-04-19-35-47.png"></p>
+<hr>
+<ol start="3">
+<li>进行比较，胜利的进入，分支节点记录失败者来自哪个归并段，根节点记录冠军</li>
+</ol>
+<p><img src="/img/2022-06-04-19-37-21.png"></p>
+<hr>
+<ol start="4">
+<li>取出最小值，第5个归并段，即1</li>
+</ol>
+<p><img src="/img/2022-06-04-19-38-14.png"></p>
+<hr>
+<ol start="5">
+<li>新值进入被取走的位置</li>
+</ol>
+<p><img src="/img/2022-06-04-19-38-42.png"></p>
+<p>k路归并的败者树深度为log<del>2</del>k,最多需要log<del>2</del>k次比较</p>
+<hr>
+<h1 id="置换-选择排序"><a href="#置换-选择排序" class="headerlink" title="置换-选择排序"></a>置换-选择排序</h1><p>模拟</p>
+<ol>
+<li>初始化</li>
+</ol>
+<p><img src="/img/2022-06-04-20-50-06.png"></p>
+<hr>
+<ol start="2">
+<li>读入3个，填满</li>
+</ol>
+<p><img src="/img/2022-06-04-20-50-51.png"></p>
+<hr>
+<ol start="3">
+<li>取出最小的数字到归并段，并记录值<br><img src="/img/2022-06-04-20-51-30.png"></li>
+</ol>
+<hr>
+<ol start="4">
+<li>读入下一个，并将最接近4的数字取出到归并段,如6，然后记录minmax &#x3D; 6</li>
+</ol>
+<p><img src="/img/2022-06-04-20-52-36.png"></p>
+<hr>
+<ol start="5">
+<li>移7记录7</li>
+</ol>
+<p><img src="/img/2022-06-04-21-10-10.png"></p>
+<hr>
+<ol start="6">
+<li>当移入10时，此时minmax是上一次的13，移入大的14，并且记录14</li>
+</ol>
+<p><img src="/img/2022-06-04-21-11-14.png"></p>
+<p><img src="/img/2022-06-04-21-12-21.png"></p>
+<hr>
+<ol start="7">
+<li>当minmax &#x3D; 30，此时内存工作区没有大于30的数字时，第一个归并段到此为止，创建第二个归并段</li>
+</ol>
+<p><img src="/img/2022-06-04-21-13-14.png"></p>
+<p><img src="/img/2022-06-04-21-14-03.png"></p>
+<hr>
+<ol start="8">
+<li>最终</li>
+</ol>
+<p><img src="/img/2022-06-04-21-14-38.png"></p>
+<hr>
+<h1 id="最佳归并数"><a href="#最佳归并数" class="headerlink" title="最佳归并数"></a>最佳归并数</h1><p>引出:归并段长度可能不同</p>
+<p><img src="/img/2022-06-04-21-17-23.png"></p>
+<p>普通归并情况</p>
+<p><img src="/img/2022-06-04-21-20-35.png"></p>
+<p>最佳归并数构建</p>
+<p><img src="/img/2022-06-04-21-21-25.png"></p>
+<p>三路构建</p>
+<p><img src="/img/2022-06-04-21-22-06.png"></p>
+<p><strong>对于K叉归并，若初始归并段的数量无法构建成严格的k叉归并树，则需要补充几个长度为0的虚段</strong></p>
+<p>虚段添加</p>
+<p><img src="/img/2022-06-04-21-24-20.png"></p>
+
 
   </div>
   
@@ -2689,10 +2771,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateModified" datetime="2022-05-30T22:19:34+08:00">
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2022-06-04T21:24:31+08:00">
   <a class='notlink'>
     <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
-    <p>更新于：2022年5月30日</p>
+    <p>更新于：2022年6月4日</p>
   </a>
 </div>
 
@@ -2719,7 +2801,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           
           >
           
-            <img src="https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/logo/128/qq.png" class="lazyload" data-srcset="https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/logo/128/qq.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+            <img src="https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/logo/128/qq.png">
           
         </a>
       
@@ -2731,7 +2813,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           
           >
           
-            <img src="https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/logo/128/qzone.png" class="lazyload" data-srcset="https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/logo/128/qzone.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+            <img src="https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/logo/128/qzone.png">
           
         </a>
       
@@ -2743,7 +2825,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           
           >
           
-            <img src="https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/logo/128/weibo.png" class="lazyload" data-srcset="https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/logo/128/weibo.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+            <img src="https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/logo/128/weibo.png">
           
         </a>
       
@@ -2897,7 +2979,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 
     <div class='content'>
-        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%89%8D%E8%A8%80"><span class="toc-text">前言</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A4%96%E9%83%A8%E6%8E%92%E5%BA%8F%E5%8E%9F%E7%90%86"><span class="toc-text">外部排序原理</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%A8%A1%E6%8B%9F"><span class="toc-text">模拟</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BC%98%E5%8C%96%EF%BC%9A%E5%A4%9A%E8%B7%AF%E5%BD%92%E5%B9%B6"><span class="toc-text">优化：多路归并</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%B4%A5%E8%80%85%E6%A0%91"><span class="toc-text">败者树</span></a></li></ol>
+        
     </div>
   </section>
 
@@ -2918,7 +3000,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
  
   <div class='content'> 
-    <ul class="list entry navigation"><li><a class="widget-last" href="/2022/06/04/%E6%8B%9B%E5%BC%8F_%E5%89%91%E6%8C%87%20Offer%2037.%20%E5%BA%8F%E5%88%97%E5%8C%96%E4%BA%8C%E5%8F%89%E6%A0%91/"><div class="item"><time>2022-06-04</time><span>招式</span></div><span>剑指 Offer 37. 序列化二叉树</span></a></li><li><a class="widget-last" href="/2022/05/18/%E6%8B%9B%E5%BC%8F_%E5%89%91%E6%8C%87%20Offer%2034.%20%E4%BA%8C%E5%8F%89%E6%A0%91%E4%B8%AD%E5%92%8C%E4%B8%BA%E6%9F%90%E4%B8%80%E5%80%BC%E7%9A%84%E8%B7%AF%E5%BE%84/"><div class="item"><time>2022-06-04</time><span>招式</span></div><span>剑指 Offer 34. 二叉树中和为某一值的路径</span></a></li><li><a class="widget-last" href="/2022/06/04/%E6%8B%9B%E5%BC%8F_%E5%89%91%E6%8C%87%20Offer%2066.%20%E6%9E%84%E5%BB%BA%E4%B9%98%E7%A7%AF%E6%95%B0%E7%BB%84/"><div class="item"><time>2022-06-04</time><span>招式</span></div><span>剑指 Offer 66. 构建乘积数组</span></a></li><li><a class="widget-last" href="/2022/06/04/%E6%8B%9B%E5%BC%8F_%E5%89%91%E6%8C%87%20Offer%2059%20-%20II.%20%E9%98%9F%E5%88%97%E7%9A%84%E6%9C%80%E5%A4%A7%E5%80%BC/"><div class="item"><time>2022-06-04</time><span>招式</span></div><span>剑指 Offer 59 - II. 队列的最大值</span></a></li><li><a class="widget-last" href="/2022/06/04/%E6%8B%9B%E5%BC%8F_%E5%89%91%E6%8C%87%20Offer%2067.%20%E6%8A%8A%E5%AD%97%E7%AC%A6%E4%B8%B2%E8%BD%AC%E6%8D%A2%E6%88%90%E6%95%B4%E6%95%B0/"><div class="item"><time>2022-06-04</time><span>招式</span></div><span>剑指 Offer 67. 把字符串转换成整数</span></a></li></ul> 
+    <ul class="list entry navigation"><li><a class="widget-last" href="/2022/06/16/%E5%86%85%E5%8A%9F_%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86/"><div class="item"><time>2022-06-16</time><span>内功</span></div><span>项目管理</span></a></li><li><a class="widget-last" href="/2022/05/30/%E5%BF%83%E6%B3%95_%E5%A4%96%E9%83%A8%E6%8E%92%E5%BA%8F/"><div class="item"><time>2022-06-04</time><span>内功</span></div><span>外部排序(多路平衡归并与败者树、置换-选择排序、最佳归并树)</span></a></li><li><a class="widget-last" href="/2022/06/04/%E6%8B%9B%E5%BC%8F_%E5%89%91%E6%8C%87%20Offer%2037.%20%E5%BA%8F%E5%88%97%E5%8C%96%E4%BA%8C%E5%8F%89%E6%A0%91/"><div class="item"><time>2022-06-04</time><span>招式</span></div><span>剑指 Offer 37. 序列化二叉树</span></a></li><li><a class="widget-last" href="/2022/05/18/%E6%8B%9B%E5%BC%8F_%E5%89%91%E6%8C%87%20Offer%2034.%20%E4%BA%8C%E5%8F%89%E6%A0%91%E4%B8%AD%E5%92%8C%E4%B8%BA%E6%9F%90%E4%B8%80%E5%80%BC%E7%9A%84%E8%B7%AF%E5%BE%84/"><div class="item"><time>2022-06-04</time><span>招式</span></div><span>剑指 Offer 34. 二叉树中和为某一值的路径</span></a></li><li><a class="widget-last" href="/2022/06/04/%E6%8B%9B%E5%BC%8F_%E5%89%91%E6%8C%87%20Offer%2066.%20%E6%9E%84%E5%BB%BA%E4%B9%98%E7%A7%AF%E6%95%B0%E7%BB%84/"><div class="item"><time>2022-06-04</time><span>招式</span></div><span>剑指 Offer 66. 构建乘积数组</span></a></li></ul> 
   </div> 
 </section> 
 
@@ -3501,33 +3583,6 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 
 
-  <script defer src="https://npm.elemecdn.com/volantis-static@0.0.1649552113628/libs/vanilla-lazyload/dist/lazyload.min.js"></script>
-<script>
-  // https://www.npmjs.com/package/vanilla-lazyload
-  // Set the options globally
-  // to make LazyLoad self-initialize
-  window.lazyLoadOptions = {
-    elements_selector: ".lazyload",
-    threshold: 0
-  };
-  // Listen to the initialization event
-  // and get the instance of LazyLoad
-  window.addEventListener(
-    "LazyLoad::Initialized",
-    function (event) {
-      window.lazyLoadInstance = event.detail.instance;
-    },
-    false
-  );
-  document.addEventListener('DOMContentLoaded', function () {
-    lazyLoadInstance.update();
-  });
-  document.addEventListener('pjax:complete', function () {
-    lazyLoadInstance.update();
-  });
-</script>
-
-
 
 
   
@@ -3913,7 +3968,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"Touale Cula's Blog","url":"https://touale.github.io/","logo":{"@type":"ImageObject","url":"img/touale.jpg","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"Touale Cula","image":{"@type":"ImageObject","url":"img/touale.jpg"},"url":"https://touale.github.io/","sameAs":["https://github.com/volantis-x"],"description":"欢迎来到 Touale Cula 的小世界哦"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://touale.github.io/","name":"Touale Cula's Blog"}},{"@type":"ListItem","position":2,"item":{"@id":"https://touale.github.io/categories/内功/","name":"内功"}},{"@type":"ListItem","position":3,"item":{"@id":"https://touale.github.io/2022/05/30/心法_外部排序/","name":"外部排序(多路平衡归并与败者树、置换-选择排序、最佳归并树)"}}]},{"@context":"http://schema.org","@type":"BlogPosting","headline":"外部排序(多路平衡归并与败者树、置换-选择排序、最佳归并树)","description":"","datePublished":"2022-05-29T16:00:00.000Z","dateModified":"2022-05-30T14:19:34.397Z","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https://touale.github.io/2022/05/30/%E5%BF%83%E6%B3%95_%E5%A4%96%E9%83%A8%E6%8E%92%E5%BA%8F/"},"author":{"@type":"Person","name":"Touale Cula","image":{"@type":"ImageObject","url":"img/touale.jpg"},"url":"https://touale.github.io/"},"publisher":{"@type":"Organization","name":"Touale Cula's Blog","logo":{"@type":"ImageObject","url":"img/touale.jpg","width":192,"height":192}},"url":"https://touale.github.io/2022/05/30/%E5%BF%83%E6%B3%95_%E5%A4%96%E9%83%A8%E6%8E%92%E5%BA%8F/","wordCount":0,"articleSection":"内功","keywords":"数据结构,内功","image":{"@type":"ImageObject","url":"img/touale.jpg","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"Touale Cula's Blog","url":"https://touale.github.io/","logo":{"@type":"ImageObject","url":"img/touale.jpg","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"Touale Cula","image":{"@type":"ImageObject","url":"img/touale.jpg"},"url":"https://touale.github.io/","sameAs":["https://github.com/volantis-x"],"description":"欢迎来到 Touale Cula 的小世界哦"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://touale.github.io/","name":"Touale Cula's Blog"}},{"@type":"ListItem","position":2,"item":{"@id":"https://touale.github.io/categories/内功/","name":"内功"}},{"@type":"ListItem","position":3,"item":{"@id":"https://touale.github.io/2022/05/30/心法_外部排序/","name":"外部排序(多路平衡归并与败者树、置换-选择排序、最佳归并树)"}}]},{"@context":"http://schema.org","@type":"BlogPosting","headline":"外部排序(多路平衡归并与败者树、置换-选择排序、最佳归并树)","description":"","datePublished":"2022-05-29T16:00:00.000Z","dateModified":"2022-06-04T13:24:31.425Z","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https://touale.github.io/2022/05/30/%E5%BF%83%E6%B3%95_%E5%A4%96%E9%83%A8%E6%8E%92%E5%BA%8F/"},"author":{"@type":"Person","name":"Touale Cula","image":{"@type":"ImageObject","url":"img/touale.jpg"},"url":"https://touale.github.io/"},"publisher":{"@type":"Organization","name":"Touale Cula's Blog","logo":{"@type":"ImageObject","url":"img/touale.jpg","width":192,"height":192}},"url":"https://touale.github.io/2022/05/30/%E5%BF%83%E6%B3%95_%E5%A4%96%E9%83%A8%E6%8E%92%E5%BA%8F/","wordCount":0,"articleSection":"内功","keywords":"数据结构,内功","image":{"@type":"ImageObject","url":"img/touale.jpg","width":192,"height":192}}]</script>
 
 
 

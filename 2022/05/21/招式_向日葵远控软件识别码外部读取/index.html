@@ -1753,7 +1753,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     debug: false,
     cdn: {"js":{"app":"/js/app.3690b000.js","parallax":"/js/plugins/parallax.8bf0ab10.js","rightMenu":"/js/plugins/rightMenu.1d2dd3e0.js","rightMenus":"/js/plugins/rightMenus.68379f6b.js","sites":"/js/plugins/tags/sites.76bf19b8.js","friends":"/js/plugins/tags/friends.f372da57.js","contributors":"/js/plugins/tags/contributors.aec80453.js","search":"/js/search/hexo.06d40311.js"},"css":{"style":"/css/style.8a038721.css"}},
     default: {"avatar":"https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/placeholder/avatar/round/3442075.svg","link":"https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/placeholder/cover/76b86c0226ffd.svg","image":"https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1654341765877),
+    lastupdate: new Date(1655356453870),
     sidebar: {
       for_page: ["blogger","category","tagcloud","donate","lastupdate"],
       for_post: ["blogger","toc","lastupdate"],
@@ -2427,7 +2427,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       <!-- see: /layout/_partial/scripts/_ctrl/coverCtrl.ejs -->
       <div id="none" class='cover-wrapper post dock' style="display: none;">
         
-  <div class='cover-bg lazyload placeholder' data-bg="https://api.yimian.xyz/img?type=moe&size=1920x1080"></div>
+  <div class='cover-bg' style='background-image:url(https://api.yimian.xyz/img?type=moe&size=1920x1080)'></div>
 
 <div class='cover-body'>
   <div class='top'>
@@ -2530,7 +2530,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
 <div class='new-meta-item author' itemprop="author" itemscope itemtype="http://schema.org/Person">
   <a itemprop="url" class='author' href="/" rel="nofollow">
-    <img itemprop="image" src="https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/apple-touch-icon.png" class="lazyload" data-srcset="https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/apple-touch-icon.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+    <img itemprop="image" src="https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/apple-touch-icon.png">
     <p itemprop="name">Touale</p>
   </a>
 </div>
@@ -2595,7 +2595,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <hr>
 <p>OK啊,基于上述原理，回到企业版的向日葵，客户反馈说用之前开源的东西不得行。刚接手时，个人觉得是不是配置文件发生了变更，或者版本不对。</p>
 <p>所以第一步就是装上了向日葵企业版，并且保持版本信息和客户一致！</p>
-<p><img src="/img/2022-05-21-19-52-14.png" class="lazyload" data-srcset="/img/2022-05-21-19-52-14.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+<p><img src="/img/2022-05-21-19-52-14.png"></p>
 <p>初步检索，发现配置文件好像好存在，通过everything检索sunlonginclient发现有关的config和之前路径相同，但是比对发现问题，ini配置文件的code和真实的识别码并不是相同的。</p>
 <p>所以我个人的猜测应该是旧版本卸载时没有清理干净..<del>无语</del> </p>
 <p>ok，果然把有关的config.ini删除，然后重启向日葵，发现config并没有重新生成，所以，软件之间的映射关系消失了….</p>
@@ -2603,12 +2603,12 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br></pre></td><td class="code"><pre><span class="line">[base]</span><br><span class="line">installautorun=</span><br><span class="line">no_window_user_pwd=0</span><br><span class="line">isopened=1</span><br><span class="line">config_path=D:\向日葵\SunloginClient\config.ini</span><br><span class="line">tracksvr=</span><br><span class="line">macaddress=C2:73:B1:D9:55:79</span><br><span class="line">has_uu=0</span><br><span class="line">showupdatetip=0</span><br><span class="line">language=0</span><br><span class="line">enable_print=0</span><br><span class="line">width=1920</span><br><span class="line">height=1080</span><br><span class="line">open_eyes=1</span><br><span class="line">screenshots_path=C:\Users\lenovo\Documents\Oray\Sunlogin Files</span><br><span class="line">hostname=default</span><br><span class="line">hostdesc=</span><br><span class="line">level=</span><br><span class="line">levelname=</span><br><span class="line">levelchanel=</span><br><span class="line">istransfer=</span><br><span class="line">ismessage=</span><br><span class="line">expires=</span><br><span class="line">security_tips_display=1</span><br><span class="line">skin=</span><br><span class="line">isfastcodelogin=1</span><br><span class="line">logintype=2</span><br><span class="line">slapiserver=slapi.oray.net</span><br><span class="line">account=</span><br><span class="line">login_duration=1000</span><br><span class="line">remindtime=2022-05-15 15:16:18</span><br><span class="line">access_token=</span><br><span class="line">refresh_token=</span><br><span class="line">access_token_expires_time=</span><br><span class="line">login_event_upload=1</span><br><span class="line">need_upload_asset=0</span><br><span class="line">openmicrolive=0</span><br><span class="line">publish_time=1653117355</span><br><span class="line">selectmode=2</span><br><span class="line">updatemode=1</span><br><span class="line">cpu=5sB4yWxK+5xBGLBPCzmvfr6/qAZCykVTDFNpwZXXnNpu4na9sozb7VRFMfBQ/+7aMUp7rNF5qPe6w7iQDEsj3l+j5cWlEAaJa7Xi+LbD5QHY8g9g7KBqXmOkoY/3czZGBhzF8wLQtVa/iGN7PlmrP+RbT+SX8uUdX9mEEtZMBOC9y2EqMzgVtvnhqbn7bMoP59PxQaqYTUhGmDfuffwNXLxj0cagh/PgwZLo5mTm2ETaMM0qyrFSbjPgrpsNK6kamO1DE2PZy5YFwuLBjzv3Iw==</span><br><span class="line">memory=Ct7HM1VSRxw=</span><br><span class="line">baseboard=5sB4yWxK+5xBGLBPCzmvfvcfONrfh+Zm9dRTootVyVt7uAeeptNvPFbUzz9Yg4IJjbdh5Q9Rte66w7iQDEsj3omcQ/tsAjOSeHMxc/ayoOOlRoc0gQviB4sN9A0jJmL09M2fkab0Zq5nI8oUBDBv92bkGu7uvXVYgMHmWo/6lwloFSpk/PBbvCXCzFxsx1RRCmEf8RlGxbQ=</span><br><span class="line">videocontroller=5sB4yWxK+5xBGLBPCzmvfpsNW6EnJEuGOc7oETI5Ni+C0sF509/x+XFYDwqtMZcSisgy62axgUG6w7iQDEsj3mNkFnsL1xFvVEi9/bVyWZMZG72DkwdZHHFMqqq6AyDcDhq/1nXFC1Q3FkK/Owh1mm+eyt2uGFOI0tFpTLSVFou6Mt9EpzclfZlVCRnNNH/P8F7ufnmq4Ez3drczjnAEkw==</span><br><span class="line">networkadapter=5sB4yWxK+5xBGLBPCzmvfsalJM6xa19LH5HD5xCDQQMJJh6vp1m8xXvlVLzFjvUbiPvZfxwAXCS6w7iQDEsj3qyI8sWNrcesDe9e5cjJtoGkaVgXejjp+/nhqbn7bMoP59PxQaqYTUhGmDfuffwNXOfFQ9Zn4xqr9mFd5ZXYcXgGisa5i7SyGw==</span><br><span class="line">desktop_monitor_info=5sB4yWxK+5xBGLBPCzmvfhw0dGh5C3dN1mGjS0qBtuBaMq21IZR8LqBzqfg/MgjCGiJgUXGoUt+6w7iQDEsj3gulQBqIB9nGI1IWKg2XOXuRQN8GcntdhJjq0E6ee+tmG+Wr3fbsZ/QsslsRSb0wKTqBMOycjRURZuQa7u69dVgL/zVPlis6cyIdbEgErMBB</span><br><span class="line">keyboard_info=5sB4yWxK+5xBGLBPCzmvfmLZpzB9jlf6/c2qigy4G5bTcb7967bItZRvQAPFOInLgJAkv96xy8i6w7iQDEsj3l+j5cWlEAaJcwMxh4Fv/u0cjWtl81avM+JZU5dLvLptgXIQ5xdlJmdv96sElIFEx9W6LMwrqrWAg7p5MpWN7Agx7PlSDoBx1L43NIN45LeL</span><br><span class="line">os_name=aDyPwYldEfIopeqYYZktKieT3zjNobg2gmerHxUlads=</span><br><span class="line">diskdrive=5sB4yWxK+5xBGLBPCzmvfjLaX9p9JpjSFwGpyEA3nZEqCND8Qo+/sJq2oXbx/RMqmZjWRSrpHo26w7iQDEsj3jB/wb7qjZMCKQYl0bgl534n8HnXis4BAXWTKn6p2863ZuQa7u69dVj84S6ncQckuF6p3+0FK4e0/Lz+97IilukJpOKHrgpqi7iIJcJ5TpI4nksRCcRBopq1f8YdCtx7lu3Gviq8IzjR/wpG7REZnW1DP1GHGw6+57ztR136ogN92zTzJXUkifIki2RrtUpqDT/f0mMWgn0nz+Sv14cJv40QGcjqfgcJMGfjym4uD0WDzmiHiAQ9wTa1el8t7VY4WyIvRfpA79QOBcLiwY879yM=</span><br><span class="line">is_enterprise=1</span><br><span class="line">firstclickadvance=1</span><br><span class="line">auto_proxy=0</span><br><span class="line">[local_security]</span><br><span class="line">certificate=0</span><br><span class="line">enabledpms=0</span><br><span class="line">autolockdesktop=0</span><br><span class="line">[advance]</span><br><span class="line">recordpath=C:\Users\lenovo\Documents\Oray\Sunlogin Files</span><br><span class="line">[common]</span><br><span class="line">autorun=1</span><br><span class="line">enablevpn=0</span><br><span class="line">projection=1</span><br><span class="line">timeout=10</span><br><span class="line">autoclose=1</span><br><span class="line">notify=1</span><br><span class="line">serviceonly=0</span><br><span class="line">enableremotecontrol=1</span><br><span class="line">askforquit=1</span><br><span class="line">enablewakeup=0</span><br><span class="line">openshareurl=0</span><br><span class="line">buyshareurl=0</span><br><span class="line">shareurl=</span><br><span class="line">[desktopmonitor]</span><br><span class="line">enable=0</span><br><span class="line">desktop=1</span><br><span class="line">framerate=1</span><br><span class="line">times=</span><br><span class="line">motiondetection=0</span><br><span class="line">sensitivity=</span><br><span class="line">area=</span><br><span class="line">[security]</span><br><span class="line">custompassword=</span><br><span class="line">usecustompassword=0</span><br><span class="line">usewindowuser=1</span><br><span class="line">wakeuppassword=</span><br><span class="line">wakeupselected=0</span><br><span class="line">whitelist=</span><br><span class="line">blacklist=</span><br><span class="line">switch=0</span><br><span class="line">enable=0</span><br><span class="line">limitloginaccesstime=</span><br><span class="line">enablelimitloginaccess=0</span><br><span class="line">harassoption=1</span><br><span class="line">landiscovery=1</span><br><span class="line">password=</span><br><span class="line">autolock=0</span><br><span class="line">code_access_request=0</span><br><span class="line">host_id_freq=0</span><br><span class="line">[desktop]</span><br><span class="line">clsid=&#123;3D7855BD-C91B-4B47-AC5C-1EDFBD30927B&#125;</span><br><span class="line">section=MODULES_LIST</span><br><span class="line">operatingenvironment=2</span><br><span class="line">enable=1</span><br><span class="line">manuconfirm=0</span><br><span class="line">confirmtime=15</span><br><span class="line">autoauth=1</span><br><span class="line">autolockws=0</span><br><span class="line">defaultresponse=1</span><br><span class="line">enablemirrordriver=1</span><br><span class="line">disabledesktopeffects=1</span><br><span class="line">remoteswitchctrl=</span><br><span class="line">[forward]</span><br><span class="line">clsid=&#123;92EEE51B-DEC5-477A-874A-66461B5A95BF&#125;</span><br><span class="line">section=MODULES_LIST</span><br><span class="line">friendlyname=绔彛杞彂</span><br><span class="line">homepage=/html/forward/index.html</span><br><span class="line">channels=name=%E5%BE%AE%E8%BD%AF%E8%BF%9C%E7%A8%8B%E6%A1%8C%E9%9D%A2&amp;pro=&amp;addr=127%2E0%2E0%2E1%3A3389;name=%E8%B7%AF%E7%94%B1%E5%99%A8&amp;pro=http&amp;addr=192%2E168%2E0%2E1%3A80;</span><br><span class="line">[fastcode_error]</span><br><span class="line">fastcode_after=10</span><br><span class="line">[network]</span><br><span class="line">open=0</span><br><span class="line">type=2</span><br><span class="line">address=127.0.0.1</span><br><span class="line">port=8889</span><br><span class="line">domain=</span><br><span class="line">username=</span><br><span class="line">password=</span><br><span class="line">ip=</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
 <p>而且相关信息貌似是base64编码，不过解码后乱码，应该不是直接编码，而是经过某算法加密</p>
-<p><img src="/img/2022-05-21-19-59-40.png" class="lazyload" data-srcset="/img/2022-05-21-19-59-40.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+<p><img src="/img/2022-05-21-19-59-40.png"></p>
 <p>其中有关很敏感的键名baseboard，和一开始的config节点base有点像…这个时候如果要解密，需要涉及逆向，最极端的方式就是hook…反编译，会导致整个流程非常复杂。</p>
 <p>所以，配置文件这条路应该走不通。</p>
 <p>好吧，换条路！</p>
 <hr>
-<h4 id="基于协议的向日葵识别码分析"><a href="#基于协议的向日葵识别码分析" class="headerlink" title="基于协议的向日葵识别码分析"></a>基于协议的向日葵识别码分析</h4><p>这个路，有点奇葩，一开始不是找配置嘛，发现一个log日志文件夹…<br><img src="/img/2022-05-21-20-03-41.png" class="lazyload" data-srcset="/img/2022-05-21-20-03-41.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+<h4 id="基于协议的向日葵识别码分析"><a href="#基于协议的向日葵识别码分析" class="headerlink" title="基于协议的向日葵识别码分析"></a>基于协议的向日葵识别码分析</h4><p>这个路，有点奇葩，一开始不是找配置嘛，发现一个log日志文件夹…<br><img src="/img/2022-05-21-20-03-41.png"></p>
 <p>sunlogin_service.20220521-164550.log 中有几个比较关键的日志信息捕获到：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">2022-05-21 16:45:51.223	- Info  -	Current client status: 2</span><br><span class="line">2022-05-21 16:45:51.223	- Info  -	send status_changed notify 2</span><br><span class="line">2022-05-21 16:45:51.223	- Info  -	Login task time 0</span><br><span class="line">2022-05-21 16:45:51.224	- Info  -	Do login( type: 2 ) at 410</span><br><span class="line">2022-05-21 16:45:51.224	- Info  -	[http call3] new call id:1, url:https://slapi.oray.net/remote/get-fastcode</span><br><span class="line">2022-05-21 16:45:51.226	- Info  -	[http call3] id:1 create new connection : https://slapi.oray.net:443</span><br><span class="line">2022-05-21 16:45:51.544	- Info  -	attempt to connect server slapi.oray.net:443(114.215.172.2:443)</span><br><span class="line">2022-05-21 16:45:52.760	- Info  -	[http call3] id:1, url:https://slapi.oray.net/remote/get-fastcode, status code:200</span><br><span class="line">2022-05-21 16:45:53.036	- Info  -	attempt to connect server rc10-fc10.oray.com:443(121.40.171.186:443)</span><br><span class="line">2022-05-21 16:45:53.656	- Info  -	[service] attempted logon</span><br><span class="line">2022-05-21 16:45:53.899	- Info  -	[service] logon server OK. public ip:183.236.0.85</span><br><span class="line">2022-05-21 16:45:54.054	- Info  -	[online] attempted client online</span><br><span class="line">2022-05-21 16:45:54.357	- Info  -	[online] client online OK.</span><br></pre></td></tr></table></figure>
 
@@ -2619,10 +2619,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <p>大概意思就是缺少字段嘛，比如mac字段…</p>
 <p>新吧，那就抓个包看看内部传输协议传输了什么数据</p>
 <p>果断祭出神器charles，打通8889的socket代理，然后把向日葵设置个内部代理</p>
-<p><img src="/img/2022-05-21-20-08-36.png" class="lazyload" data-srcset="/img/2022-05-21-20-08-36.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+<p><img src="/img/2022-05-21-20-08-36.png"></p>
 <p>然后重启下向日葵</p>
 <p>ok，捕获到4条链接</p>
-<p><img src="/img/2022-05-21-20-09-53.png" class="lazyload" data-srcset="/img/2022-05-21-20-09-53.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+<p><img src="/img/2022-05-21-20-09-53.png"></p>
 <p>提交了</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">GET /remote/get-fastcode?fastcode=767585688&amp;fastcodepwd=Byzlwou99GKf2TzQ3mjTe1dYHOm6M4Ln&amp;isforced=0&amp;mac=C2%3A73%3AB1%3AD9%3A55%3A79&amp;code=&amp;version=3%2E2%2E1%2E44986&amp;client=Windows%2Cx64%2CEnt%2Cappname%3DsunloginRemoteClient&amp; HTTP/1.1</span><br><span class="line">Accept: */*</span><br><span class="line">Host: slapi.oray.net</span><br><span class="line">User-Agent: SLRC/3.2.1.44986 (Windows,x64,Ent,appname=sunloginRemoteClient)</span><br><span class="line">Content-Type: application/x-www-form-urlencoded</span><br></pre></td></tr></table></figure>
 <p>返回了</p>
@@ -2642,7 +2642,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;</span><br><span class="line">&lt;response&gt;</span><br><span class="line">&lt;category&gt;remote&lt;/category&gt;</span><br><span class="line">&lt;action&gt;getfastcode&lt;/action&gt;</span><br><span class="line">&lt;code&gt;1220&lt;/code&gt;</span><br><span class="line">&lt;message&gt;GET_FASTCODE_TOO_MUCH&lt;/message&gt;</span><br><span class="line">&lt;datas&gt;</span><br><span class="line"></span><br><span class="line">&lt;/datas&gt;</span><br><span class="line">&lt;/response&gt;</span><br></pre></td></tr></table></figure>
 
 <p>而且向日葵程序也加载不出来识别码了</p>
-<p><img src="/img/2022-05-21-20-20-42.png" class="lazyload" data-srcset="/img/2022-05-21-20-20-42.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+<p><img src="/img/2022-05-21-20-20-42.png"></p>
 <p>然后经过下面的过程。。。。</p>
 <p>1.还是访问获取fast-code</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://slapi.oray.net/remote/get-fastcode?fastcode=767585688&amp;fastcodepwd=Byzlwou99GKf2TzQ3mjTe1dYHOm6M4Ln&amp;isforced=0&amp;mac=C2%3A73%3AB1%3AD9%3A55%3A79&amp;code=&amp;version=3%2E2%2E1%2E44986&amp;client=Windows%2Cx64%2CEnt%2Cappname%3DsunloginRemoteClient&amp;</span><br></pre></td></tr></table></figure>
@@ -2655,7 +2655,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <p>返回</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">HTTP/1.1 200 OK</span><br><span class="line">Date: Sat, 21 May 2022 12:31:38 GMT</span><br><span class="line">Content-Type: text/xml;charset=utf-8</span><br><span class="line">Transfer-Encoding: chunked</span><br><span class="line">Front-End-Https: on</span><br><span class="line">Connection: keep-alive</span><br><span class="line"></span><br><span class="line">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;</span><br><span class="line">&lt;response&gt;</span><br><span class="line">&lt;category&gt;sunlogin&lt;/category&gt;</span><br><span class="line">&lt;action&gt;remoteinfoupdate&lt;/action&gt;</span><br><span class="line">&lt;code&gt;0&lt;/code&gt;</span><br><span class="line">&lt;message&gt;SUCCESS&lt;/message&gt;</span><br><span class="line">&lt;datas&gt;</span><br><span class="line">&lt;data type=&quot;field&quot; name=&quot;configmodifiedtime&quot;&gt;1653136298&lt;/data&gt;</span><br><span class="line">&lt;/datas&gt;</span><br><span class="line">&lt;/response&gt;</span><br></pre></td></tr></table></figure>
 
-<p>3.响应UI<br><img src="/img/2022-05-21-20-34-02.png" class="lazyload" data-srcset="/img/2022-05-21-20-34-02.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+<p>3.响应UI<br><img src="/img/2022-05-21-20-34-02.png"></p>
 <p>这个时候，我的识别码真正变化了<del>无语</del></p>
 <p>这时候还是回去访问一开始缩短的链接，也就是通过mac查识别码</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;</span><br><span class="line">&lt;response&gt;</span><br><span class="line">&lt;category&gt;remote&lt;/category&gt;</span><br><span class="line">&lt;action&gt;getfastcode&lt;/action&gt;</span><br><span class="line">&lt;code&gt;0&lt;/code&gt;</span><br><span class="line">&lt;message&gt;SUCCESS&lt;/message&gt;</span><br><span class="line">&lt;datas&gt;</span><br><span class="line">&lt;data type=&quot;field&quot; name=&quot;fastcode&quot;&gt;k883600822&lt;/data&gt;&lt;data type=&quot;field&quot; name=&quot;license&quot;&gt;3655-9fca-27b7-113e&lt;/data&gt;&lt;data type=&quot;field&quot; name=&quot;password&quot;&gt;vqRgXU5niFP3SSz3MukQ5znadf09t2bZ&lt;/data&gt;&lt;data type=&quot;field&quot; name=&quot;lastusetime&quot;&gt;1653136486&lt;/data&gt;&lt;data type=&quot;field&quot; name=&quot;slapi&quot;&gt;slapi.oray.net&lt;/data&gt;&lt;data type=&quot;field&quot; name=&quot;sysserviceid&quot;&gt;0&lt;/data&gt;&lt;data type=&quot;field&quot; name=&quot;expiredate&quot;&gt;-1&lt;/data&gt;&lt;data type=&quot;field&quot; name=&quot;login&quot;&gt;rc08-fc01.oray.com&lt;/data&gt;&lt;data type=&quot;field&quot; name=&quot;httpsserver&quot;&gt;rc08-fc01.oray.com:443&lt;/data&gt;&lt;data type=&quot;field&quot; name=&quot;pubsvr&quot;&gt;pubsub02.oray.net&lt;/data&gt;&lt;data type=&quot;field&quot; name=&quot;tracksvr&quot;&gt;&lt;/data&gt;&lt;data type=&quot;field&quot; name=&quot;lastmodifytime&quot;&gt;1653136486&lt;/data&gt;&lt;data type=&quot;field&quot; name=&quot;statuscode&quot;&gt;&lt;/data&gt;&lt;data type=&quot;field&quot; name=&quot;security_tips_display&quot;&gt;1&lt;/data&gt;&lt;data type=&quot;field&quot; name=&quot;force_login&quot;&gt;1&lt;/data&gt;&lt;data type=&quot;field&quot; name=&quot;retryinterval&quot;&gt;30&lt;/data&gt;&lt;data type=&quot;field&quot; name=&quot;expiredate_timestamp&quot;&gt;1653168886&lt;/data&gt;</span><br><span class="line">&lt;/datas&gt;</span><br><span class="line">&lt;/response&gt;</span><br></pre></td></tr></table></figure>
@@ -2674,12 +2674,12 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <h4 id="基于窗口句柄的内容提取"><a href="#基于窗口句柄的内容提取" class="headerlink" title="基于窗口句柄的内容提取"></a>基于窗口句柄的内容提取</h4><p>这个思路应该是大多数人想到了，但是很遗憾走不通</p>
 <p>非常简单，找个窗口句柄对组件进行解析，发现：</p>
 <p>发现只能解析一个窗口，其他组建解析不了</p>
-<p><img src="/img/2022-05-21-20-40-31.png" class="lazyload" data-srcset="/img/2022-05-21-20-40-31.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+<p><img src="/img/2022-05-21-20-40-31.png"></p>
 <p>不像其他软件，可以解析到具体的按钮组件等</p>
-<p><img src="/img/2022-05-21-20-41-01.png" class="lazyload" data-srcset="/img/2022-05-21-20-41-01.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+<p><img src="/img/2022-05-21-20-41-01.png"></p>
 <p>原因嘛，很easy，向日葵是自绘窗口，所以嘛</p>
 <p>切换到UI绑定看看</p>
-<p><img src="/img/2022-05-21-20-41-51.png" class="lazyload" data-srcset="/img/2022-05-21-20-41-51.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+<p><img src="/img/2022-05-21-20-41-51.png"></p>
 <p>UI探测也不行，不过有一说一。tv远程软件可以通过绑定句柄进行识别码获取，qq虽然也是自绘窗口，句柄探测找不到组建，但是ui探测是读取到一些信息，比如聊天记录啦</p>
 <p>好吧，这条路不行</p>
 <hr>
@@ -2688,15 +2688,15 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <p>先前提到配置文件，不管信息是保存在配置文件，还是保存在数据库，或者是云端，不管有没有加密，其实最终数据都会加载在内存中。。。</p>
 <p>那就直接祭出CE大法</p>
 <p>搜索关键字</p>
-<p><img src="/img/2022-05-21-20-50-24.png" class="lazyload" data-srcset="/img/2022-05-21-20-50-24.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+<p><img src="/img/2022-05-21-20-50-24.png"></p>
 <p>21个结果，emmm等一会，如果这个值过一会发生了变化，说明不是长久存在，需要找个一个恒定值</p>
-<p><img src="/img/2022-05-21-20-51-53.png" class="lazyload" data-srcset="/img/2022-05-21-20-51-53.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+<p><img src="/img/2022-05-21-20-51-53.png"></p>
 <p>剔除变化结果，浏览在内存的表现形式</p>
-<p><img src="/img/2022-05-21-20-52-57.png" class="lazyload" data-srcset="/img/2022-05-21-20-52-57.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+<p><img src="/img/2022-05-21-20-52-57.png"></p>
 <p>像这种表现得独立的，忽略吧，他的特征难以让我们定位到的所在</p>
-<p><img src="/img/2022-05-21-20-53-47.png" class="lazyload" data-srcset="/img/2022-05-21-20-53-47.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+<p><img src="/img/2022-05-21-20-53-47.png"></p>
 <p>这种还行</p>
-<p><img src="/img/2022-05-21-20-54-21.png" class="lazyload" data-srcset="/img/2022-05-21-20-54-21.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+<p><img src="/img/2022-05-21-20-54-21.png"></p>
 <p>这个就非常不错，表现出json格式，所以我们只要找到 “fastcode”:”k 这个关键词即可</p>
 <p>转换成 hex 形式</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">22 66 61 73 74 63 6F 64 65 22 20 3A 20 22 6B</span><br></pre></td></tr></table></figure>
@@ -2706,7 +2706,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 
 <p>结果：</p>
-<p><img src="/img/2022-05-21-20-56-39.png" class="lazyload" data-srcset="/img/2022-05-21-20-56-39.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+<p><img src="/img/2022-05-21-20-56-39.png"></p>
 <p>顺利读取…下班了！</p>
 
 
@@ -2774,7 +2774,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           
           >
           
-            <img src="https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/logo/128/qq.png" class="lazyload" data-srcset="https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/logo/128/qq.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+            <img src="https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/logo/128/qq.png">
           
         </a>
       
@@ -2786,7 +2786,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           
           >
           
-            <img src="https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/logo/128/qzone.png" class="lazyload" data-srcset="https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/logo/128/qzone.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+            <img src="https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/logo/128/qzone.png">
           
         </a>
       
@@ -2798,7 +2798,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           
           >
           
-            <img src="https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/logo/128/weibo.png" class="lazyload" data-srcset="https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/logo/128/weibo.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+            <img src="https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/logo/128/weibo.png">
           
         </a>
       
@@ -2967,7 +2967,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
  
   <div class='content'> 
-    <ul class="list entry navigation"><li><a class="widget-last" href="/2022/06/04/%E6%8B%9B%E5%BC%8F_%E5%89%91%E6%8C%87%20Offer%2037.%20%E5%BA%8F%E5%88%97%E5%8C%96%E4%BA%8C%E5%8F%89%E6%A0%91/"><div class="item"><time>2022-06-04</time><span>招式</span></div><span>剑指 Offer 37. 序列化二叉树</span></a></li><li><a class="widget-last" href="/2022/05/18/%E6%8B%9B%E5%BC%8F_%E5%89%91%E6%8C%87%20Offer%2034.%20%E4%BA%8C%E5%8F%89%E6%A0%91%E4%B8%AD%E5%92%8C%E4%B8%BA%E6%9F%90%E4%B8%80%E5%80%BC%E7%9A%84%E8%B7%AF%E5%BE%84/"><div class="item"><time>2022-06-04</time><span>招式</span></div><span>剑指 Offer 34. 二叉树中和为某一值的路径</span></a></li><li><a class="widget-last" href="/2022/06/04/%E6%8B%9B%E5%BC%8F_%E5%89%91%E6%8C%87%20Offer%2066.%20%E6%9E%84%E5%BB%BA%E4%B9%98%E7%A7%AF%E6%95%B0%E7%BB%84/"><div class="item"><time>2022-06-04</time><span>招式</span></div><span>剑指 Offer 66. 构建乘积数组</span></a></li><li><a class="widget-last" href="/2022/06/04/%E6%8B%9B%E5%BC%8F_%E5%89%91%E6%8C%87%20Offer%2059%20-%20II.%20%E9%98%9F%E5%88%97%E7%9A%84%E6%9C%80%E5%A4%A7%E5%80%BC/"><div class="item"><time>2022-06-04</time><span>招式</span></div><span>剑指 Offer 59 - II. 队列的最大值</span></a></li><li><a class="widget-last" href="/2022/06/04/%E6%8B%9B%E5%BC%8F_%E5%89%91%E6%8C%87%20Offer%2067.%20%E6%8A%8A%E5%AD%97%E7%AC%A6%E4%B8%B2%E8%BD%AC%E6%8D%A2%E6%88%90%E6%95%B4%E6%95%B0/"><div class="item"><time>2022-06-04</time><span>招式</span></div><span>剑指 Offer 67. 把字符串转换成整数</span></a></li></ul> 
+    <ul class="list entry navigation"><li><a class="widget-last" href="/2022/06/16/%E5%86%85%E5%8A%9F_%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86/"><div class="item"><time>2022-06-16</time><span>内功</span></div><span>项目管理</span></a></li><li><a class="widget-last" href="/2022/05/30/%E5%BF%83%E6%B3%95_%E5%A4%96%E9%83%A8%E6%8E%92%E5%BA%8F/"><div class="item"><time>2022-06-04</time><span>内功</span></div><span>外部排序(多路平衡归并与败者树、置换-选择排序、最佳归并树)</span></a></li><li><a class="widget-last" href="/2022/06/04/%E6%8B%9B%E5%BC%8F_%E5%89%91%E6%8C%87%20Offer%2037.%20%E5%BA%8F%E5%88%97%E5%8C%96%E4%BA%8C%E5%8F%89%E6%A0%91/"><div class="item"><time>2022-06-04</time><span>招式</span></div><span>剑指 Offer 37. 序列化二叉树</span></a></li><li><a class="widget-last" href="/2022/05/18/%E6%8B%9B%E5%BC%8F_%E5%89%91%E6%8C%87%20Offer%2034.%20%E4%BA%8C%E5%8F%89%E6%A0%91%E4%B8%AD%E5%92%8C%E4%B8%BA%E6%9F%90%E4%B8%80%E5%80%BC%E7%9A%84%E8%B7%AF%E5%BE%84/"><div class="item"><time>2022-06-04</time><span>招式</span></div><span>剑指 Offer 34. 二叉树中和为某一值的路径</span></a></li><li><a class="widget-last" href="/2022/06/04/%E6%8B%9B%E5%BC%8F_%E5%89%91%E6%8C%87%20Offer%2066.%20%E6%9E%84%E5%BB%BA%E4%B9%98%E7%A7%AF%E6%95%B0%E7%BB%84/"><div class="item"><time>2022-06-04</time><span>招式</span></div><span>剑指 Offer 66. 构建乘积数组</span></a></li></ul> 
   </div> 
 </section> 
 
@@ -3548,33 +3548,6 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 </script>
 
 
-
-
-  <script defer src="https://npm.elemecdn.com/volantis-static@0.0.1649552113628/libs/vanilla-lazyload/dist/lazyload.min.js"></script>
-<script>
-  // https://www.npmjs.com/package/vanilla-lazyload
-  // Set the options globally
-  // to make LazyLoad self-initialize
-  window.lazyLoadOptions = {
-    elements_selector: ".lazyload",
-    threshold: 0
-  };
-  // Listen to the initialization event
-  // and get the instance of LazyLoad
-  window.addEventListener(
-    "LazyLoad::Initialized",
-    function (event) {
-      window.lazyLoadInstance = event.detail.instance;
-    },
-    false
-  );
-  document.addEventListener('DOMContentLoaded', function () {
-    lazyLoadInstance.update();
-  });
-  document.addEventListener('pjax:complete', function () {
-    lazyLoadInstance.update();
-  });
-</script>
 
 
 

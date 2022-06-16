@@ -1755,7 +1755,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     debug: false,
     cdn: {"js":{"app":"/js/app.3690b000.js","parallax":"/js/plugins/parallax.8bf0ab10.js","rightMenu":"/js/plugins/rightMenu.1d2dd3e0.js","rightMenus":"/js/plugins/rightMenus.68379f6b.js","sites":"/js/plugins/tags/sites.76bf19b8.js","friends":"/js/plugins/tags/friends.f372da57.js","contributors":"/js/plugins/tags/contributors.aec80453.js","search":"/js/search/hexo.06d40311.js"},"css":{"style":"/css/style.8a038721.css"}},
     default: {"avatar":"https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/placeholder/avatar/round/3442075.svg","link":"https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/placeholder/cover/76b86c0226ffd.svg","image":"https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1654341765877),
+    lastupdate: new Date(1655356453870),
     sidebar: {
       for_page: ["blogger","category","tagcloud","donate","lastupdate"],
       for_post: ["blogger","toc","lastupdate"],
@@ -2429,7 +2429,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       <!-- see: /layout/_partial/scripts/_ctrl/coverCtrl.ejs -->
       <div id="none" class='cover-wrapper post dock' style="display: none;">
         
-  <div class='cover-bg lazyload placeholder' data-bg="https://api.yimian.xyz/img?type=moe&size=1920x1080"></div>
+  <div class='cover-bg' style='background-image:url(https://api.yimian.xyz/img?type=moe&size=1920x1080)'></div>
 
 <div class='cover-body'>
   <div class='top'>
@@ -2532,7 +2532,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
 <div class='new-meta-item author' itemprop="author" itemscope itemtype="http://schema.org/Person">
   <a itemprop="url" class='author' href="/" rel="nofollow">
-    <img itemprop="image" src="https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/apple-touch-icon.png" class="lazyload" data-srcset="https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/apple-touch-icon.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+    <img itemprop="image" src="https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/apple-touch-icon.png">
     <p itemprop="name">Touale</p>
   </a>
 </div>
@@ -2580,7 +2580,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   <div id="layoutHelper-page-plugins"></div>
   <div id="post-body" itemprop="articleBody">
     <h3 id="题目内容"><a href="#题目内容" class="headerlink" title="题目内容"></a>题目内容</h3><p>任务六：采集全部5页的彩票数据，计算全部中奖的总金额（包含一、二、三等奖）</p>
-<p><img src="/img/!%5B%5D(img/2022-04-25-19-14-42.png).png" class="lazyload" data-srcset="/img/!%5B%5D(img/2022-04-25-19-14-42.png).png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+<p><img src="/img/!%5B%5D(img/2022-04-25-19-14-42.png).png"></p>
 <hr>
 <h3 id="初步分析"><a href="#初步分析" class="headerlink" title="初步分析"></a>初步分析</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">GET https://match.yuanrenxue.com/api/match/6?m=OTfA1luzknp0JvTbZefBFolpU8kdVfMeLq6RaU9C1dOQVziK8tm6EX0hBWXAt954thxjgweOHgz6hpWdBXyynIQdeabEpcCoe7y4ERhA112WBzgniwiXZdRoFLqf%252B%252BhHgOsn%252FXJxPcZHHuNB3XbBUGFvK6uFBOmeVB5OMCCqkoE%253D&amp;q=1-1651903761000%7C HTTP/1.1</span><br><span class="line">Host: match.yuanrenxue.com</span><br><span class="line">Connection: keep-alive</span><br><span class="line">Accept: application/json, text/javascript, */*; q=0.01</span><br><span class="line">User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36</span><br><span class="line">X-Requested-With: XMLHttpRequest</span><br><span class="line">Sec-Fetch-Site: same-origin</span><br><span class="line">Sec-Fetch-Mode: cors</span><br><span class="line">Sec-Fetch-Dest: empty</span><br><span class="line">Referer: https://match.yuanrenxue.com/match/6</span><br><span class="line">Accept-Encoding: gzip, deflate, br</span><br><span class="line">Accept-Language: zh-CN,zh;q=0.9,en;q=0.8</span><br></pre></td></tr></table></figure>
 
@@ -2590,18 +2590,18 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <p>初步结论，应该就是提交参数存在加密，返回时明文</p>
 <hr>
 <h3 id="深度分析"><a href="#深度分析" class="headerlink" title="深度分析"></a>深度分析</h3><p>捕捉请求，对发起请求的堆栈进行分析</p>
-<p><img src="/img/2022-05-07-14-31-06.png" class="lazyload" data-srcset="/img/2022-05-07-14-31-06.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
-<p><img src="/img/2022-05-07-14-31-30.png" class="lazyload" data-srcset="/img/2022-05-07-14-31-30.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+<p><img src="/img/2022-05-07-14-31-06.png"></p>
+<p><img src="/img/2022-05-07-14-31-30.png"></p>
 <p>非常明显，m和q的生成位置都在于此，可以打个断点，查看如何生成。</p>
 <hr>
-<p>首先对m进行分析，断点后发现t应该是一个时间戳，而o应该是一个常数，具体不清楚，继续查看r函数的定义<br><img src="/img/2022-05-07-14-33-53.png" class="lazyload" data-srcset="/img/2022-05-07-14-33-53.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
-<p><img src="/img/2022-05-07-14-34-11.png" class="lazyload" data-srcset="/img/2022-05-07-14-34-11.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+<p>首先对m进行分析，断点后发现t应该是一个时间戳，而o应该是一个常数，具体不清楚，继续查看r函数的定义<br><img src="/img/2022-05-07-14-33-53.png"></p>
+<p><img src="/img/2022-05-07-14-34-11.png"></p>
 <p>从上面的代码来看，o应该是点击上一页和下一页所触发加一的操作，并且大于6时，整个网页会进行重新加载，使其o变成1，而r最终调用的应该是z，z应该是一种加密函数。</p>
 <p>上面的代码来看，几乎没有任何混淆，那直接用一种暴力手法，全部复制下载在本地加载，最后附加一个console的输出！</p>
-<p><img src="/img/2022-05-07-14-37-15.png" class="lazyload" data-srcset="/img/2022-05-07-14-37-15.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+<p><img src="/img/2022-05-07-14-37-15.png"></p>
 <p>强制运行后会发现有问题，emm…下面进入正题了，对模糊点进行分析！</p>
 <h4 id="1-表情加密"><a href="#1-表情加密" class="headerlink" title="1.表情加密"></a>1.表情加密</h4><p>在代码最前面出现了一堆颜文字，这种俗称表情加密，正常人成aaencode加密</p>
-<p><img src="/img/2022-05-07-14-39-14.png" class="lazyload" data-srcset="/img/2022-05-07-14-39-14.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+<p><img src="/img/2022-05-07-14-39-14.png"></p>
 <p>解决方案很好使，因为最终还是要放入解释器解释，所以要么在控制台二次输出，要么就是随便一个解密网站也行，比如(这个网站)[<a target="_blank" rel="noopener" href="https://www.qtool.net/decode]">https://www.qtool.net/decode]</a></p>
 <p>解密后，执行代码很简单如下</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">window.o = 1;</span><br></pre></td></tr></table></figure>
@@ -2610,40 +2610,40 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">window = &#123;&#125;</span><br><span class="line">window = this</span><br><span class="line">window = global</span><br></pre></td></tr></table></figure>
 
 <p>但是,补完后出现这种情况，提示xxx不存在</p>
-<p><img src="/img/2022-05-07-14-43-37.png" class="lazyload" data-srcset="/img/2022-05-07-14-43-37.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+<p><img src="/img/2022-05-07-14-43-37.png"></p>
 <p>ok，那就找到关于ASN1的地方，搜索大法</p>
-<p><img src="/img/2022-05-07-14-44-46.png" class="lazyload" data-srcset="/img/2022-05-07-14-44-46.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+<p><img src="/img/2022-05-07-14-44-46.png"></p>
 <p>ASN1应该是一个全局变量，但是最后丢失了，原因经过一系列断点，原因在此</p>
-<p><img src="/img/2022-05-07-14-46-25.png" class="lazyload" data-srcset="/img/2022-05-07-14-46-25.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+<p><img src="/img/2022-05-07-14-46-25.png"></p>
 <p>解决方案，去掉就好了。。。。把window重置了，浏览器环境没有影响，但是对于node环境有影响</p>
 <hr>
-<h4 id="3-加密坑"><a href="#3-加密坑" class="headerlink" title="3.加密坑"></a>3.加密坑</h4><p>继续运行，输出了该错误<br><img src="/img/2022-05-07-14-47-46.png" class="lazyload" data-srcset="/img/2022-05-07-14-47-46.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+<h4 id="3-加密坑"><a href="#3-加密坑" class="headerlink" title="3.加密坑"></a>3.加密坑</h4><p>继续运行，输出了该错误<br><img src="/img/2022-05-07-14-47-46.png"></p>
 <p>继续断点在问题出现的地方</p>
-<p><img src="/img/2022-05-07-14-48-26.png" class="lazyload" data-srcset="/img/2022-05-07-14-48-26.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
-<p>发现node环境与浏览器环境不同，浏览器环境是128，而node下是0<br><img src="/img/2022-05-07-14-50-10.png" class="lazyload" data-srcset="/img/2022-05-07-14-50-10.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
-<p>调用堆栈，e来源于pe，但似乎没什么用，折叠代码，找下关于this.n<br><img src="/img/2022-05-07-14-51-19.png" class="lazyload" data-srcset="/img/2022-05-07-14-51-19.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
-<p>发现此处存在jsFuck混淆加密，还原<br><img src="/img/2022-05-07-14-58-24.png" class="lazyload" data-srcset="/img/2022-05-07-14-58-24.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+<p><img src="/img/2022-05-07-14-48-26.png"></p>
+<p>发现node环境与浏览器环境不同，浏览器环境是128，而node下是0<br><img src="/img/2022-05-07-14-50-10.png"></p>
+<p>调用堆栈，e来源于pe，但似乎没什么用，折叠代码，找下关于this.n<br><img src="/img/2022-05-07-14-51-19.png"></p>
+<p>发现此处存在jsFuck混淆加密，还原<br><img src="/img/2022-05-07-14-58-24.png"></p>
 <p>还原结果</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">false;</span><br></pre></td></tr></table></figure>
 
 <hr>
-<p>应该就是由于本地无法解析该语句<br><img src="/img/2022-05-07-15-00-23.png" class="lazyload" data-srcset="/img/2022-05-07-15-00-23.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+<p>应该就是由于本地无法解析该语句<br><img src="/img/2022-05-07-15-00-23.png"></p>
 <hr>
 <h4 id="4-生成坑"><a href="#4-生成坑" class="headerlink" title="4.生成坑"></a>4.生成坑</h4><p>经过上述运行，已经得到加密结果，比如</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">console.log(z(1651903761000,1))</span><br><span class="line"></span><br><span class="line">PS C:\Users\lenovo\Desktop\js攻防&gt; node &quot;c:\Users\lenovo\Desktop\js攻防\回溯\2.js&quot;</span><br><span class="line">OTfA1luzknp0JvTbZefBFolpU8kdVfMeLq6RaU9C1dOQVziK8tm6EX0hBWXAt954thxjgweOHgz6hpWdBXyynIQdeabEpcCoe7y4ERhA112WBzgniwiXZdRoFLqf%2B%2BhHgOsn%2FXJxPcZHHuNB3XbBUGFvK6uFBOmeVB5OMCCqkoE%3D</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
 <p>这时候问题又来了，每次运行都是得到上面的结果</p>
 <p>浏览器运行，每次结果都不一样</p>
-<p><img src="/img/2022-05-07-15-02-18.png" class="lazyload" data-srcset="/img/2022-05-07-15-02-18.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
-<p><img src="/img/2022-05-07-15-02-55.png" class="lazyload" data-srcset="/img/2022-05-07-15-02-55.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+<p><img src="/img/2022-05-07-15-02-18.png"></p>
+<p><img src="/img/2022-05-07-15-02-55.png"></p>
 <p>出现这个问题，我陷入了很大的迷茫，，，本质上这是一个rsa加密没错，作者经过了魔改rsa，rsa每次加密结果都不一样确实，然后就是不断地调试调试。。。</p>
 <p>后面发现一个事情，我每次都是重新运行，浏览器下是持续keep life状态</p>
 <p>那么，尝试一下</p>
-<p><img src="/img/2022-05-07-15-04-50.png" class="lazyload" data-srcset="/img/2022-05-07-15-04-50.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+<p><img src="/img/2022-05-07-15-04-50.png"></p>
 <p>发现，每次结果都不一样了，而且和浏览器对应上了，卒。</p>
 <hr>
 <h4 id="5-风控坑"><a href="#5-风控坑" class="headerlink" title="5.风控坑"></a>5.风控坑</h4><p>经过一些列操作，封装发现风控问题了</p>
-<p><img src="/img/2022-05-07-15-06-13.png" class="lazyload" data-srcset="/img/2022-05-07-15-06-13.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+<p><img src="/img/2022-05-07-15-06-13.png"></p>
 <p>这个时候我就很无语了，利用fiddle直接抓包，重放发现浏览器也是风控，这时候怀疑服务端校验了重放请求。</p>
 <p>那就直接拦截fd的包，然后复制到requests里面请求，也是风控。</p>
 <p>ok，这个时候怀疑时间问题。果然，拦截后时间如果长了点再运行放出来就会风控，而且时间只有2秒。</p>
@@ -2731,7 +2731,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           
           >
           
-            <img src="https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/logo/128/qq.png" class="lazyload" data-srcset="https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/logo/128/qq.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+            <img src="https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/logo/128/qq.png">
           
         </a>
       
@@ -2743,7 +2743,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           
           >
           
-            <img src="https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/logo/128/qzone.png" class="lazyload" data-srcset="https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/logo/128/qzone.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+            <img src="https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/logo/128/qzone.png">
           
         </a>
       
@@ -2755,7 +2755,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           
           >
           
-            <img src="https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/logo/128/weibo.png" class="lazyload" data-srcset="https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/logo/128/weibo.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+            <img src="https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/logo/128/weibo.png">
           
         </a>
       
@@ -2941,7 +2941,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
  
   <div class='content'> 
-    <ul class="list entry navigation"><li><a class="widget-last" href="/2022/06/04/%E6%8B%9B%E5%BC%8F_%E5%89%91%E6%8C%87%20Offer%2037.%20%E5%BA%8F%E5%88%97%E5%8C%96%E4%BA%8C%E5%8F%89%E6%A0%91/"><div class="item"><time>2022-06-04</time><span>招式</span></div><span>剑指 Offer 37. 序列化二叉树</span></a></li><li><a class="widget-last" href="/2022/05/18/%E6%8B%9B%E5%BC%8F_%E5%89%91%E6%8C%87%20Offer%2034.%20%E4%BA%8C%E5%8F%89%E6%A0%91%E4%B8%AD%E5%92%8C%E4%B8%BA%E6%9F%90%E4%B8%80%E5%80%BC%E7%9A%84%E8%B7%AF%E5%BE%84/"><div class="item"><time>2022-06-04</time><span>招式</span></div><span>剑指 Offer 34. 二叉树中和为某一值的路径</span></a></li><li><a class="widget-last" href="/2022/06/04/%E6%8B%9B%E5%BC%8F_%E5%89%91%E6%8C%87%20Offer%2066.%20%E6%9E%84%E5%BB%BA%E4%B9%98%E7%A7%AF%E6%95%B0%E7%BB%84/"><div class="item"><time>2022-06-04</time><span>招式</span></div><span>剑指 Offer 66. 构建乘积数组</span></a></li><li><a class="widget-last" href="/2022/06/04/%E6%8B%9B%E5%BC%8F_%E5%89%91%E6%8C%87%20Offer%2059%20-%20II.%20%E9%98%9F%E5%88%97%E7%9A%84%E6%9C%80%E5%A4%A7%E5%80%BC/"><div class="item"><time>2022-06-04</time><span>招式</span></div><span>剑指 Offer 59 - II. 队列的最大值</span></a></li><li><a class="widget-last" href="/2022/06/04/%E6%8B%9B%E5%BC%8F_%E5%89%91%E6%8C%87%20Offer%2067.%20%E6%8A%8A%E5%AD%97%E7%AC%A6%E4%B8%B2%E8%BD%AC%E6%8D%A2%E6%88%90%E6%95%B4%E6%95%B0/"><div class="item"><time>2022-06-04</time><span>招式</span></div><span>剑指 Offer 67. 把字符串转换成整数</span></a></li></ul> 
+    <ul class="list entry navigation"><li><a class="widget-last" href="/2022/06/16/%E5%86%85%E5%8A%9F_%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86/"><div class="item"><time>2022-06-16</time><span>内功</span></div><span>项目管理</span></a></li><li><a class="widget-last" href="/2022/05/30/%E5%BF%83%E6%B3%95_%E5%A4%96%E9%83%A8%E6%8E%92%E5%BA%8F/"><div class="item"><time>2022-06-04</time><span>内功</span></div><span>外部排序(多路平衡归并与败者树、置换-选择排序、最佳归并树)</span></a></li><li><a class="widget-last" href="/2022/06/04/%E6%8B%9B%E5%BC%8F_%E5%89%91%E6%8C%87%20Offer%2037.%20%E5%BA%8F%E5%88%97%E5%8C%96%E4%BA%8C%E5%8F%89%E6%A0%91/"><div class="item"><time>2022-06-04</time><span>招式</span></div><span>剑指 Offer 37. 序列化二叉树</span></a></li><li><a class="widget-last" href="/2022/05/18/%E6%8B%9B%E5%BC%8F_%E5%89%91%E6%8C%87%20Offer%2034.%20%E4%BA%8C%E5%8F%89%E6%A0%91%E4%B8%AD%E5%92%8C%E4%B8%BA%E6%9F%90%E4%B8%80%E5%80%BC%E7%9A%84%E8%B7%AF%E5%BE%84/"><div class="item"><time>2022-06-04</time><span>招式</span></div><span>剑指 Offer 34. 二叉树中和为某一值的路径</span></a></li><li><a class="widget-last" href="/2022/06/04/%E6%8B%9B%E5%BC%8F_%E5%89%91%E6%8C%87%20Offer%2066.%20%E6%9E%84%E5%BB%BA%E4%B9%98%E7%A7%AF%E6%95%B0%E7%BB%84/"><div class="item"><time>2022-06-04</time><span>招式</span></div><span>剑指 Offer 66. 构建乘积数组</span></a></li></ul> 
   </div> 
 </section> 
 
@@ -3522,33 +3522,6 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 </script>
 
 
-
-
-  <script defer src="https://npm.elemecdn.com/volantis-static@0.0.1649552113628/libs/vanilla-lazyload/dist/lazyload.min.js"></script>
-<script>
-  // https://www.npmjs.com/package/vanilla-lazyload
-  // Set the options globally
-  // to make LazyLoad self-initialize
-  window.lazyLoadOptions = {
-    elements_selector: ".lazyload",
-    threshold: 0
-  };
-  // Listen to the initialization event
-  // and get the instance of LazyLoad
-  window.addEventListener(
-    "LazyLoad::Initialized",
-    function (event) {
-      window.lazyLoadInstance = event.detail.instance;
-    },
-    false
-  );
-  document.addEventListener('DOMContentLoaded', function () {
-    lazyLoadInstance.update();
-  });
-  document.addEventListener('pjax:complete', function () {
-    lazyLoadInstance.update();
-  });
-</script>
 
 
 
