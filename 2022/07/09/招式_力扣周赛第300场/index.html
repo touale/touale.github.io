@@ -31,19 +31,19 @@
   <!-- feed -->
   <!-- 页面元数据 -->
   <pjax>
-  <title>招力扣周赛第300场 - Touale Cula's Blog</title>
+  <title>力扣周赛_第300场 - Touale Cula's Blog</title>
   <meta name="keywords" content="算法,力扣,内功,心法,招式">
   <meta desc name="description" content="欢迎来到 Touale Cula 的小世界哦 - Touale Cula - Touale Cula's Blog">
   
 <meta property="og:type" content="article">
-<meta property="og:title" content="招力扣周赛第300场">
+<meta property="og:title" content="力扣周赛_第300场">
 <meta property="og:url" content="https://touale.github.io/2022/07/09/%E6%8B%9B%E5%BC%8F_%E5%8A%9B%E6%89%A3%E5%91%A8%E8%B5%9B%E7%AC%AC300%E5%9C%BA/index.html">
 <meta property="og:site_name" content="Touale Cula&#39;s Blog">
 <meta property="og:description" content="招力扣周赛第300场第一题 解密给你字符串 key 和 message ，分别表示一个加密密钥和一段加密消息。解密 message 的步骤如下： 使用 key 中 26 个英文小写字母第一次出现的顺序作为替换表中的字母 顺序 。将替换表与普通英文字母表对齐，形成对照表。按照对照表 替换 message 中的每个字母。空格 ‘ ‘ 保持不变。例如，key &#x3D; “happy boy”（实际的">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://touale.github.io/2022/07/09/%E6%8B%9B%E5%BC%8F_%E5%8A%9B%E6%89%A3%E5%91%A8%E8%B5%9B%E7%AC%AC300%E5%9C%BA/img/touale.jpg">
 <meta property="article:published_time" content="2022-07-08T16:00:00.000Z">
-<meta property="article:modified_time" content="2022-07-10T12:30:13.711Z">
+<meta property="article:modified_time" content="2022-07-10T12:45:58.888Z">
 <meta property="article:author" content="Touale Cula">
 <meta property="article:tag" content="算法">
 <meta property="article:tag" content="力扣">
@@ -1753,7 +1753,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     debug: false,
     cdn: {"js":{"app":"/js/app.3690b000.js","parallax":"/js/plugins/parallax.8bf0ab10.js","rightMenu":"/js/plugins/rightMenu.1d2dd3e0.js","rightMenus":"/js/plugins/rightMenus.68379f6b.js","sites":"/js/plugins/tags/sites.76bf19b8.js","friends":"/js/plugins/tags/friends.f372da57.js","contributors":"/js/plugins/tags/contributors.aec80453.js","search":"/js/search/hexo.06d40311.js"},"css":{"style":"/css/style.8a038721.css"}},
     default: {"avatar":"https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/placeholder/avatar/round/3442075.svg","link":"https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/placeholder/cover/76b86c0226ffd.svg","image":"https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1657456255629),
+    lastupdate: new Date(1657457165562),
     sidebar: {
       for_page: ["blogger","category","tagcloud","donate","lastupdate"],
       for_post: ["blogger","toc","lastupdate"],
@@ -2522,7 +2522,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
     
       <h1 class="title" itemprop="name headline">
-        招力扣周赛第300场
+        力扣周赛_第300场
       </h1>
       <div class='new-meta-box'>
         
@@ -2621,6 +2621,21 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 </div><div class="story post-story"><h2 id="优化"><a href="#优化" class="headerlink" title="优化"></a>优化</h2><p>修改为前缀和</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">class Solution &#123;</span><br><span class="line">public:</span><br><span class="line">    int peopleAwareOfSecret(int n, int delay, int forget) &#123;</span><br><span class="line">        vector&lt;vector&lt;int&gt;&gt; dp(n+1,vector&lt;int&gt;(n+1));</span><br><span class="line">        const int MOD = 1e9+7;</span><br><span class="line">        for (int i = 1; i &lt;= forget; i ++ ) dp[1][i] = 1;</span><br><span class="line">        for(int i=2;i&lt;=n;i++)</span><br><span class="line">            for(int j = 1;j&lt;=n;j++)&#123;</span><br><span class="line">                if(j==1) dp[i][j] = (dp[i-1][forget-1] - dp[i-1][delay-1])%MOD;</span><br><span class="line">                else dp[i][j] = (dp[i-1][j-1] - dp[i-1][j-2]) % MOD;</span><br><span class="line">                dp[i][j] =  (dp[i][j] + dp[i][j-1]) % MOD;</span><br><span class="line">            &#125;</span><br><span class="line">        return (dp[n][forget] + MOD) % MOD;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
+<hr>
+<h1 id="第四题-网格图中递增路径的数目"><a href="#第四题-网格图中递增路径的数目" class="headerlink" title="第四题 网格图中递增路径的数目"></a>第四题 网格图中递增路径的数目</h1><p>给你一个 m x n 的整数网格图 grid ，你可以从一个格子移动到 4 个方向相邻的任意一个格子。</p>
+<p>请你返回在网格图中从 任意 格子出发，达到 任意 格子，且路径中的数字是 严格递增 的路径数目。由于答案可能会很大，请将结果对 109 + 7 取余 后返回。</p>
+<p>如果两条路径中访问过的格子不是完全相同的，那么它们视为两条不同的路径。</p>
+<p> </p>
+<p>示例 1：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">输入：grid = [[1,1],[3,4]]</span><br><span class="line">输出：8</span><br><span class="line">解释：严格递增路径包括：</span><br><span class="line">- 长度为 1 的路径：[1]，[1]，[3]，[4] 。</span><br><span class="line">- 长度为 2 的路径：[1 -&gt; 3]，[1 -&gt; 4]，[3 -&gt; 4] 。</span><br><span class="line">- 长度为 3 的路径：[1 -&gt; 3 -&gt; 4] 。</span><br><span class="line">路径数目为 4 + 3 + 1 = 8 。</span><br></pre></td></tr></table></figure>
+<p>示例 2：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">输入：grid = [[1],[2]]</span><br><span class="line">输出：3</span><br><span class="line">解释：严格递增路径包括：</span><br><span class="line">- 长度为 1 的路径：[1]，[2] 。</span><br><span class="line">- 长度为 2 的路径：[1 -&gt; 2] 。</span><br><span class="line">路径数目为 2 + 1 = 3 。</span><br></pre></td></tr></table></figure>
+
+<p>提示：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">m == grid.length</span><br><span class="line">n == grid[i].length</span><br><span class="line">1 &lt;= m, n &lt;= 1000</span><br><span class="line">1 &lt;= m * n &lt;= 105</span><br><span class="line">1 &lt;= grid[i][j] &lt;= 105</span><br></pre></td></tr></table></figure>
+
+</div><div class="story post-story"><h2 id="解法-记忆搜索"><a href="#解法-记忆搜索" class="headerlink" title="解法 记忆搜索"></a>解法 记忆搜索</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br></pre></td><td class="code"><pre><span class="line">class Solution &#123;</span><br><span class="line">public:</span><br><span class="line">    vector&lt;vector&lt;int&gt;&gt; g;</span><br><span class="line">    int visited[1010][1010];</span><br><span class="line">    int n,m;</span><br><span class="line">    const int MOD = 1e9 + 7;</span><br><span class="line"></span><br><span class="line">    int dp(int x,int y)&#123;</span><br><span class="line">        int dx[4] = &#123;-1,0,1,0&#125;,dy[4] = &#123;0,1,0,-1&#125;;</span><br><span class="line">        if(visited[x][y] != -1) return visited[x][y];</span><br><span class="line"></span><br><span class="line">        visited[x][y] = 1;</span><br><span class="line">        for(int i = 0;i &lt; 4;i++)&#123;</span><br><span class="line">            int a = x + dx[i],b = y + dy[i];</span><br><span class="line">            if(a &gt;= 0 &amp;&amp; a&lt; n &amp;&amp; b &gt;= 0 &amp;&amp; b &lt; m &amp;&amp; g[a][b] &gt; g[x][y])</span><br><span class="line">                visited[x][y] = (visited[x][y] + dp(a,b)) % MOD;</span><br><span class="line">        &#125;</span><br><span class="line">        return visited[x][y];</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    int countPaths(vector&lt;vector&lt;int&gt;&gt;&amp; grid) &#123;</span><br><span class="line">        n = grid.size();</span><br><span class="line">        m = grid[0].size();</span><br><span class="line">        g = grid;</span><br><span class="line">        for(int i = 0;i&lt;n;i++)</span><br><span class="line">            for(int j = 0;j&lt;m;j++)&#123;</span><br><span class="line">                visited[i][j] = -1;</span><br><span class="line">            &#125;</span><br><span class="line">        </span><br><span class="line">        int res = 0;</span><br><span class="line"></span><br><span class="line">        for(int i = 0;i&lt;n;i++)&#123;</span><br><span class="line">            for(int j = 0;j&lt;m;j++)&#123;</span><br><span class="line">                res = (res + dp(i,j)) % MOD;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        </span><br><span class="line">        return res;</span><br><span class="line">        </span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+</div><div class="story post-story"><h2 id="结果-3"><a href="#结果-3" class="headerlink" title="结果"></a>结果</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">执行用时：</span><br><span class="line">204 ms</span><br><span class="line">, 在所有 C++ 提交中击败了</span><br><span class="line">84.86%</span><br><span class="line">的用户</span><br><span class="line">内存消耗：</span><br><span class="line">46.8 MB</span><br><span class="line">, 在所有 C++ 提交中击败了</span><br><span class="line">50.50%</span><br><span class="line">的用户</span><br></pre></td></tr></table></figure>
 <script type="text&#x2F;javascript" src="https://npm.elemecdn.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://npm.elemecdn.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://npm.elemecdn.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://npm.elemecdn.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">
 </div>
   </div>
@@ -2657,7 +2672,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateModified" datetime="2022-07-10T20:30:13+08:00">
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2022-07-10T20:45:58+08:00">
   <a class='notlink'>
     <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
     <p>更新于：2022年7月10日</p>
@@ -2683,7 +2698,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://touale.github.io/2022/07/09/%E6%8B%9B%E5%BC%8F_%E5%8A%9B%E6%89%A3%E5%91%A8%E8%B5%9B%E7%AC%AC300%E5%9C%BA/&title=招力扣周赛第300场 - Touale Cula's Blog&summary="
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://touale.github.io/2022/07/09/%E6%8B%9B%E5%BC%8F_%E5%8A%9B%E6%89%A3%E5%91%A8%E8%B5%9B%E7%AC%AC300%E5%9C%BA/&title=力扣周赛_第300场 - Touale Cula's Blog&summary="
           
           >
           
@@ -2695,7 +2710,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://touale.github.io/2022/07/09/%E6%8B%9B%E5%BC%8F_%E5%8A%9B%E6%89%A3%E5%91%A8%E8%B5%9B%E7%AC%AC300%E5%9C%BA/&title=招力扣周赛第300场 - Touale Cula's Blog&summary="
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://touale.github.io/2022/07/09/%E6%8B%9B%E5%BC%8F_%E5%8A%9B%E6%89%A3%E5%91%A8%E8%B5%9B%E7%AC%AC300%E5%9C%BA/&title=力扣周赛_第300场 - Touale Cula's Blog&summary="
           
           >
           
@@ -2707,7 +2722,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="http://service.weibo.com/share/share.php?url=https://touale.github.io/2022/07/09/%E6%8B%9B%E5%BC%8F_%E5%8A%9B%E6%89%A3%E5%91%A8%E8%B5%9B%E7%AC%AC300%E5%9C%BA/&title=招力扣周赛第300场 - Touale Cula's Blog&summary="
+          target="_blank" href="http://service.weibo.com/share/share.php?url=https://touale.github.io/2022/07/09/%E6%8B%9B%E5%BC%8F_%E5%8A%9B%E6%89%A3%E5%91%A8%E8%B5%9B%E7%AC%AC300%E5%9C%BA/&title=力扣周赛_第300场 - Touale Cula's Blog&summary="
           
           >
           
@@ -2857,7 +2872,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 
     <div class='content'>
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%A7%A3%E6%B3%95"><span class="toc-text">解法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BB%93%E6%9E%9C"><span class="toc-text">结果</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%A7%A3%E6%B3%95-1"><span class="toc-text">解法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BB%93%E6%9E%9C-1"><span class="toc-text">结果</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%A7%A3%E6%B3%95%E4%B8%80"><span class="toc-text">解法一</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BB%93%E6%9E%9C-2"><span class="toc-text">结果</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BC%98%E5%8C%96"><span class="toc-text">优化</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%A7%A3%E6%B3%95"><span class="toc-text">解法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BB%93%E6%9E%9C"><span class="toc-text">结果</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%A7%A3%E6%B3%95-1"><span class="toc-text">解法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BB%93%E6%9E%9C-1"><span class="toc-text">结果</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%A7%A3%E6%B3%95%E4%B8%80"><span class="toc-text">解法一</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BB%93%E6%9E%9C-2"><span class="toc-text">结果</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BC%98%E5%8C%96"><span class="toc-text">优化</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%A7%A3%E6%B3%95-%E8%AE%B0%E5%BF%86%E6%90%9C%E7%B4%A2"><span class="toc-text">解法 记忆搜索</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BB%93%E6%9E%9C-3"><span class="toc-text">结果</span></a></li></ol>
     </div>
   </section>
 
@@ -2878,7 +2893,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
  
   <div class='content'> 
-    <ul class="list entry navigation"><li><a class="widget-last" href="/2022/07/06/%E5%86%85%E5%8A%9F_%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86_%E7%AC%AC%E4%B8%80%E7%AB%A0_%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%BF%B0/"><div class="item"><time>2022-07-10</time><span>内功</span></div><span>计算机组成原理_第一章_计算机系统概述</span></a></li><li><a class="widget-last" href="/2022/07/09/%E6%8B%9B%E5%BC%8F_%E5%8A%9B%E6%89%A3%E5%91%A8%E8%B5%9B%E7%AC%AC300%E5%9C%BA/"><div class="item"><time>2022-07-10</time><span>招式</span></div><span>招力扣周赛第300场</span></a></li><li><a class="widget-last" href="/2022/05/07/%E5%86%85%E5%8A%9F_%E6%8F%92%E5%85%A5%E6%8E%92%E5%BA%8F/"><div class="item"><time>2022-07-02</time><span>内功</span></div><span>插入排序(直接插入排序、折半插入排序、希尔排序)</span></a></li><li><a class="widget-last" href="/2022/06/28/%E5%86%85%E5%8A%9F_%E9%A1%B9%E7%9B%AE%E6%9E%B6%E6%9E%84_%E7%AE%80%E5%8C%96/"><div class="item"><time>2022-06-28</time><span>内功</span></div><span>项目架构_简化</span></a></li><li><a class="widget-last" href="/2022/06/28/%E5%86%85%E5%8A%9F_%E8%BD%AF%E4%BB%B6%E6%9E%B6%E6%9E%84/"><div class="item"><time>2022-06-28</time><span>内功</span></div><span>项目架构</span></a></li></ul> 
+    <ul class="list entry navigation"><li><a class="widget-last" href="/2022/07/09/%E6%8B%9B%E5%BC%8F_%E5%8A%9B%E6%89%A3%E5%91%A8%E8%B5%9B%E7%AC%AC300%E5%9C%BA/"><div class="item"><time>2022-07-10</time><span>招式</span></div><span>力扣周赛_第300场</span></a></li><li><a class="widget-last" href="/2022/07/06/%E5%86%85%E5%8A%9F_%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86_%E7%AC%AC%E4%B8%80%E7%AB%A0_%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%BF%B0/"><div class="item"><time>2022-07-10</time><span>内功</span></div><span>计算机组成原理_第一章_计算机系统概述</span></a></li><li><a class="widget-last" href="/2022/05/07/%E5%86%85%E5%8A%9F_%E6%8F%92%E5%85%A5%E6%8E%92%E5%BA%8F/"><div class="item"><time>2022-07-02</time><span>内功</span></div><span>插入排序(直接插入排序、折半插入排序、希尔排序)</span></a></li><li><a class="widget-last" href="/2022/06/28/%E5%86%85%E5%8A%9F_%E9%A1%B9%E7%9B%AE%E6%9E%B6%E6%9E%84_%E7%AE%80%E5%8C%96/"><div class="item"><time>2022-06-28</time><span>内功</span></div><span>项目架构_简化</span></a></li><li><a class="widget-last" href="/2022/06/28/%E5%86%85%E5%8A%9F_%E8%BD%AF%E4%BB%B6%E6%9E%B6%E6%9E%84/"><div class="item"><time>2022-06-28</time><span>内功</span></div><span>项目架构</span></a></li></ul> 
   </div> 
 </section> 
 
@@ -3846,7 +3861,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"Touale Cula's Blog","url":"https://touale.github.io/","logo":{"@type":"ImageObject","url":"img/touale.jpg","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"Touale Cula","image":{"@type":"ImageObject","url":"img/touale.jpg"},"url":"https://touale.github.io/","sameAs":["https://github.com/volantis-x"],"description":"欢迎来到 Touale Cula 的小世界哦"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://touale.github.io/","name":"Touale Cula's Blog"}},{"@type":"ListItem","position":2,"item":{"@id":"https://touale.github.io/categories/招式/","name":"招式"}},{"@type":"ListItem","position":3,"item":{"@id":"https://touale.github.io/2022/07/09/招式_力扣周赛第300场/","name":"招力扣周赛第300场"}}]},{"@context":"http://schema.org","@type":"BlogPosting","headline":"招力扣周赛第300场","description":"","datePublished":"2022-07-08T16:00:00.000Z","dateModified":"2022-07-10T12:30:13.711Z","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https://touale.github.io/2022/07/09/%E6%8B%9B%E5%BC%8F_%E5%8A%9B%E6%89%A3%E5%91%A8%E8%B5%9B%E7%AC%AC300%E5%9C%BA/"},"author":{"@type":"Person","name":"Touale Cula","image":{"@type":"ImageObject","url":"img/touale.jpg"},"url":"https://touale.github.io/"},"publisher":{"@type":"Organization","name":"Touale Cula's Blog","logo":{"@type":"ImageObject","url":"img/touale.jpg","width":192,"height":192}},"url":"https://touale.github.io/2022/07/09/%E6%8B%9B%E5%BC%8F_%E5%8A%9B%E6%89%A3%E5%91%A8%E8%B5%9B%E7%AC%AC300%E5%9C%BA/","wordCount":0,"articleSection":"招式","keywords":"算法,力扣","image":{"@type":"ImageObject","url":"img/touale.jpg","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"Touale Cula's Blog","url":"https://touale.github.io/","logo":{"@type":"ImageObject","url":"img/touale.jpg","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"Touale Cula","image":{"@type":"ImageObject","url":"img/touale.jpg"},"url":"https://touale.github.io/","sameAs":["https://github.com/volantis-x"],"description":"欢迎来到 Touale Cula 的小世界哦"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://touale.github.io/","name":"Touale Cula's Blog"}},{"@type":"ListItem","position":2,"item":{"@id":"https://touale.github.io/categories/招式/","name":"招式"}},{"@type":"ListItem","position":3,"item":{"@id":"https://touale.github.io/2022/07/09/招式_力扣周赛第300场/","name":"力扣周赛_第300场"}}]},{"@context":"http://schema.org","@type":"BlogPosting","headline":"力扣周赛_第300场","description":"","datePublished":"2022-07-08T16:00:00.000Z","dateModified":"2022-07-10T12:45:58.888Z","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https://touale.github.io/2022/07/09/%E6%8B%9B%E5%BC%8F_%E5%8A%9B%E6%89%A3%E5%91%A8%E8%B5%9B%E7%AC%AC300%E5%9C%BA/"},"author":{"@type":"Person","name":"Touale Cula","image":{"@type":"ImageObject","url":"img/touale.jpg"},"url":"https://touale.github.io/"},"publisher":{"@type":"Organization","name":"Touale Cula's Blog","logo":{"@type":"ImageObject","url":"img/touale.jpg","width":192,"height":192}},"url":"https://touale.github.io/2022/07/09/%E6%8B%9B%E5%BC%8F_%E5%8A%9B%E6%89%A3%E5%91%A8%E8%B5%9B%E7%AC%AC300%E5%9C%BA/","wordCount":0,"articleSection":"招式","keywords":"算法,力扣","image":{"@type":"ImageObject","url":"img/touale.jpg","width":192,"height":192}}]</script>
 
 
 
