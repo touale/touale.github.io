@@ -1753,7 +1753,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     debug: false,
     cdn: {"js":{"app":"/js/app.3690b000.js","parallax":"/js/plugins/parallax.8bf0ab10.js","rightMenu":"/js/plugins/rightMenu.1d2dd3e0.js","rightMenus":"/js/plugins/rightMenus.68379f6b.js","sites":"/js/plugins/tags/sites.76bf19b8.js","friends":"/js/plugins/tags/friends.f372da57.js","contributors":"/js/plugins/tags/contributors.aec80453.js","search":"/js/search/hexo.06d40311.js"},"css":{"style":"/css/style.8a038721.css"}},
     default: {"avatar":"https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/placeholder/avatar/round/3442075.svg","link":"https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/placeholder/cover/76b86c0226ffd.svg","image":"https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1656430723162),
+    lastupdate: new Date(1657456255629),
     sidebar: {
       for_page: ["blogger","category","tagcloud","donate","lastupdate"],
       for_post: ["blogger","toc","lastupdate"],
@@ -2598,7 +2598,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">class Solution &#123;</span><br><span class="line">public:</span><br><span class="line">    int translateNum(int num) &#123;</span><br><span class="line">        string nums = to_string(num);</span><br><span class="line">        if(nums.size() == 1)return 1;</span><br><span class="line"></span><br><span class="line">        int l= 1;</span><br><span class="line">        auto temp =  nums.substr(0, 2);</span><br><span class="line">        int r = (&quot;10&quot;&lt;=temp &amp;&amp; temp &lt;=&quot;25&quot;) ?2:1;</span><br><span class="line">        int q = r;</span><br><span class="line">        </span><br><span class="line">        for(int i = 2;i&lt;nums.size();i++)&#123;    </span><br><span class="line">            auto temp =  nums.substr(i-1, 2);</span><br><span class="line">            if(&quot;10&quot;&lt;=temp &amp;&amp; temp&lt;=&quot;25&quot;)&#123;</span><br><span class="line">                q = l + r;</span><br><span class="line">            &#125;else&#123;</span><br><span class="line">               q = r;</span><br><span class="line">            &#125;</span><br><span class="line">            l = r;</span><br><span class="line">            r = q;</span><br><span class="line">        &#125;</span><br><span class="line">        return q;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
 
 <p>结果</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">执行用时：</span><br><span class="line">0 ms</span><br><span class="line">, 在所有 C++ 提交中击败了</span><br><span class="line">100.00%</span><br><span class="line">的用户</span><br><span class="line">内存消耗：</span><br><span class="line">5.8 MB</span><br><span class="line">, 在所有 C++ 提交中击败了</span><br><span class="line">58.65%</span><br><span class="line">的用户</span><br><span class="line">通过测试用例：</span><br><span class="line">49 / 49</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">执行用时：</span><br><span class="line">0 ms</span><br><span class="line">, 在所有 C++ 提交中击败了</span><br><span class="line">100.00%</span><br><span class="line">的用户</span><br><span class="line">内存消耗：</span><br><span class="line">5.8 MB</span><br><span class="line">, 在所有 C++ 提交中击败了</span><br><span class="line">58.65%</span><br><span class="line">的用户</span><br><span class="line">通过测试用例：</span><br><span class="line">49 / 49</span><br></pre></td></tr></table></figure><script type="text&#x2F;javascript" src="https://npm.elemecdn.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://npm.elemecdn.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://npm.elemecdn.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://npm.elemecdn.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">
 
   </div>
   
@@ -2717,19 +2717,18 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     <div class="prev-next">
       
-        <a class='prev' href='/2022/05/20/%E6%8B%9B%E5%BC%8F_%E5%89%91%E6%8C%87%20Offer%2045.%20%E6%8A%8A%E6%95%B0%E7%BB%84%E6%8E%92%E6%88%90%E6%9C%80%E5%B0%8F%E7%9A%84%E6%95%B0/'>
-          <p class='title'><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>剑指 Offer 45. 把数组排成最小的数</p>
-          <p class='content'>题目内容输入一个非负整数数组，把数组里所有数字拼接起来排成一个数，打印能拼接出的所有数字中最小的一个。
- 
-示例 1:
-12输入: [10,2]输出: &quot;102&quot;
-示例 2:...</p>
+        <a class='prev' href='/2022/05/20/%E6%8B%9B%E5%BC%8F_%E5%89%91%E6%8C%87%20Offer%2047.%20%E7%A4%BC%E7%89%A9%E7%9A%84%E6%9C%80%E5%A4%A7%E4%BB%B7%E5%80%BC/'>
+          <p class='title'><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>剑指 Offer 47. 礼物的最大价值</p>
+          <p class='content'>题目在一个 m*n 的棋盘的每一格都放有一个礼物，每个礼物都有一定的价值（价值大于 0）。你可以从棋盘的左上角开始拿格子里的礼物，并每次向右或者向下移动一格、直到到达棋盘的右下角。给定一个棋盘及...</p>
         </a>
       
       
-        <a class='next' href='/2022/05/20/%E6%8B%9B%E5%BC%8F_%E5%89%91%E6%8C%87%20Offer%2047.%20%E7%A4%BC%E7%89%A9%E7%9A%84%E6%9C%80%E5%A4%A7%E4%BB%B7%E5%80%BC/'>
-          <p class='title'>剑指 Offer 47. 礼物的最大价值<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
-          <p class='content'>题目在一个 m*n 的棋盘的每一格都放有一个礼物，每个礼物都有一定的价值（价值大于 0）。你可以从棋盘的左上角开始拿格子里的礼物，并每次向右或者向下移动一格、直到到达棋盘的右下角。给定一个棋盘及...</p>
+        <a class='next' href='/2022/05/20/%E6%8B%9B%E5%BC%8F_%E5%89%91%E6%8C%87%20Offer%2048.%20%E6%9C%80%E9%95%BF%E4%B8%8D%E5%90%AB%E9%87%8D%E5%A4%8D%E5%AD%97%E7%AC%A6%E7%9A%84%E5%AD%90%E5%AD%97%E7%AC%A6%E4%B8%B2/'>
+          <p class='title'>剑指 Offer 48. 最长不含重复字符的子字符串<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>题目请从字符串中找出一个最长的不包含重复字符的子字符串，计算该最长子字符串的长度。
+ 
+示例 1:
+123输入: &quot;abcabcbb&quot;输出: 3 解释: 因为无重复字符的最长...</p>
         </a>
       
     </div>
@@ -2857,7 +2856,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
  
   <div class='content'> 
-    <ul class="list entry navigation"><li><a class="widget-last" href="/2022/06/28/%E5%86%85%E5%8A%9F_%E9%A1%B9%E7%9B%AE%E6%9E%B6%E6%9E%84_%E7%AE%80%E5%8C%96/"><div class="item"><time>2022-06-28</time><span>内功</span></div><span>项目架构_简化</span></a></li><li><a class="widget-last" href="/2022/06/28/%E5%86%85%E5%8A%9F_%E8%BD%AF%E4%BB%B6%E6%9E%B6%E6%9E%84/"><div class="item"><time>2022-06-28</time><span>内功</span></div><span>项目架构</span></a></li><li><a class="widget-last" href="/2022/06/28/%E6%8B%9B%E5%BC%8F_TCSniffer/"><div class="item"><time>2022-06-28</time><span>招式</span></div><span>TCSniffer</span></a></li><li><a class="widget-last" href="/2022/06/16/%E5%86%85%E5%8A%9F_%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86_%E7%AE%80%E5%8C%96/"><div class="item"><time>2022-06-16</time><span>内功</span></div><span>项目管理_简化</span></a></li><li><a class="widget-last" href="/2022/06/16/%E5%86%85%E5%8A%9F_%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86/"><div class="item"><time>2022-06-16</time><span>内功</span></div><span>项目管理</span></a></li></ul> 
+    <ul class="list entry navigation"><li><a class="widget-last" href="/2022/07/06/%E5%86%85%E5%8A%9F_%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86_%E7%AC%AC%E4%B8%80%E7%AB%A0_%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%BF%B0/"><div class="item"><time>2022-07-10</time><span>内功</span></div><span>计算机组成原理_第一章_计算机系统概述</span></a></li><li><a class="widget-last" href="/2022/07/09/%E6%8B%9B%E5%BC%8F_%E5%8A%9B%E6%89%A3%E5%91%A8%E8%B5%9B%E7%AC%AC300%E5%9C%BA/"><div class="item"><time>2022-07-10</time><span>招式</span></div><span>招力扣周赛第300场</span></a></li><li><a class="widget-last" href="/2022/05/07/%E5%86%85%E5%8A%9F_%E6%8F%92%E5%85%A5%E6%8E%92%E5%BA%8F/"><div class="item"><time>2022-07-02</time><span>内功</span></div><span>插入排序(直接插入排序、折半插入排序、希尔排序)</span></a></li><li><a class="widget-last" href="/2022/06/28/%E5%86%85%E5%8A%9F_%E9%A1%B9%E7%9B%AE%E6%9E%B6%E6%9E%84_%E7%AE%80%E5%8C%96/"><div class="item"><time>2022-06-28</time><span>内功</span></div><span>项目架构_简化</span></a></li><li><a class="widget-last" href="/2022/06/28/%E5%86%85%E5%8A%9F_%E8%BD%AF%E4%BB%B6%E6%9E%B6%E6%9E%84/"><div class="item"><time>2022-06-28</time><span>内功</span></div><span>项目架构</span></a></li></ul> 
   </div> 
 </section> 
 
